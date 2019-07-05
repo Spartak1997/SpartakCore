@@ -1,7 +1,7 @@
-package com.SpartakCore.creativetab;
+package com.spartakcore.creativetab;
 
-import com.SpartakCore.gthandler.CustomItemList;
-import com.SpartakCore.item.ItemList;
+import com.spartakcore.gthandler.CustomItemList;
+import com.spartakcore.item.ItemList;
 import eu.usrv.yamcore.creativetabs.CreativeTabsManager;
 import eu.usrv.yamcore.creativetabs.ModCreativeTab;
 import eu.usrv.yamcore.items.ModItemManager;

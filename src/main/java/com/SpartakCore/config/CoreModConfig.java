@@ -1,4 +1,4 @@
-package com.SpartakCore.config;
+package com.spartakcore.config;
 
 import eu.usrv.yamcore.config.ConfigManager;
 

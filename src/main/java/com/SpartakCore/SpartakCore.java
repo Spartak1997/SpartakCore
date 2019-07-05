@@ -1,13 +1,13 @@
-package com.SpartakCore;
+package com.spartakcore;
 
-import com.SpartakCore.command.*;
-import com.SpartakCore.config.CoreModConfig;
-import com.SpartakCore.creativetab.ModTabList;
-import com.SpartakCore.galacticgreg.SpaceDimRegisterer;
-import com.SpartakCore.gthandler.GT_CustomLoader;
-import com.SpartakCore.item.ItemList;
-import com.SpartakCore.lib.Refstrings;
-import com.SpartakCore.main.CommonProxy;
+import com.spartakcore.command.*;
+import com.spartakcore.config.CoreModConfig;
+import com.spartakcore.creativetab.ModTabList;
+import com.spartakcore.galacticgreg.SpaceDimRegisterer;
+import com.spartakcore.gthandler.GT_CustomLoader;
+import com.spartakcore.item.ItemList;
+import com.spartakcore.lib.Refstrings;
+import com.spartakcore.main.CommonProxy;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
@@ -43,13 +43,13 @@ import java.util.Random;
 		name = Refstrings.NAME,
 		version = "0.1")
 
-public class SpartakCore {
+public class spartakcore {
 	
 	@SidedProxy(clientSide = Refstrings.CLIENTSIDE, serverSide = Refstrings.SERVERSIDE)
     public static CommonProxy proxy;
 	
 	@Mod.Instance(Refstrings.MODID)
-    public static SpartakCore instance;
+    public static spartakcore instance;
 	
 	public static ModItemManager ItemManager;
 	public static CreativeTabsManager TabManager;

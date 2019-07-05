@@ -1,4 +1,4 @@
-package com.SpartakCore.main;
+package com.spartakcore.main;
 
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
 
-import static com.SpartakCore.main.ConfigHandler.CONFIG_HANDLER;
+import static com.spartakcore.main.ConfigHandler.CONFIG_HANDLER;
 
 public class ClientProxy extends CommonProxy {
 

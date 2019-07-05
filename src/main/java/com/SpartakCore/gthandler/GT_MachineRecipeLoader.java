@@ -1,4 +1,4 @@
-package com.SpartakCore.gthandler;
+package com.spartakcore.gthandler;
 
 import java.lang.reflect.Field;
 

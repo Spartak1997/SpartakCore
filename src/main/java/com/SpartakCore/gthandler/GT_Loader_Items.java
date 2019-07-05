@@ -1,6 +1,6 @@
-package com.SpartakCore.gthandler;
+package com.spartakcore.gthandler;
 
-import com.SpartakCore.item.ItemList;
+import com.spartakcore.item.ItemList;
 import gregtech.common.items.GT_MetaGenerated_Item_01;
 
 public class GT_Loader_Items {

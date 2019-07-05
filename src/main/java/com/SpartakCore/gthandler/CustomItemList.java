@@ -1,4 +1,4 @@
-package com.SpartakCore.gthandler;
+package com.spartakcore.gthandler;
 
 import gregtech.api.interfaces.IItemContainer;
 import gregtech.api.util.GT_ModHandler;

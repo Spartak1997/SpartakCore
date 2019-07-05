@@ -1,4 +1,4 @@
-package com.SpartakCore.main;
+package com.spartakcore.main;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.client.Minecraft;

@@ -1,4 +1,4 @@
-package com.SpartakCore.command;
+package com.spartakcore.command;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import eu.usrv.yamcore.auxiliary.PlayerChatHelper;

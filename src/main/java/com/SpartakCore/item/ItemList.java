@@ -1,8 +1,8 @@
-package com.SpartakCore.item;
+package com.spartakcore.item;
 
-import com.SpartakCore.creativetab.ModTabList;
-import com.SpartakCore.lib.Refstrings;
-import com.SpartakCore.SpartakCore;
+import com.spartakcore.creativetab.ModTabList;
+import com.spartakcore.lib.Refstrings;
+import com.spartakcore.spartakcore;
 import eu.usrv.yamcore.items.ModItemManager;
 import eu.usrv.yamcore.items.ModSimpleBaseItem;
 import net.minecraft.item.ItemStack;
@@ -32,7 +32,7 @@ public enum ItemList {
         {
             if (il.Item != null) {
                 if (!pItemManager.AddItemToManagedRegistry(il.Item)) {
-                    SpartakCore.Logger.error(String.format("Item [%s] failed to register", il.toString()));
+                	spartakcore.Logger.error(String.format("Item [%s] failed to register", il.toString()));
                     tResult = false;
                 }
             }

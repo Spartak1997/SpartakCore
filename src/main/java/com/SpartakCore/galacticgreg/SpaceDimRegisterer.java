@@ -1,4 +1,4 @@
-package com.SpartakCore.galacticgreg;
+package com.spartakcore.galacticgreg;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

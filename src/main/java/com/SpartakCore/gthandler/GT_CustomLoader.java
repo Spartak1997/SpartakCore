@@ -1,6 +1,6 @@
-package com.SpartakCore.gthandler;
+package com.spartakcore.gthandler;
 
-import com.SpartakCore.item.ItemList;
+import com.spartakcore.item.ItemList;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 

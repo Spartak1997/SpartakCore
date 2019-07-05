@@ -1,4 +1,4 @@
-package com.SpartakCore.main;
+package com.spartakcore.main;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
