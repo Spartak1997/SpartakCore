@@ -26,10 +26,69 @@ import net.minecraftforge.oredict.OreDictionary;
 public class GT_MachineRecipeLoader implements Runnable{
 	@Override
     public void run(){
+		
+		//Rocket Circuits
+        final int[] EUperRecipe = new int[]{
+                480,                //t2 = HV
+                1920,                //t3 = EV
+                7680,                //t4 = IV
+                30720,                //t5 = LuV
+                122880,                //t6 = ZPM
+                500000,                //t7 = UV
+                2000000,                //t8 = UHV
+        };
+
+        ItemStack[] RocketMaterial = new ItemStack[8];
+        RocketMaterial[0] = GT_ModHandler.getModItem("GalacticraftCore", "item.heavyPlating", 1L);
+        RocketMaterial[1] = GT_ModHandler.getModItem("GalacticraftMars", "item.null", 1L, 3);
+        RocketMaterial[2] = GT_ModHandler.getModItem("GalacticraftMars", "item.itemBasicAsteroids", 1L);
+        RocketMaterial[3] = CustomItemList.HeavyDutyPlateTier4.get(1L);
+        RocketMaterial[4] = CustomItemList.HeavyDutyPlateTier5.get(1L);
+        RocketMaterial[5] = CustomItemList.HeavyDutyPlateTier6.get(1L);
+        RocketMaterial[6] = CustomItemList.HeavyDutyPlateTier7.get(1L);
+        RocketMaterial[7] = CustomItemList.HeavyDutyPlateTier8.get(1L);
+
+        ItemStack[] RocketChip = new ItemStack[8];
+        RocketChip[0] = CustomItemList.SchematicsTier1.get(1L);
+        RocketChip[1] = CustomItemList.SchematicsTier2.get(1L);
+        RocketChip[2] = CustomItemList.SchematicsTier3.get(1L);
+        RocketChip[3] = CustomItemList.SchematicsTier4.get(1L);
+        RocketChip[4] = CustomItemList.SchematicsTier5.get(1L);
+        RocketChip[5] = CustomItemList.SchematicsTier6.get(1L);
+        RocketChip[6] = CustomItemList.SchematicsTier7.get(1L);
+        RocketChip[7] = CustomItemList.SchematicsTier8.get(1L);
+
+        ItemStack[] ExtraChips = new ItemStack[3];
+        ExtraChips[0] = CustomItemList.SchematicsMoonBuggy.get(1L);
+        ExtraChips[1] = CustomItemList.SchematicsCargoRocket.get(1L);
+        ExtraChips[2] = CustomItemList.SchematicsAstroMiner.get(1L);
+        
 		for (Materials tMat : Materials.values()) {//TODO dream things using soldering go in here!
             if (tMat.mStandardMoltenFluid != null && tMat.contains(SubTag.SOLDERING_MATERIAL) && !(GregTech_API.mUseOnlyGoodSolderingMaterials && !tMat.contains(SubTag.SOLDERING_MATERIAL_GOOD))) {
                 int tMultiplier = tMat.contains(SubTag.SOLDERING_MATERIAL_GOOD) ? 1 : tMat.contains(SubTag.SOLDERING_MATERIAL_BAD) ? 4 : 2;
 
+              //Rocket Circuits
+                GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {ItemList.Circuit_Quantumprocessor.get(1L), RocketMaterial[0],GT_Utility.getIntegratedCircuit(1)},tMat.getMolten(576L * tMultiplier / 2L), RocketChip[0], 9000, 480, true);
+                GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {ItemList.Circuit_Data.get(1L), RocketMaterial[0],GT_Utility.getIntegratedCircuit(1)},tMat.getMolten(576L * tMultiplier / 2L), RocketChip[0], 9000, 480, true);
+                GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {ItemList.Circuit_Nanocomputer.get(1L), RocketMaterial[0],GT_Utility.getIntegratedCircuit(1)},tMat.getMolten(576L * tMultiplier / 2L), RocketChip[0], 9000, 480, true);
+
+                for (byte i=2;i<9;++i) {
+                    ItemStack DataStickWScheme = ItemList.Tool_DataStick.get(1L);
+                    DataStickWScheme.setTagCompound(GT_Utility.getNBTContainingShort(new NBTTagCompound(), "rocket_tier", (short) i ));
+                    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[(i-1)],ItemList.Circuit_Elite.get(1L),DataStickWScheme.splitStack(0)}, tMat.getMolten(576L * tMultiplier / 2L), RocketChip[(i-1)], 9000, EUperRecipe[(i-2)], true);
+                    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[(i-1)],ItemList.Circuit_Elitenanocomputer.get(1L),DataStickWScheme.splitStack(0)}, tMat.getMolten(576L * tMultiplier / 2L), RocketChip[(i-1)], 9000, EUperRecipe[(i-2)], true);
+                    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[(i-1)],ItemList.Circuit_Quantumcomputer.get(1L),DataStickWScheme.splitStack(0)}, tMat.getMolten(576L * tMultiplier / 2L), RocketChip[(i-1)], 9000, EUperRecipe[(i-2)], true);
+                    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[(i-1)],ItemList.Circuit_Crystalprocessor.get(1L),DataStickWScheme.splitStack(0)}, tMat.getMolten(576L * tMultiplier / 2L), RocketChip[(i-1)], 9000, EUperRecipe[(i-2)], true);
+                    }
+
+                for (byte i=0;i<3;++i) {
+                	ItemStack DataStickWScheme = ItemList.Tool_DataStick.get(1L);
+                    DataStickWScheme.setTagCompound(GT_Utility.getNBTContainingShort(new NBTTagCompound(), "rocket_tier", (short) (i+100)));
+                    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[i],ItemList.Circuit_Quantumprocessor.get(1L),DataStickWScheme.splitStack(0)},tMat.getMolten(576L * tMultiplier / 2L),ExtraChips[i], 9000, EUperRecipe[i], true);
+                    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[i],ItemList.Circuit_Data.get(1L),DataStickWScheme.splitStack(0)},tMat.getMolten(576L * tMultiplier / 2L),ExtraChips[i], 9000, EUperRecipe[i], true);
+                    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[i],ItemList.Circuit_Nanocomputer.get(1L),DataStickWScheme.splitStack(0)},tMat.getMolten(576L * tMultiplier / 2L),ExtraChips[i], 9000, EUperRecipe[i], true);
+                }
+                
 		if(Loader.isModLoaded("OpenComputers")) {
 			//cable
             GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Gold, 1), GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.RedstoneAlloy, 1), GT_Utility.getIntegratedCircuit(1)}, GT_Values.NF, GT_ModHandler.getModItem("OpenComputers", "cable", 1L, 0), 200, 120);
