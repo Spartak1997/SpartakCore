@@ -11,6 +11,7 @@ import com.spartakcore.gthandler.GT_CustomLoader;
 import com.spartakcore.item.ItemList;
 import com.spartakcore.lib.Refstrings;
 import com.spartakcore.main.CommonProxy;
+import com.spartakcore.oredict.OreDictHandler;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
@@ -65,7 +66,6 @@ public class spartakcore {
 	public static LogHelper Logger = new LogHelper(Refstrings.MODID);
 	private static SpaceDimRegisterer SpaceDimReg;
 	private static BacteriaRegistry BacteriaRegistry;
-	private static GT_CoreModSupport GT_CoreModSupport;
 	
 	public static void AddLoginError(String pMessage)
     {
@@ -166,6 +166,10 @@ public class spartakcore {
 	@Mod.EventHandler
     public void load(FMLInitializationEvent event)
     {
+		// Register additional OreDictionary Names
+        if(CoreConfig.OreDictItems_Enabled)
+        OreDictHandler.register_all();
+        
         // Register Dimensions in GalacticGregGT5
 		if (Loader.isModLoaded("galacticgreg"))
         {

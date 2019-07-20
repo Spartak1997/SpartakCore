@@ -168,11 +168,10 @@ public class BacteriaRegistry {
     }
 
     private void runBWRecipes(){
-        addBioLabRecipeIncubation(GT_ModHandler.getModItem("GalaxySpace","barnardaClog",1L),CultureSet.get("BarnadaCBac"),new int[]{250}, FluidRegistry.getFluidStack("unknowwater",8000),500, BW_Util.getMachineVoltageFromTier(8),0);
-        addBioLabRecipeIncubation(GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L, 0),CultureSet.get("TcetiEBac"),new int[]{250}, FluidRegistry.getFluidStack("unknowwater",8000),500, BW_Util.getMachineVoltageFromTier(8),0);
-        addBioLabRecipeIncubation(GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L, 3),CultureSet.get("TcetiEBac"),new int[]{250}, FluidRegistry.getFluidStack("unknowwater",8000),500, BW_Util.getMachineVoltageFromTier(8),0);
-        addBioLabRecipeIncubation(GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L, 4),CultureSet.get("TcetiEBac"),new int[]{250}, FluidRegistry.getFluidStack("unknowwater",8000),500, BW_Util.getMachineVoltageFromTier(8),0);
-        addBioLabRecipeIncubation(GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L, 5),CultureSet.get("TcetiEBac"),new int[]{250}, FluidRegistry.getFluidStack("unknowwater",8000),500, BW_Util.getMachineVoltageFromTier(8),0);
+    	addBioLabRecipeIncubation(GT_ModHandler.getModItem("GalaxySpace","barnardaClog",1L),CultureSet.get("BarnadaCBac"),new int[]{250}, FluidRegistry.getFluidStack("unknowwater",8000),500, BW_Util.getMachineVoltageFromTier(8),0);
+        for (int i = 0; i < OreDictionary.getOres("cropTcetiESeaweed").size(); i++) {
+            addBioLabRecipeIncubation(OreDictionary.getOres("cropTcetiESeaweed").get(i),CultureSet.get("TcetiEBac"),new int[]{250}, FluidRegistry.getFluidStack("unknowwater",8000),500, BW_Util.getMachineVoltageFromTier(8),0);
+        }
         addBacterialVatRecipe(new ItemStack[]{AntimonyTrioxide.getDust(16),Osmium.getDust(16)},CultureSet.get("CombinedBac"),new FluidStack[]{Oil.getFluid(1000)},new FluidStack[]{Xenoxene.getFluid(1)},3600,BW_Util.getMachineVoltageFromTier(8),Materials.NaquadahEnriched,8,0,false);
         new BioItemLoader();
     }
