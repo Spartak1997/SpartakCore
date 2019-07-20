@@ -50,6 +50,7 @@ public enum ItemList {
 	Tier6Booster(new ModSimpleBaseItem("Tier6Booster",ModTabList.ModSpaceTab)),
 	Tier7Booster(new ModSimpleBaseItem("Tier7Booster",ModTabList.ModSpaceTab)),
 	Tier8Booster(new ModSimpleBaseItem("Tier8Booster",ModTabList.ModSpaceTab)),
+	TCetiESeaweedExtract(new ModSimpleBaseItem("TCetiESeaweedExtract",ModTabList.ModSpaceTab)),
 	
 	// Do not delete this
     EndOfList(null);

@@ -22,7 +22,10 @@ public enum CustomItemList implements IItemContainer {
 	HeavyDutyNoseConeTier4,HeavyDutyNoseConeTier5,HeavyDutyNoseConeTier6,HeavyDutyNoseConeTier7,HeavyDutyNoseConeTier8,
 	HeavyDutyRocketEngineTier4,HeavyDutyRocketEngineTier5,HeavyDutyRocketEngineTier6,HeavyDutyRocketEngineTier7,HeavyDutyRocketEngineTier8,
 	HeavyDutyRocketFinsTier4,HeavyDutyRocketFinsTier5,HeavyDutyRocketFinsTier6,HeavyDutyRocketFinsTier7,HeavyDutyRocketFinsTier8,
-	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster;
+	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster,
+	
+	//Dusts
+	TCetiESeaweedExtract;
 	
 	private ItemStack mStack;
 	private boolean mHasNotBeenSet = true;

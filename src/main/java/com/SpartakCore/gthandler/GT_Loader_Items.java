@@ -56,6 +56,7 @@ public class GT_Loader_Items {
 		CustomItemList.Tier6Booster.set(ItemList.Tier6Booster.getIS());
 		CustomItemList.Tier7Booster.set(ItemList.Tier7Booster.getIS());
 		CustomItemList.Tier8Booster.set(ItemList.Tier8Booster.getIS());
+		CustomItemList.TCetiESeaweedExtract.set(ItemList.TCetiESeaweedExtract.getIS());
 		
 	}
 }
