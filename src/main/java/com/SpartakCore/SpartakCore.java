@@ -1,9 +1,12 @@
 package com.spartakcore;
 
+import com.spartakcore.bartworksHandler.BacteriaRegistry;
 import com.spartakcore.command.*;
 import com.spartakcore.config.CoreModConfig;
 import com.spartakcore.creativetab.ModTabList;
+import com.spartakcore.fluids.FluidList;
 import com.spartakcore.galacticgreg.SpaceDimRegisterer;
+import com.spartakcore.gthandler.GT_CoreModSupport;
 import com.spartakcore.gthandler.GT_CustomLoader;
 import com.spartakcore.item.ItemList;
 import com.spartakcore.lib.Refstrings;
@@ -26,6 +29,7 @@ import eu.usrv.yamcore.creativetabs.CreativeTabsManager;
 import eu.usrv.yamcore.fluids.ModFluidManager;
 import eu.usrv.yamcore.items.ModItemManager;
 import gregtech.api.GregTech_API;
+import gregtech.api.interfaces.ITexture;
 import gregtech.GT_Mod;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -41,7 +45,7 @@ import java.util.Random;
 @Mod (
 		modid = Refstrings.MODID,
 		name = Refstrings.NAME,
-		version = "0.1")
+		version = "0.2")
 
 public class spartakcore {
 	
@@ -53,12 +57,15 @@ public class spartakcore {
 	
 	public static ModItemManager ItemManager;
 	public static CreativeTabsManager TabManager;
+	public static ModFluidManager FluidManager;
 	public static GT_CustomLoader GTCustomLoader;
 	public static CoreModConfig CoreConfig;
 	public static IngameErrorLog Module_AdminErrorLogs;
 	public static Random Rnd;
 	public static LogHelper Logger = new LogHelper(Refstrings.MODID);
 	private static SpaceDimRegisterer SpaceDimReg;
+	private static BacteriaRegistry BacteriaRegistry;
+	private static GT_CoreModSupport GT_CoreModSupport;
 	
 	public static void AddLoginError(String pMessage)
     {
@@ -119,6 +126,11 @@ public class spartakcore {
         TabManager = new CreativeTabsManager();
         ModTabList.InitModTabs(TabManager, ItemManager);
         
+      //Materials init
+        //if (!GT_Mod.gregtechproxy.mEnableAllMaterials) {
+            new GT_CoreModSupport();
+        //}
+        
      // ------------------------------------------------------------
         Logger.debug("PRELOAD Create Items");
         if (!ItemList.AddToItemManager(ItemManager))
@@ -127,9 +139,28 @@ public class spartakcore {
             AddLoginError("[SpartakCoreMod-Items] Some items failed to register. Check the logfile for details");
         }
         
+     // ------------------------------------------------------------
+        Logger.debug("PRELOAD Create Fluids");
+        FluidManager = new ModFluidManager(Refstrings.MODID);
+        if (!FluidList.AddToItemManager(FluidManager))
+        {
+            Logger.warn("Some fluids failed to register. Check the logfile for details");
+            AddLoginError("[CoreMod-Fluids] Some fluids failed to register. Check the logfile for details");
+        }
+        
      // register final list with valid items to forge
         Logger.debug("LOAD Register Items");
         ItemManager.RegisterItems(TabManager);
+        
+        Logger.debug("LOAD Register Fluids");
+        FluidManager.RegisterItems(TabManager);
+        
+        if (Loader.isModLoaded("bartworks"))
+        {
+        BacteriaRegistry = new BacteriaRegistry();
+        }
+        
+        
     }
 	
 	@Mod.EventHandler
@@ -164,6 +195,8 @@ public class spartakcore {
     {
 		GTCustomLoader = new GT_CustomLoader();
         GTCustomLoader.run();
+        
+        BacteriaRegistry.runAllPostinit();
     }
 	
 	@Mod.EventHandler
