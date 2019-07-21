@@ -375,6 +375,7 @@ public class GT_MachineRecipeLoader implements Runnable{
 		}
             }
 		}
+		run2();
 	}
 	
 	private void run2() {
@@ -547,7 +548,7 @@ public class GT_MachineRecipeLoader implements Runnable{
 	            GT_Values.RA.addCutterRecipe(ItemList.Circuit_Silicon_Ingot8.get(1, new Object[0]), GT_Values.NI, ItemList.Circuit_Silicon_Wafer8.get(64, new Object[0]), ItemList.Circuit_Silicon_Wafer8.get(64, new Object[0]), 3200, 7680, true);
 	            GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Silicon, 8), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.VibrantAlloy, 6), Materials.Argon.getGas(3000), null, ItemList.Circuit_Silicon_Ingot9.get(1, new Object[0]), null, 12000, 1024, 3333);
 	            GT_Values.RA.addCutterRecipe(ItemList.Circuit_Silicon_Ingot9.get(1, new Object[0]), GT_Values.NI, ItemList.Circuit_Silicon_Wafer9.get(40, new Object[0]), null, 1000, 240, true);
-	            GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Silicon, 64), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Neutronium, 4), Materials.Radon.getGas(24000), null, ItemList.Circuit_Silicon_Ingot10.get(1, new Object[0]), null, 29000, 500000, 11000);
+	            GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Silicon, 64), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Neutronium, 4), Materials.Radon.getGas(24000), null, ItemList.Circuit_Silicon_Ingot10.get(1, new Object[0]), null, 29000, 500000, 10800);
 	            GT_Values.RA.addCutterRecipe(ItemList.Circuit_Silicon_Ingot10.get(1, new Object[0]), GT_Values.NI, ItemList.Circuit_Silicon_Wafer10.get(64, new Object[0]), ItemList.Circuit_Silicon_Wafer10.get(64, new Object[0]), 6400, 122880, true);
 	            
 	         // Vacuum Freezer
