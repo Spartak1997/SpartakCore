@@ -127,9 +127,9 @@ public class spartakcore {
         ModTabList.InitModTabs(TabManager, ItemManager);
         
       //Materials init
-        //if (!GT_Mod.gregtechproxy.mEnableAllMaterials) {
+        if (!GT_Mod.gregtechproxy.mEnableAllMaterials) {
             new GT_CoreModSupport();
-        //}
+        }
         
      // ------------------------------------------------------------
         Logger.debug("PRELOAD Create Items");
