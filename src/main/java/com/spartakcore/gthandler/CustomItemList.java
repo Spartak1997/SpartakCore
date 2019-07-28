@@ -24,10 +24,6 @@ public enum CustomItemList implements IItemContainer {
 	HeavyDutyRocketFinsTier4,HeavyDutyRocketFinsTier5,HeavyDutyRocketFinsTier6,HeavyDutyRocketFinsTier7,HeavyDutyRocketFinsTier8,
 	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster,
 	
-	//Batteries
-	BatteryHull_UMV, BatteryHull_UxV,
-	BatteryHull_UMV_Full, BatteryHull_UxV_Full,
-	
 	//Dusts
 	TCetiESeaweedExtract;
 	
