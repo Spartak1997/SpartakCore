@@ -3,6 +3,7 @@ package com.spartakcore.gthandler;
 import java.lang.reflect.Field;
 
 import com.spartakcore.gtppHandler.GTPPRecipeLoader;
+import com.spartakcore.ttHandler.TTRecipeLoader;
 import cpw.mods.fml.common.Loader;
 import gregtech.api.GregTech_API;
 import gregtech.api.enums.GT_Values;
@@ -31,8 +32,13 @@ public class GT_MachineRecipeLoader implements Runnable{
 		// --- GT++
 		if (Loader.isModLoaded("miscutils")) {
             new GTPPRecipeLoader().run();
-        }
-	    
+       }
+		
+		// --- TecTech
+		if (Loader.isModLoaded("tectech")) {
+            new TTRecipeLoader().run();
+       }
+		
 		// --- GalaxySpace
         if (Loader.isModLoaded("GalaxySpace"))
         {
