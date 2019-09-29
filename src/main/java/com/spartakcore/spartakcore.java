@@ -225,7 +225,9 @@ public class spartakcore {
 		GTCustomLoader = new GT_CustomLoader();
         GTCustomLoader.run();
         
-        BacteriaRegistry.runAllPostinit();
+        if (Loader.isModLoaded("bartworks")) {
+            BacteriaRegistry.runAllPostinit();
+	    }
     }
 	
 	@Mod.EventHandler
