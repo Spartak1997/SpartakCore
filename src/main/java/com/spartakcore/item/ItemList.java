@@ -51,6 +51,13 @@ public enum ItemList {
 	Tier7Booster(new ModSimpleBaseItem("Tier7Booster",ModTabList.ModSpaceTab)),
 	Tier8Booster(new ModSimpleBaseItem("Tier8Booster",ModTabList.ModSpaceTab)),
 	TCetiESeaweedExtract(new ModSimpleBaseItem("TCetiESeaweedExtract",ModTabList.ModSpaceTab)),
+	QuantumPartBoots(new ModSimpleBaseItem("QuantumPartBoots",ModTabList.ModGenericTab)),
+	QuantumPartChestplate(new ModSimpleBaseItem("QuantumPartChestplate",ModTabList.ModGenericTab)),
+	QuantumPartHelmetEmpty(new ModSimpleBaseItem("QuantumPartHelmetEmpty",ModTabList.ModGenericTab)),
+	QuantumPartHelmet(new ModSimpleBaseItem("QuantumPartHelmet",ModTabList.ModGenericTab)),
+	QuantumPartLeggings(new ModSimpleBaseItem("QuantumPartLeggings",ModTabList.ModGenericTab)),
+	QuantumCrystal(new ModSimpleBaseItem("QuantumCrystal",ModTabList.ModGenericTab)),
+	IridiumAlloyItemCasing(new ModSimpleBaseItem("IridiumAlloyItemCasing",ModTabList.ModBarsAndCasingsTab)),
 	
 	// Do not delete this
     EndOfList(null);

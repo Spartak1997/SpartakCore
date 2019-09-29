@@ -14,13 +14,17 @@ import net.minecraft.item.ItemStack;
 import java.util.List;
 
 public class ModTabList {
+	public static String ModGenericTab = "tabSpartakCoreItems_Generic";
 	public static String ModSpaceTab = "tabSpartakCoreSpace";
+	public static String ModBarsAndCasingsTab = "tabSpartakCoreBars_Casings";
 	
 	private ModTabList() {}
 	
 	public static void InitModTabs(CreativeTabsManager pTabManager, ModItemManager pItemManager)
 	{
+		pTabManager.AddCreativeTab(new ModCreativeTab(ModGenericTab, ItemList.QuantumPartChestplate.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModSpaceTab, ItemList.SchematicsTier1.Item.getConstructedItem()));
+		pTabManager.AddCreativeTab(new ModCreativeTab(ModBarsAndCasingsTab, ItemList.IridiumAlloyItemCasing.Item.getConstructedItem()));
 		
 		
 	}

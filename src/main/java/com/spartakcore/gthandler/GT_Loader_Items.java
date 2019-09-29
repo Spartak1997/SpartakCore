@@ -57,6 +57,13 @@ public class GT_Loader_Items
 		CustomItemList.Tier7Booster.set(ItemList.Tier7Booster.getIS());
 		CustomItemList.Tier8Booster.set(ItemList.Tier8Booster.getIS());
 		CustomItemList.TCetiESeaweedExtract.set(ItemList.TCetiESeaweedExtract.getIS());
+		CustomItemList.QuantumPartBoots.set(ItemList.QuantumPartBoots.getIS());
+		CustomItemList.QuantumPartChestplate.set(ItemList.QuantumPartChestplate.getIS());
+		CustomItemList.QuantumPartHelmetEmpty.set(ItemList.QuantumPartHelmetEmpty.getIS());
+		CustomItemList.QuantumPartHelmet.set(ItemList.QuantumPartHelmet.getIS());
+		CustomItemList.QuantumPartLeggings.set(ItemList.QuantumPartLeggings.getIS());
+		CustomItemList.IridiumAlloyItemCasing.set(ItemList.IridiumAlloyItemCasing.getIS());
+		CustomItemList.QuantumCrystal.set(ItemList.QuantumCrystal.getIS());
 		
 	}
 }

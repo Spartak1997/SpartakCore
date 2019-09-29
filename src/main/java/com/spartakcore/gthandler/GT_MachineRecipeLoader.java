@@ -656,6 +656,72 @@ public class GT_MachineRecipeLoader implements Runnable{
 	            GT_Values.RA.addSuperCoolingFreezerRecipe(GT_OreDictUnificator.get(OrePrefixes.ingotHot, Materials.Quantium, 1L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Quantium, 1L), Materials.SuperCoolant.getFluid(150), new FluidStack(FluidRegistry.getFluid("ic2hotcoolant"), 50), 60, 30720);
 	            GT_Values.RA.addSuperCoolingFreezerRecipe(GT_OreDictUnificator.get(OrePrefixes.ingotHot, Materials.BlackPlutonium, 1L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.BlackPlutonium, 1L), Materials.SuperCoolant.getFluid(150), new FluidStack(FluidRegistry.getFluid("ic2hotcoolant"), 50), 66, 122880);
 	            
+	            //ItemCasings
+	            GT_Values.RA.addAlloySmelterRecipe(GT_ModHandler.getModItem("IC2","itemPartIridium",2L), ItemList.Shape_Mold_Casing.get(0), com.spartakcore.item.ItemList.IridiumAlloyItemCasing.getIS().splitStack(3), 1200, 256);
+	            
+	            //Quantum Armor Parts
+	            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getIC2Item("nanoBoots", 1L, GT_Values.W), CustomItemList.IridiumAlloyItemCasing.get(4L), CustomItemList.QuantumPartBoots.get(1L), 1200, 1920);
+	            GT_Values.RA.addAssemblerRecipe(Loader.isModLoaded("GraviSuite") ? GT_ModHandler.getModItem("GraviSuite", "advNanoChestPlate", 1, GT_Values.W) : GT_ModHandler.getIC2Item("nanoBodyarmor", 1L, GT_Values.W), CustomItemList.IridiumAlloyItemCasing.get(8L), CustomItemList.QuantumPartChestplate.get(1L), 1200, 1920);
+	            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getIC2Item("nanoHelmet", 1L, GT_Values.W), CustomItemList.IridiumAlloyItemCasing.get(5L), CustomItemList.QuantumPartHelmetEmpty.get(1L), 1200, 1920);
+	            GT_Values.RA.addAssemblerRecipe(CustomItemList.QuantumPartHelmetEmpty.get(1L), GT_OreDictUnificator.get(OrePrefixes.lens, Materials.ReinforcedGlass, 8L), CustomItemList.QuantumPartHelmet.get(1L), 1200, 1920);
+	            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getIC2Item("nanoLeggings", 1L, GT_Values.W), CustomItemList.IridiumAlloyItemCasing.get(7L), CustomItemList.QuantumPartLeggings.get(1L), 1200, 1920);
+	            
+	          //Quantum Armor
+                GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getIC2Item("quantumHelmet", 1, GT_Values.W));
+
+                GT_Values.RA.addAssemblerRecipe(new ItemStack[]{CustomItemList.QuantumPartHelmet.get(1L),
+                                CustomItemList.QuantumCrystal.get(1L),
+                                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 2),
+                                GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.TungstenSteel, 4),
+                                ItemList.Energy_LapotronicOrb.get(1L),
+                                ItemList.Sensor_IV.get(1L),
+                                ItemList.Field_Generator_EV.get(1L),
+                                GT_OreDictUnificator.get(OrePrefixes.screw, Materials.TungstenSteel, 4),
+                                GT_Utility.getIntegratedCircuit(10)},
+                                Materials.Titanium.getMolten(1728L),
+                        GT_ModHandler.getIC2Item("quantumHelmet", 1L, 26), 1500, 7680);
+
+                GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getIC2Item("quantumBodyarmor", 1, GT_Values.W));
+
+                GT_Values.RA.addAssemblerRecipe(new ItemStack[]{CustomItemList.QuantumPartChestplate.get(1L),
+                                CustomItemList.QuantumCrystal.get(1L),
+                                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 2),
+                                GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.TungstenSteel, 6),
+                                ItemList.Energy_LapotronicOrb.get(1L),
+                                ItemList.Field_Generator_EV.get(3L),
+                                ItemList.Electric_Motor_IV.get(2L),
+                                GT_OreDictUnificator.get(OrePrefixes.screw, Materials.TungstenSteel, 4),
+                                GT_Utility.getIntegratedCircuit(11)},
+                                Materials.Titanium.getMolten(2880L),
+                        GT_ModHandler.getIC2Item("quantumBodyarmor", 1L, 26), 1500, 7680);
+
+                GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getIC2Item("quantumLeggings", 1, GT_Values.W));
+
+                GT_Values.RA.addAssemblerRecipe(new ItemStack[]{CustomItemList.QuantumPartLeggings.get(1L),
+                                CustomItemList.QuantumCrystal.get(1L),
+                                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 2),
+                                GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.TungstenSteel, 6),
+                                ItemList.Energy_LapotronicOrb.get(1L),
+                                ItemList.Field_Generator_EV.get(2L),
+                                ItemList.Electric_Motor_IV.get(4L),
+                                GT_OreDictUnificator.get(OrePrefixes.screw, Materials.TungstenSteel, 4),
+                                GT_Utility.getIntegratedCircuit(12)},
+                                Materials.Titanium.getMolten(2304L),
+                        GT_ModHandler.getIC2Item("quantumLeggings", 1L, 26), 1500, 7680);
+
+                GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getIC2Item("quantumBoots", 1, GT_Values.W));
+
+                GT_Values.RA.addAssemblerRecipe(new ItemStack[]{CustomItemList.QuantumPartBoots.get(1L),
+                                CustomItemList.QuantumCrystal.get(1L),
+                                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 2),
+                                GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.TungstenSteel, 4),
+                                ItemList.Energy_LapotronicOrb.get(1L),
+                                ItemList.Field_Generator_EV.get(1L),
+                                ItemList.Electric_Piston_IV.get(2L),
+                                GT_OreDictUnificator.get(OrePrefixes.screw, Materials.TungstenSteel, 4),
+                                GT_Utility.getIntegratedCircuit(12)},
+                                Materials.Titanium.getMolten(1440L),
+                        GT_ModHandler.getIC2Item("quantumBoots", 1L, 26), 1500, 7680);
 	}
 	
 	private final static boolean make_floppy(String displayname,String name,int color, int circuit) {

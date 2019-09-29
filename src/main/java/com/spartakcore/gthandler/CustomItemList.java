@@ -20,15 +20,23 @@ public enum CustomItemList implements IItemContainer {
 	
 	//Schematics
 	SchematicsTier1, SchematicsTier2, SchematicsTier3, SchematicsTier4, SchematicsTier5, SchematicsTier6, SchematicsTier7, SchematicsTier8,SchematicsAstroMiner,SchematicsCargoRocket,SchematicsMoonBuggy,
+	
 	//Plates
 	HeavyDutyPlateTier4,HeavyDutyPlateTier5,HeavyDutyPlateTier6,HeavyDutyPlateTier7,HeavyDutyPlateTier8,
+	
 	//Ingots
 	HeavyDutyAlloyIngotT4,HeavyDutyAlloyIngotT5,HeavyDutyAlloyIngotT6,HeavyDutyAlloyIngotT7,HeavyDutyAlloyIngotT8,
+	
 	//Components
 	HeavyDutyNoseConeTier4,HeavyDutyNoseConeTier5,HeavyDutyNoseConeTier6,HeavyDutyNoseConeTier7,HeavyDutyNoseConeTier8,
 	HeavyDutyRocketEngineTier4,HeavyDutyRocketEngineTier5,HeavyDutyRocketEngineTier6,HeavyDutyRocketEngineTier7,HeavyDutyRocketEngineTier8,
 	HeavyDutyRocketFinsTier4,HeavyDutyRocketFinsTier5,HeavyDutyRocketFinsTier6,HeavyDutyRocketFinsTier7,HeavyDutyRocketFinsTier8,
 	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster,
+	IridiumAlloyItemCasing,
+	QuantumCrystal,
+	
+	//Armor
+	QuantumPartBoots, QuantumPartChestplate, QuantumPartHelmetEmpty, QuantumPartHelmet, QuantumPartLeggings,
 	
 	//Dusts
 	TCetiESeaweedExtract;
