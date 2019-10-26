@@ -8,8 +8,6 @@ import gregtech.api.interfaces.ITexture;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
-import com.spartakcore.gthandler.tileentities.CustomTextures;
-
 public class GT_CustomLoader {
 
 	private static final GT_Loader_Items ItemLoader = new GT_Loader_Items();
