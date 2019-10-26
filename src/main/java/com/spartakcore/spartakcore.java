@@ -8,7 +8,6 @@ import com.spartakcore.fluids.FluidList;
 import com.spartakcore.galacticgreg.SpaceDimRegisterer;
 import com.spartakcore.gthandler.GT_CoreModSupport;
 import com.spartakcore.gthandler.GT_CustomLoader;
-import com.spartakcore.gthandler.tileentities.CustomTextures;
 import com.spartakcore.item.ItemList;
 import com.spartakcore.lib.Refstrings;
 import com.spartakcore.main.CommonProxy;
