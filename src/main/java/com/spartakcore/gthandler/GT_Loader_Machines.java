@@ -1,5 +1,6 @@
 package com.spartakcore.gthandler;
 
+import cpw.mods.fml.common.Loader;
 import gregtech.api.GregTech_API;
 import gregtech.api.enums.*;
 import gregtech.api.metatileentity.implementations.*;
