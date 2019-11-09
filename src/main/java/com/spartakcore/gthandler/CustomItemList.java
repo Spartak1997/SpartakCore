@@ -33,7 +33,12 @@ public enum CustomItemList implements IItemContainer {
 	HeavyDutyRocketFinsTier4,HeavyDutyRocketFinsTier5,HeavyDutyRocketFinsTier6,HeavyDutyRocketFinsTier7,HeavyDutyRocketFinsTier8,
 	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster,
 	IridiumAlloyItemCasing,
+	
+	//Crystal
 	QuantumCrystal,
+	
+	//Lens
+	RefinedReinforcedGlassLense, ChargedGlassLense, HugeRefinedReinforcedGlassLense, HugeChargedGlassLense,
 	
 	//Armor
 	QuantumPartBoots, QuantumPartChestplate, QuantumPartHelmetEmpty, QuantumPartHelmet, QuantumPartLeggings,

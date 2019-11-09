@@ -58,6 +58,10 @@ public enum ItemList {
 	QuantumPartLeggings(new ModSimpleBaseItem("QuantumPartLeggings",ModTabList.ModGenericTab)),
 	QuantumCrystal(new ModSimpleBaseItem("QuantumCrystal",ModTabList.ModGenericTab)),
 	IridiumAlloyItemCasing(new ModSimpleBaseItem("IridiumAlloyItemCasing",ModTabList.ModBarsAndCasingsTab)),
+	RefinedReinforcedGlassLense(new ModSimpleBaseItem("RefinedReinforcedGlassLense",ModTabList.ModGenericTab)),
+	ChargedGlassLense(new ModSimpleBaseItem("ChargedGlassLense",ModTabList.ModGenericTab)),
+	HugeRefinedReinforcedGlassLense(new ModSimpleBaseItem("HugeRefinedReinforcedGlassLense",ModTabList.ModGenericTab)),
+	HugeChargedGlassLense(new ModSimpleBaseItem("HugeChargedGlassLense",ModTabList.ModGenericTab)),
 	
 	// Do not delete this
     EndOfList(null);
