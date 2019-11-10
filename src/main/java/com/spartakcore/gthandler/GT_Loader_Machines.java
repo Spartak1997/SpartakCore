@@ -1,6 +1,7 @@
 package com.spartakcore.gthandler;
 
 import cpw.mods.fml.common.Loader;
+import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
 import gregtech.api.enums.*;
 import gregtech.api.metatileentity.implementations.*;
@@ -9,7 +10,10 @@ import gregtech.api.util.GT_OreDictUnificator;
 import gregtech.api.util.GT_Recipe;
 import gregtech.api.util.GT_Utility;
 import gregtech.common.tileentities.automation.GT_MetaTileEntity_ChestBuffer;
+import gregtech.common.tileentities.generators.GT_MetaTileEntity_DieselGenerator;
+import gregtech.common.tileentities.generators.GT_MetaTileEntity_GasTurbine;
 import gregtech.common.tileentities.generators.GT_MetaTileEntity_PlasmaGenerator;
+import gregtech.common.tileentities.generators.GT_MetaTileEntity_SteamTurbine;
 import gregtech.common.tileentities.machines.basic.*;
 import gregtech.loaders.preload.GT_Loader_MetaTileEntities;
 import gtPlusPlus.core.material.gregtech.CustomGTMaterials;
@@ -160,8 +164,98 @@ public class GT_Loader_Machines {
 			            GT_Values.RA.addAssemblerRecipe(itInputs2[aTier-10], GT_CoreModSupport.RadoxPolymer.getMolten((long) (2.25 * Math.pow(2,(aTier-9)))), outBuses[aTier-10], 480, (int) (30 * Math.pow(4, (aTier - 1))), false);
 		        }
 				
-				
-				
+		        // ===================================================================================================
+				// Component Assembler
+				// ===================================================================================================
+
+		        if(GT_Mod.gregtechproxy.mComponentAssembler){
+		        	CustomItemList.Machine_LV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13010, "basicmachine.componentassembler.tier.01", "Basic Component Assembling Machine", 1, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_MV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13011, "basicmachine.componentassembler.tier.02", "Advanced Component Assembling Machine", 2, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_HV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13012, "basicmachine.componentassembler.tier.03", "Advanced Component Assembling Machine II", 3, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_EV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13013, "basicmachine.componentassembler.tier.04", "Advanced Component Assembling Machine III", 4, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_IV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13014, "basicmachine.componentassembler.tier.05", "Advanced Component Assembling Machine IV", 5, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_LuV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13015, "basicmachine.componentassembler.tier.06", "Extreme Component Assembling Machine", 6, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_ZPM_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13016, "basicmachine.componentassembler.tier.07", "Extreme Component Assembling Machine II", 7, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_UV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13017, "basicmachine.componentassembler.tier.08", "Extreme Component Assembling Machine III", 8, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_UHV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13018, "basicmachine.componentassembler.tier.09", "Epic Component Assembling Machine", 9, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+			        CustomItemList.Machine_UEV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13019, "basicmachine.componentassembler.tier.10", "Epic Component Assembling Machine II", 10, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 0, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
+					
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_LV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', CustomItemList.ULVPiston,
+							'R', CustomItemList.ULVRobotArm,
+							'H', ItemList.Hull_LV,
+							'C', OrePrefixes.circuit.get(Materials.Basic),
+							'W', OrePrefixes.cableGt01.get(Materials.Tin)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_MV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_LV,
+							'R', ItemList.Robot_Arm_LV,
+							'H', ItemList.Hull_MV,
+							'C', OrePrefixes.circuit.get(Materials.Good),
+							'W', OrePrefixes.cableGt01.get(Materials.Copper)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_HV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_MV,
+							'R', ItemList.Robot_Arm_MV,
+							'H', ItemList.Hull_HV,
+							'C', OrePrefixes.circuit.get(Materials.Advanced),
+							'W', OrePrefixes.cableGt02.get(Materials.Gold)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_EV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_HV,
+							'R', ItemList.Robot_Arm_HV,
+							'H', ItemList.Hull_EV,
+							'C', OrePrefixes.circuit.get(Materials.Data),
+							'W', OrePrefixes.cableGt02.get(Materials.Aluminium)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_IV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_EV,
+							'R', ItemList.Robot_Arm_EV,
+							'H', ItemList.Hull_IV,
+							'C', OrePrefixes.circuit.get(Materials.Elite),
+							'W', OrePrefixes.cableGt04.get(Materials.TungstenSteel)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_LuV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_IV,
+							'R', ItemList.Robot_Arm_IV,
+							'H', ItemList.Hull_LuV,
+							'C', OrePrefixes.circuit.get(Materials.Master),
+							'W', OrePrefixes.cableGt04.get(Materials.VanadiumGallium)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_ZPM_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_LuV,
+							'R', ItemList.Robot_Arm_LuV,
+							'H', ItemList.Hull_ZPM,
+							'C', OrePrefixes.circuit.get(Materials.Ultimate),
+							'W', OrePrefixes.cableGt08.get(Materials.Naquadah)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_UV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_ZPM,
+							'R', ItemList.Robot_Arm_ZPM,
+							'H', ItemList.Hull_UV,
+							'C', OrePrefixes.circuit.get(Materials.Superconductor),
+							'W', OrePrefixes.cableGt08.get(Materials.NaquadahAlloy)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_UHV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_UV,
+							'R', ItemList.Robot_Arm_UV,
+							'H', ItemList.Hull_MAX,
+							'C', OrePrefixes.circuit.get(Materials.Infinite),
+							'W', OrePrefixes.wireGt12.get(Materials.Europium)});
+			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_UEV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
+							'P', ItemList.Electric_Piston_UHV,
+							'R', ItemList.Robot_Arm_UHV,
+							'H', ItemList.Hull_UEV,
+							'C', OrePrefixes.circuit.get(Materials.Bio),
+							'W', OrePrefixes.wireGt12.get(Materials.Diamericiumtitanium)});
+		        }else {
+		        
+		        }
+		        
+		        // ===================================================================================================
+				// ULV Generators
+				// ===================================================================================================
+
+		        CustomItemList.Generator_Steam_Turbine_ULV.set(new GT_MetaTileEntity_SteamTurbine(13025, "basicgenerator.steamturbine.tier.00", "First Steam Turbine", 0).getStackForm(1L));
+		        CustomItemList.Generator_Diesel_ULV.set(new GT_MetaTileEntity_DieselGenerator(13026, "basicgenerator.diesel.tier.00", "First Combustion Generator", 0).getStackForm(1L));
+		        CustomItemList.Generator_Gas_Turbine_ULV.set(new GT_MetaTileEntity_GasTurbine(13027, "basicgenerator.gasturbine.tier.00", "First Gas Turbine", 0).getStackForm(1L));
+		        
+		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Steam_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'P', OrePrefixes.pipeSmall.get(Materials.Lead)});
+		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Diesel_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "EME", "GWG", 'M', ItemList.Hull_ULV, 'P', CustomItemList.ULVPiston, 'E', CustomItemList.ULVMotor, 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
+		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Gas_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"CRC", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead)});
+		        
 	}
 
 }

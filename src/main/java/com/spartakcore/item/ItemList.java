@@ -62,6 +62,9 @@ public enum ItemList {
 	ChargedGlassLense(new ModSimpleBaseItem("ChargedGlassLense",ModTabList.ModGenericTab)),
 	HugeRefinedReinforcedGlassLense(new ModSimpleBaseItem("HugeRefinedReinforcedGlassLense",ModTabList.ModGenericTab)),
 	HugeChargedGlassLense(new ModSimpleBaseItem("HugeChargedGlassLense",ModTabList.ModGenericTab)),
+	ULVMotor(new ModSimpleBaseItem("ULVMotor",ModTabList.ModGenericTab)),
+	ULVPiston(new ModSimpleBaseItem("ULVPiston",ModTabList.ModGenericTab)),
+	ULVRobotArm(new ModSimpleBaseItem("ULVRobotArm",ModTabList.ModGenericTab)),
 	
 	// Do not delete this
     EndOfList(null);

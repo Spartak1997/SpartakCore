@@ -18,6 +18,9 @@ public enum CustomItemList implements IItemContainer {
 	Bus_Input_UEV, Bus_Input_UIV, Bus_Input_UMV, Bus_Input_UXV, Bus_Input_OPV,Bus_Input_MAX,
 	Bus_Output_UEV, Bus_Output_UIV, Bus_Output_UMV, Bus_Output_UXV, Bus_Output_OPV,Bus_Output_MAX,
 	
+	Machine_ULV_ComponentAssembler, Machine_LV_ComponentAssembler, Machine_MV_ComponentAssembler, Machine_HV_ComponentAssembler, Machine_EV_ComponentAssembler, Machine_IV_ComponentAssembler, Machine_LuV_ComponentAssembler, Machine_ZPM_ComponentAssembler, Machine_UV_ComponentAssembler, Machine_UHV_ComponentAssembler, Machine_UEV_ComponentAssembler, Machine_UIV_ComponentAssembler, Machine_UMV_ComponentAssembler, Machine_UXV_ComponentAssembler, Machine_OpV_ComponentAssembler, 
+
+	Generator_Steam_Turbine_ULV, Generator_Diesel_ULV, Generator_Gas_Turbine_ULV,
 	//Schematics
 	SchematicsTier1, SchematicsTier2, SchematicsTier3, SchematicsTier4, SchematicsTier5, SchematicsTier6, SchematicsTier7, SchematicsTier8,SchematicsAstroMiner,SchematicsCargoRocket,SchematicsMoonBuggy,
 	
@@ -33,6 +36,7 @@ public enum CustomItemList implements IItemContainer {
 	HeavyDutyRocketFinsTier4,HeavyDutyRocketFinsTier5,HeavyDutyRocketFinsTier6,HeavyDutyRocketFinsTier7,HeavyDutyRocketFinsTier8,
 	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster,
 	IridiumAlloyItemCasing,
+	ULVMotor, ULVPiston, ULVRobotArm,
 	
 	//Crystal
 	QuantumCrystal,

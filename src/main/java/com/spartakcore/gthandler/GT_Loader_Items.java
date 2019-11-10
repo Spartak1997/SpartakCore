@@ -68,6 +68,9 @@ public class GT_Loader_Items
 		CustomItemList.ChargedGlassLense.set(ItemList.ChargedGlassLense.getIS());
 		CustomItemList.HugeRefinedReinforcedGlassLense.set(ItemList.HugeRefinedReinforcedGlassLense.getIS());
 		CustomItemList.HugeChargedGlassLense.set(ItemList.HugeChargedGlassLense.getIS());
+		CustomItemList.ULVMotor.set(ItemList.ULVMotor.getIS());
+		CustomItemList.ULVPiston.set(ItemList.ULVPiston.getIS());
+		CustomItemList.ULVRobotArm.set(ItemList.ULVRobotArm.getIS());
 		
 	}
 }
