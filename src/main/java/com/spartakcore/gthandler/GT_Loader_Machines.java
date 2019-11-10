@@ -160,8 +160,14 @@ public class GT_Loader_Machines {
 			            itInputs2[i]= new ItemStack[]{hulls[i].copy(), chests[i].copy(), GT_Utility.getIntegratedCircuit(2)};
 		        }
 		        for (int aTier = 10; aTier < 15; aTier++) {
+		        	if (Loader.isModLoaded("bartworks"))
+			        {
 			            GT_Values.RA.addAssemblerRecipe(itInputs[aTier-10], GT_CoreModSupport.RadoxPolymer.getMolten((long) (2.25 * Math.pow(2,(aTier-9)))), inBuses[aTier-10], 480, (int) (30 * Math.pow(4, (aTier - 1))), false);
 			            GT_Values.RA.addAssemblerRecipe(itInputs2[aTier-10], GT_CoreModSupport.RadoxPolymer.getMolten((long) (2.25 * Math.pow(2,(aTier-9)))), outBuses[aTier-10], 480, (int) (30 * Math.pow(4, (aTier - 1))), false);
+			        }else {
+			        	GT_Values.RA.addAssemblerRecipe(itInputs[aTier-10], Materials.PerroxPolymer.getMolten((long) (2.25 * Math.pow(2,(aTier-9)))), inBuses[aTier-10], 480, (int) (30 * Math.pow(4, (aTier - 1))), false);
+			            GT_Values.RA.addAssemblerRecipe(itInputs2[aTier-10], Materials.PerroxPolymer.getMolten((long) (2.25 * Math.pow(2,(aTier-9)))), outBuses[aTier-10], 480, (int) (30 * Math.pow(4, (aTier - 1))), false);
+			        }
 		        }
 				
 		        // ===================================================================================================
