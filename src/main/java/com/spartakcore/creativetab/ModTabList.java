@@ -17,7 +17,8 @@ public class ModTabList {
 	public static String ModGenericTab = "tabSpartakCoreItems_Generic";
 	public static String ModSpaceTab = "tabSpartakCoreSpace";
 	public static String ModBarsAndCasingsTab = "tabSpartakCoreBars_Casings";
-	public static String ModAdditionsToGregTechTab = "tabSpartakGregTechAdditions";
+	public static String ModAdditionsToGregTechTab = "tabSpartakCoreGregTechAdditions";
+	public static String ModBlocksTab = "tabSpartakCoreBlocks";
 	
 	private ModTabList() {}
 	
@@ -26,6 +27,7 @@ public class ModTabList {
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModGenericTab, ItemList.QuantumPartChestplate.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModSpaceTab, ItemList.SchematicsTier1.Item.getConstructedItem()));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModBarsAndCasingsTab, ItemList.IridiumAlloyItemCasing.Item.getConstructedItem()));
+		pTabManager.AddCreativeTab(new ModCreativeTab(ModBlocksTab, Item.getItemFromBlock(Blocks.stone)));
 		pTabManager.AddCreativeTab(new ModCreativeTab(ModAdditionsToGregTechTab, Item.getItemFromBlock(Blocks.end_stone)) {
 			@Override
 			public void displayAllReleventItems(List stuffToShow) {

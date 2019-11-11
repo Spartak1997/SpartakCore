@@ -1,6 +1,7 @@
 package com.spartakcore;
 
 import com.spartakcore.bartworksHandler.BacteriaRegistry;
+import com.spartakcore.block.BlockList;
 import com.spartakcore.command.*;
 import com.spartakcore.config.CoreModConfig;
 import com.spartakcore.creativetab.ModTabList;
@@ -64,6 +65,7 @@ public class spartakcore {
 	public static ModItemManager ItemManager;
 	public static CreativeTabsManager TabManager;
 	public static ModFluidManager FluidManager;
+	public static ModBlockManager BlockManager;
 	public static CustomToolTipsHandler Module_CustomToolTips;
 	public static IngameErrorLog Module_AdminErrorLogs;
 	public static GT_CustomLoader GTCustomLoader;
@@ -120,6 +122,7 @@ public class spartakcore {
         // ------------------------------------------------------------
         Logger.debug("PRELOAD Init itemmanager");
         ItemManager = new ModItemManager(Refstrings.MODID);
+        BlockManager = new ModBlockManager(Refstrings.MODID);
         
      // ------------------------------------------------------------
         Logger.debug("PRELOAD Init Tabmanager");
@@ -138,7 +141,17 @@ public class spartakcore {
             Logger.warn("Some items failed to register. Check the logfile for details");
             AddLoginError("[SpartakCoreMod-Items] Some items failed to register. Check the logfile for details");
         }
-        
+     // ------------------------------------------------------------
+
+     // ------------------------------------------------------------
+        Logger.info("PRELOAD Create Blocks");
+        if (!BlockList.AddToItemManager(BlockManager))
+        {
+            Logger.warn("Some blocks failed to register. Check the logfile for details");
+            AddLoginError("[CoreMod-Blocks] Some blocks failed to register. Check the logfile for details");
+        }
+     // ------------------------------------------------------------
+
         
      // ------------------------------------------------------------
         // Init Modules
@@ -163,6 +176,9 @@ public class spartakcore {
      // register final list with valid items to forge
         Logger.debug("LOAD Register Items");
         ItemManager.RegisterItems(TabManager);
+        
+        Logger.debug("LOAD Register Blocks");
+        BlockManager.RegisterItems(TabManager);
         
         Logger.debug("LOAD Register Fluids");
         FluidManager.RegisterItems(TabManager);

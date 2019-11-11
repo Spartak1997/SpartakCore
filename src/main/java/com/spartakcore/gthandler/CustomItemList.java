@@ -37,6 +37,7 @@ public enum CustomItemList implements IItemContainer {
 	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster,
 	IridiumAlloyItemCasing,
 	ULVMotor, ULVPiston, ULVRobotArm,
+	PistonBlock, PistonPlate,
 	
 	//Crystal
 	QuantumCrystal,

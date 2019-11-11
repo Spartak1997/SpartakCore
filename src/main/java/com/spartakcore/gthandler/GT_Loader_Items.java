@@ -71,6 +71,7 @@ public class GT_Loader_Items
 		CustomItemList.ULVMotor.set(ItemList.ULVMotor.getIS());
 		CustomItemList.ULVPiston.set(ItemList.ULVPiston.getIS());
 		CustomItemList.ULVRobotArm.set(ItemList.ULVRobotArm.getIS());
+		CustomItemList.PistonPlate.set(ItemList.PistonPlate.getIS());
 		
 	}
 }

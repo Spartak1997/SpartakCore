@@ -65,6 +65,7 @@ public enum ItemList {
 	ULVMotor(new ModSimpleBaseItem("ULVMotor",ModTabList.ModGenericTab)),
 	ULVPiston(new ModSimpleBaseItem("ULVPiston",ModTabList.ModGenericTab)),
 	ULVRobotArm(new ModSimpleBaseItem("ULVRobotArm",ModTabList.ModGenericTab)),
+	PistonPlate(new ModSimpleBaseItem("PistonPlate",ModTabList.ModGenericTab)),
 	
 	// Do not delete this
     EndOfList(null);
