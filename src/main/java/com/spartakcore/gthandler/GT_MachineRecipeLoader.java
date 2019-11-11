@@ -401,8 +401,8 @@ public class GT_MachineRecipeLoader implements Runnable{
 		GT_Values.RA.addChemicalBathRecipe(CustomItemList.RefinedReinforcedGlassLense.get(1L), Materials.Radon.getGas(250), CustomItemList.ChargedGlassLense.get(1L), null, null, null, 384, 480);
         GT_Values.RA.addChemicalBathRecipe(CustomItemList.HugeRefinedReinforcedGlassLense.get(1L), Materials.Radon.getGas(1250), CustomItemList.HugeChargedGlassLense.get(1L), null, null, null, 384, 1920);
         GT_Values.RA.addLaserEngraverRecipe(CustomItemList.RefinedReinforcedGlassLense.get(3L), GT_Utility.copyAmount(0, GT_OreDictUnificator.get(OrePrefixes.lens, Materials.Diamond, 1)), CustomItemList.HugeRefinedReinforcedGlassLense.get(1L), 2400, 2000, false);
-        
-        
+		
+		
         // ### Components ### \\
         if(GT_Mod.gregtechproxy.mComponentAssembler){
         	// ===================================================================================================
@@ -565,6 +565,20 @@ public class GT_MachineRecipeLoader implements Runnable{
             GT_Values.RA.addAssemblerRecipe(ItemList.Emitter_IV.get(1L), GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Ultimate, 4), Materials.HSSS.getMolten(576), ItemList.Field_Generator_IV.get(1L), 600, 7680);
             
         }
+        
+        // ===================================================================================================
+		// Piston in Assembler
+		// ===================================================================================================
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {new ItemStack(Blocks.cobblestone),GT_OreDictUnificator.get(OrePrefixes.gearGtSmall,Materials.Iron,1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.block.BlockList.PistonBlock.getIS(), 100, 30, false);
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {new ItemStack(Blocks.cobblestone),GT_OreDictUnificator.get(OrePrefixes.gearGtSmall,Materials.Bronze,1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.block.BlockList.PistonBlock.getIS(), 100, 30, false);
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {new ItemStack(Blocks.fence),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Natura","Natura.fence",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Forestry","fences",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("ExtraTrees","fence",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Forestry","fencesFireproof",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        GT_Values.RA.addAssemblerRecipe(CustomItemList.PistonPlate.get(1L), com.spartakcore.block.BlockList.PistonBlock.getIS(), null, new ItemStack(Blocks.piston, 1), 100, 8);
+        
+        
         
 		// ### BlastFurnace ### \\
 				/*
@@ -833,6 +847,10 @@ public class GT_MachineRecipeLoader implements Runnable{
 	            GT_Values.RA.addSuperCoolingFreezerRecipe(GT_OreDictUnificator.get(OrePrefixes.ingotHot, Materials.Quantium, 1L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Quantium, 1L), Materials.SuperCoolant.getFluid(150), new FluidStack(FluidRegistry.getFluid("ic2hotcoolant"), 50), 60, 30720);
 	            GT_Values.RA.addSuperCoolingFreezerRecipe(GT_OreDictUnificator.get(OrePrefixes.ingotHot, Materials.BlackPlutonium, 1L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.BlackPlutonium, 1L), Materials.SuperCoolant.getFluid(150), new FluidStack(FluidRegistry.getFluid("ic2hotcoolant"), 50), 66, 122880);
 	            
+	            // ===================================================================================================
+	    		// Quantum Armor in Assembler
+	    		// ===================================================================================================
+	            
 	            //ItemCasings
 	            GT_Values.RA.addAlloySmelterRecipe(GT_ModHandler.getModItem("IC2","itemPartIridium",2L), ItemList.Shape_Mold_Casing.get(0), com.spartakcore.item.ItemList.IridiumAlloyItemCasing.getIS().splitStack(3), 1200, 256);
 	            
@@ -843,7 +861,7 @@ public class GT_MachineRecipeLoader implements Runnable{
 	            GT_Values.RA.addAssemblerRecipe(CustomItemList.QuantumPartHelmetEmpty.get(1L), GT_OreDictUnificator.get(OrePrefixes.lens, Materials.ReinforcedGlass, 8L), CustomItemList.QuantumPartHelmet.get(1L), 1200, 1920);
 	            GT_Values.RA.addAssemblerRecipe(GT_ModHandler.getIC2Item("nanoLeggings", 1L, GT_Values.W), CustomItemList.IridiumAlloyItemCasing.get(7L), CustomItemList.QuantumPartLeggings.get(1L), 1200, 1920);
 	            
-	          //Quantum Armor
+	            //Quantum Armor
                 GT_ModHandler.removeRecipeByOutput(GT_ModHandler.getIC2Item("quantumHelmet", 1, GT_Values.W));
 
                 GT_Values.RA.addAssemblerRecipe(new ItemStack[]{CustomItemList.QuantumPartHelmet.get(1L),
