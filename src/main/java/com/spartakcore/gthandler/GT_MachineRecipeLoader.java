@@ -401,8 +401,17 @@ public class GT_MachineRecipeLoader implements Runnable{
 		GT_Values.RA.addChemicalBathRecipe(CustomItemList.RefinedReinforcedGlassLense.get(1L), Materials.Radon.getGas(250), CustomItemList.ChargedGlassLense.get(1L), null, null, null, 384, 480);
         GT_Values.RA.addChemicalBathRecipe(CustomItemList.HugeRefinedReinforcedGlassLense.get(1L), Materials.Radon.getGas(1250), CustomItemList.HugeChargedGlassLense.get(1L), null, null, null, 384, 1920);
         GT_Values.RA.addLaserEngraverRecipe(CustomItemList.RefinedReinforcedGlassLense.get(3L), GT_Utility.copyAmount(0, GT_OreDictUnificator.get(OrePrefixes.lens, Materials.Diamond, 1)), CustomItemList.HugeRefinedReinforcedGlassLense.get(1L), 2400, 2000, false);
-		
-		
+        
+        //Casings
+        if (Loader.isModLoaded("miscutils")){
+    		
+    	}else {
+        GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.TungstenSteel, 8L), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_IV.get(1L, new Object[0]), 50, 16);
+        GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Chrome, 8L), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_LuV.get(1L, new Object[0]), 50, 16);
+        GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Iridium, 8L), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_ZPM.get(1L, new Object[0]), 50, 16);
+        GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Osmium, 8L), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_UV.get(1L, new Object[0]), 50, 16);
+    	}
+        
         // ### Components ### \\
         if(GT_Mod.gregtechproxy.mComponentAssembler){
         	// ===================================================================================================

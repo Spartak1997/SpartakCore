@@ -22,6 +22,10 @@ import net.minecraft.item.ItemStack;
 
 public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_CraftingRecipeLoader implements Runnable {
 
+	private static final String aTextWire1 = "wire."; private static final String aTextCable1 = "cable."; private static final String aTextWire2 = " Wire"; private static final String aTextCable2 = " Cable";
+    private final static String aTextPlate = "PPP"; private final static String aTextPlateWrench = "PwP"; private final static String aTextPlateMotor = "PMP"; private final static String aTextCableHull = "CMC";
+    private final static String aTextWireHull = "WMW"; private final static String aTextWireChest = "WTW"; private final static String aTextWireCoil = "WCW"; private final static String aTextMotorWire = "EWE";
+    private final static String aTextWirePump = "WPW";
 	private static final String aTextRailcraft = "Railcraft";
     private static final String aTextMachineBeta = "machine.beta";
     private static final String aTextMachineAlpha = "machine.alpha";
@@ -35,7 +39,18 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
     @Override
     public void run() {
     	
+    	if (Loader.isModLoaded("miscutils")){
+    		
+    	}else {
+    	GT_ModHandler.addCraftingRecipe(ItemList.Casing_IV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', OrePrefixes.plate.get(Materials.TungstenSteel)});
+        GT_ModHandler.addCraftingRecipe(ItemList.Casing_LuV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', OrePrefixes.plate.get(Materials.Chrome)});
+        GT_ModHandler.addCraftingRecipe(ItemList.Casing_ZPM.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', OrePrefixes.plate.get(Materials.Iridium)});
+        GT_ModHandler.addCraftingRecipe(ItemList.Casing_UV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', OrePrefixes.plate.get(Materials.Osmium)});
+    	}
+    	
     	Object[] o = new Object[0];
+    	
+    	//###Components###\\
     	
     	if(GT_Mod.gregtechproxy.mComponentAssembler){
     		//===Motors===\\
