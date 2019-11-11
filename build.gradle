@@ -150,20 +150,20 @@ task getBartworks(type: Download, dependsOn: "getGalacticGreg") {
     mustRunAfter "deobfBinJar"
     mustRunAfter "repackMinecraft"
 }
-task getGtPlusPlus(type: Download, dependsOn: "getBartworks") {
-    onlyIf {
-        !file("libs/GT-PlusPlus-1.6.02-release.jar").exists()
-    }
-    src 'https://addons-origin.cursecdn.com/files/2478/265/GT-PlusPlus-1.6.02-release.jar'
-    dest file("libs/GT-PlusPlus-1.6.02-release.jar")
-    mustRunAfter "deobfBinJar"
-    mustRunAfter "repackMinecraft"
-}
+//task getGtPlusPlus(type: Download, dependsOn: "getBartworks") {
+//    onlyIf {
+//        !file("libs/GT-PlusPlus-1.6.02-release.jar").exists()
+//    }
+//    src 'https://addons-origin.cursecdn.com/files/2478/265/GT-PlusPlus-1.6.02-release.jar'
+//    dest file("libs/GT-PlusPlus-1.6.02-release.jar")
+//    mustRunAfter "deobfBinJar"
+//    mustRunAfter "repackMinecraft"
+//}
 
-tasks.setupCIWorkspace.dependsOn getGtPlusPlus
-tasks.setupDevWorkspace.dependsOn getGtPlusPlus
-tasks.setupDecompWorkspace.dependsOn getGtPlusPlus
-tasks.compileJava.dependsOn getGtPlusPlus
+//tasks.setupCIWorkspace.dependsOn getGtPlusPlus
+//tasks.setupDevWorkspace.dependsOn getGtPlusPlus
+//tasks.setupDecompWorkspace.dependsOn getGtPlusPlus
+//tasks.compileJava.dependsOn getGtPlusPlus
 
 processResources
 {
