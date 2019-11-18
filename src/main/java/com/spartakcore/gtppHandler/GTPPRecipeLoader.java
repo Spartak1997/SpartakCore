@@ -31,6 +31,11 @@ public class GTPPRecipeLoader implements Runnable {
     private final static boolean aBoolConst_0 = false;
 	private final static Boolean isNEILoaded = Loader.isModLoaded("NotEnoughItems");
 	
+	public static String plateHastelloyC276= "plateHastelloyC276";
+	public static String plateHastelloyN= "plateHastelloyN";
+	public static String plateLafiumCompound= "plateLafiumCompound";
+	public static String plateCinobiteA243= "plateCinobiteA243";
+	
 	@Override
     public void run() {
 
@@ -43,15 +48,15 @@ public class GTPPRecipeLoader implements Runnable {
 
         //Casing
         if (GT_Mod.gregtechproxy.mGTPlusPlusHard) {
-            GT_ModHandler.addCraftingRecipe(ItemList.Casing_IV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', ALLOY.HASTELLOY_C276.getPlate(1)});
+            GT_ModHandler.addCraftingRecipe(ItemList.Casing_IV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', "plateHastelloyC276"});
             GT_Values.RA.addAssemblerRecipe(ALLOY.HASTELLOY_C276.getPlate(8), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_IV.get(1L, new Object[0]), 50, 16);
             if (Loader.isModLoaded("bartworks")){
         }else {
-            GT_ModHandler.addCraftingRecipe(ItemList.Casing_LuV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', ALLOY.HASTELLOY_N.getPlate(1)});
+            GT_ModHandler.addCraftingRecipe(ItemList.Casing_LuV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', "plateHastelloyN"});
             GT_Values.RA.addAssemblerRecipe(ALLOY.HASTELLOY_N.getPlate(8), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_LuV.get(1L, new Object[0]), 50, 16);
             }
-            GT_ModHandler.addCraftingRecipe(ItemList.Casing_ZPM.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', ALLOY.LAFIUM.getPlate(1)});
-            GT_ModHandler.addCraftingRecipe(ItemList.Casing_UV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', ALLOY.CINOBITE.getPlate(1)});
+            GT_ModHandler.addCraftingRecipe(ItemList.Casing_ZPM.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', "plateLafiumCompound"});
+            GT_ModHandler.addCraftingRecipe(ItemList.Casing_UV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', "plateCinobiteA243"});
             GT_Values.RA.addAssemblerRecipe(ALLOY.LAFIUM.getPlate(8), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_ZPM.get(1L, new Object[0]), 50, 16);
             GT_Values.RA.addAssemblerRecipe(ALLOY.CINOBITE.getPlate(8), ItemList.Circuit_Integrated.getWithDamage(0L, 8L, new Object[0]), ItemList.Casing_UV.get(1L, new Object[0]), 50, 16);
         }else {
