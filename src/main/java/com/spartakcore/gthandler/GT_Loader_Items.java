@@ -72,6 +72,9 @@ public class GT_Loader_Items
 		CustomItemList.ULVPiston.set(ItemList.ULVPiston.getIS());
 		CustomItemList.ULVRobotArm.set(ItemList.ULVRobotArm.getIS());
 		CustomItemList.PistonPlate.set(ItemList.PistonPlate.getIS());
+		CustomItemList.SteelBars.set(ItemList.SteelBars.getIS());
+		CustomItemList.DustSmallFertilizer.set(ItemList.DustSmallFertilizer.getIS());
+		CustomItemList.DustTinyFertilizer.set(ItemList.DustTinyFertilizer.getIS());
 		
 	}
 }

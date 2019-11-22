@@ -73,9 +73,20 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
     	
     	Object[] o = new Object[0];
     	
+    	GT_ModHandler.addCraftingRecipe(CustomItemList.SteelBars.get(3L, o), GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE, new Object[]{" h ", "SSS", "SSS", 'S', GT_OreDictUnificator.get(OrePrefixes.stick, Materials.Steel, 1)});
+
+    	GT_ModHandler.addCraftingRecipe(CustomItemList.Casing_Farm.get(1L), bits, new Object[]{"ThT", "TFT", "TwT", 'T', CustomItemList.SteelBars, 'F', OrePrefixes.frameGt.get(Materials.Steel)});
+        
+    	//Fertilizer
+    	GT_ModHandler.addCraftingRecipe(CustomItemList.DustSmallFertilizer.get(4L), bits, new Object[]{" D", "  ", 'D', GT_ModHandler.getModItem("IC2", "itemFertilizer", 1L,0)});
+    	GT_ModHandler.addCraftingRecipe(CustomItemList.DustTinyFertilizer.get(9L), bits, new Object[]{"D ", "  ", 'D', GT_ModHandler.getModItem("IC2", "itemFertilizer", 1L,0)});
+        
+    	GT_ModHandler.addCraftingRecipe(GT_ModHandler.getModItem("IC2", "itemFertilizer", 1L,0), bits, new Object[]{"DD", "DD", 'D', CustomItemList.DustSmallFertilizer.get(1L)});
+    	GT_ModHandler.addCraftingRecipe(GT_ModHandler.getModItem("IC2", "itemFertilizer", 1L,0), bits, new Object[]{"DDD", "DDD", "DDD", 'D', CustomItemList.DustTinyFertilizer.get(1L)});
+        
     	//###Components###\\
-		
-		if(GT_Mod.gregtechproxy.mComponentAssembler){
+    	
+    	if(GT_Mod.gregtechproxy.mComponentAssembler){
     		//===Motors===\\
         	GT_ModHandler.addCraftingRecipe(CustomItemList.ULVMotor.get(1L, new Object[0]), GT_ModHandler.RecipeBits.DISMANTLEABLE | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE, new Object[]{"CWR", "WIW", "RWC", 'I', OrePrefixes.stick.get(Materials.IronMagnetic), 'R', OrePrefixes.stick.get(Materials.Iron), 'W', OrePrefixes.wireGt01.get(Materials.Tin), 'C', OrePrefixes.cableGt01.get(Materials.Lead)});
         	

@@ -16,6 +16,10 @@ public class OreDictHandler {
 			OreDictionary.registerOre("cropSpace", GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L,i));
 			OreDictionary.registerOre("cropTcetiESeaweed", GT_ModHandler.getModItem("GalaxySpace", "tcetiedandelions", 1L,i));
 		}
+		OreDictionary.registerOre("dustFertilizer", GT_ModHandler.getModItem("IC2", "itemFertilizer", 1L,0));
+		OreDictionary.registerOre("dustSmallFertilizer", ItemList.DustSmallFertilizer.getIS());
+		OreDictionary.registerOre("dustTinyFertilizer", ItemList.DustTinyFertilizer.getIS());
+
 	}
 	
 	public static void register_all() {

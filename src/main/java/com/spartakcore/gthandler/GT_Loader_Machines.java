@@ -1,5 +1,7 @@
 package com.spartakcore.gthandler;
 
+import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_Farm;
+
 import cpw.mods.fml.common.Loader;
 import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
@@ -261,6 +263,22 @@ public class GT_Loader_Machines {
 		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Steam_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'P', OrePrefixes.pipeSmall.get(Materials.Lead)});
 		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Diesel_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "EME", "GWG", 'M', ItemList.Hull_ULV, 'P', CustomItemList.ULVPiston, 'E', CustomItemList.ULVMotor, 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
 		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Gas_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"CRC", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead)});
+		        
+		        // ===================================================================================================
+				// MULTIBLOCKS
+				// ===================================================================================================
+				CustomItemList.Machine_Multi_Farm.set(new GT_MetaTileEntity_Farm(13001, "multimachine.farm", "Multiblock Farm").getStackForm(1L));
+
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_Multi_Farm.get(1L),
+						bitsd,
+						new Object[]{"ROR", "CHC", "PWP",
+								'H', ItemList.Hull_MV,
+								'W', OrePrefixes.cableGt02.get(Materials.Copper),
+								'C', OrePrefixes.circuit.get(Materials.Good),
+								'P', ItemList.Electric_Pump_MV,
+								'R', ItemList.Robot_Arm_MV,
+								'O', OreDictNames.craftingDiamondBlade});
+				
 		        
 	}
 

@@ -66,6 +66,9 @@ public enum ItemList {
 	ULVPiston(new ModSimpleBaseItem("ULVPiston",ModTabList.ModGenericTab)),
 	ULVRobotArm(new ModSimpleBaseItem("ULVRobotArm",ModTabList.ModGenericTab)),
 	PistonPlate(new ModSimpleBaseItem("PistonPlate",ModTabList.ModGenericTab)),
+	SteelBars(new ModSimpleBaseItem("SteelBars",ModTabList.ModBarsAndCasingsTab)),
+	DustSmallFertilizer(new ModSimpleBaseItem("DustSmallFertilizer",ModTabList.ModGenericTab)),
+	DustTinyFertilizer(new ModSimpleBaseItem("DustTinyFertilizer",ModTabList.ModGenericTab)),
 	
 	// Do not delete this
     EndOfList(null);

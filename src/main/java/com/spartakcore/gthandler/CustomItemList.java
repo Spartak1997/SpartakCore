@@ -21,6 +21,13 @@ public enum CustomItemList implements IItemContainer {
 	Machine_ULV_ComponentAssembler, Machine_LV_ComponentAssembler, Machine_MV_ComponentAssembler, Machine_HV_ComponentAssembler, Machine_EV_ComponentAssembler, Machine_IV_ComponentAssembler, Machine_LuV_ComponentAssembler, Machine_ZPM_ComponentAssembler, Machine_UV_ComponentAssembler, Machine_UHV_ComponentAssembler, Machine_UEV_ComponentAssembler, Machine_UIV_ComponentAssembler, Machine_UMV_ComponentAssembler, Machine_UXV_ComponentAssembler, Machine_OpV_ComponentAssembler, 
 
 	Generator_Steam_Turbine_ULV, Generator_Diesel_ULV, Generator_Gas_Turbine_ULV,
+	
+	//Casings
+	Casing_Farm,
+	
+	//Multimachines
+	Machine_Multi_Farm,
+	
 	//Schematics
 	SchematicsTier1, SchematicsTier2, SchematicsTier3, SchematicsTier4, SchematicsTier5, SchematicsTier6, SchematicsTier7, SchematicsTier8,SchematicsAstroMiner,SchematicsCargoRocket,SchematicsMoonBuggy,
 	
@@ -38,6 +45,7 @@ public enum CustomItemList implements IItemContainer {
 	IridiumAlloyItemCasing,
 	ULVMotor, ULVPiston, ULVRobotArm,
 	PistonBlock, PistonPlate,
+	SteelBars,
 	
 	//Crystal
 	QuantumCrystal,
@@ -49,7 +57,7 @@ public enum CustomItemList implements IItemContainer {
 	QuantumPartBoots, QuantumPartChestplate, QuantumPartHelmetEmpty, QuantumPartHelmet, QuantumPartLeggings,
 	
 	//Dusts
-	TCetiESeaweedExtract;
+	TCetiESeaweedExtract, DustSmallFertilizer, DustTinyFertilizer;
 	
 	private ItemStack mStack;
 	private boolean mHasNotBeenSet = true;
