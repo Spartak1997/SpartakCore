@@ -616,10 +616,10 @@ public class GT_MachineRecipeLoader implements Runnable{
         GT_Values.RA.addAssemblerRecipe(new ItemStack[] {new ItemStack(Blocks.cobblestone),GT_OreDictUnificator.get(OrePrefixes.gearGtSmall,Materials.Iron,1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.block.BlockList.PistonBlock.getIS(), 100, 30, false);
         GT_Values.RA.addAssemblerRecipe(new ItemStack[] {new ItemStack(Blocks.cobblestone),GT_OreDictUnificator.get(OrePrefixes.gearGtSmall,Materials.Bronze,1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.block.BlockList.PistonBlock.getIS(), 100, 30, false);
         GT_Values.RA.addAssemblerRecipe(new ItemStack[] {new ItemStack(Blocks.fence),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Natura","Natura.fence",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Forestry","fences",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("ExtraTrees","fence",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Forestry","fencesFireproof",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        //GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Natura","Natura.fence",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        //GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Forestry","fences",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        //GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("ExtraTrees","fence",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
+        //GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Forestry","fencesFireproof",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
         GT_Values.RA.addAssemblerRecipe(CustomItemList.PistonPlate.get(1L), com.spartakcore.block.BlockList.PistonBlock.getIS(), null, new ItemStack(Blocks.piston, 1), 100, 8);
         
         
