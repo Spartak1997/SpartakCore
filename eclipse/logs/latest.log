@@ -1,0 +1,76 @@
+[12:14:18] [main/INFO]: Setting user: Player823
+[12:14:25] [Client thread/INFO]: LWJGL Version: 2.9.1
+[12:16:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:GregTech, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:EnderCore, FMLFileResourcePack:Ender IO, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BC Transport, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Robotics, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Factory, FMLFileResourcePack:Mantle, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin, FMLFileResourcePack:Applied Energistics 2, FMLFileResourcePack:Baubles, FMLFileResourcePack:CoFH Core, FMLFileResourcePack:Nuclear Control 2, FMLFileResourcePack:Immersive Engineering, FMLFileResourcePack:Magneticraft, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Galacticraft Planets, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:GT++, FMLFileResourcePack:GT++ Australia, FMLFileResourcePack:GT++ Toxic Everglades, FMLFileResourcePack:YAMCore, FMLFileResourcePack:SpartakCore, FMLFileResourcePack:Translocator, FMLFileResourcePack:Galactic Greg
+[12:17:09] [Sound Library Loader/INFO]: Sound engine started
+[12:17:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[12:17:30] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[12:17:32] [Client thread/INFO]: Created: 16x16 textures/revolvers-atlas
+[12:20:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:GregTech, FMLFileResourcePack:Tinkers' Construct, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:Forestry for Minecraft, FMLFileResourcePack:EnderCore, FMLFileResourcePack:Ender IO, FMLFileResourcePack:BC Builders, FMLFileResourcePack:BC Transport, FMLFileResourcePack:BC Energy, FMLFileResourcePack:BC Silicon, FMLFileResourcePack:BC Robotics, FMLFileResourcePack:BuildCraft, FMLFileResourcePack:BC Factory, FMLFileResourcePack:Mantle, FMLFileResourcePack:Forge Microblocks, FMLFileResourcePack:Forge Multipart, FMLFileResourcePack:Minecraft Multipart Plugin, FMLFileResourcePack:Applied Energistics 2, FMLFileResourcePack:Baubles, FMLFileResourcePack:CoFH Core, FMLFileResourcePack:Nuclear Control 2, FMLFileResourcePack:Immersive Engineering, FMLFileResourcePack:Magneticraft, FMLFileResourcePack:Railcraft, FMLFileResourcePack:Galacticraft Planets, FMLFileResourcePack:Galacticraft Core, FMLFileResourcePack:GT++, FMLFileResourcePack:GT++ Australia, FMLFileResourcePack:GT++ Toxic Everglades, FMLFileResourcePack:YAMCore, FMLFileResourcePack:SpartakCore, FMLFileResourcePack:Translocator, FMLFileResourcePack:Galactic Greg
+[12:21:27] [Client thread/INFO]: Created: 2048x2048 textures/blocks-atlas
+[12:21:27] [Client thread/INFO]: Created: 1024x1024 textures/revolvers-atlas
+[12:22:02] [Client thread/INFO]: Created: 2048x2048 textures/items-atlas
+[12:22:03] [Sound Library Loader/INFO]: Sound engine started
+[12:22:20] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[12:22:20] [Server thread/INFO]: Generating keypair
+[12:22:21] [Server thread/INFO]: Preparing start region for level 0
+[12:22:28] [Server thread/INFO]: Changing view distance to 12, from 10
+[12:22:29] [Server thread/INFO]: Player823[local:E:1d2439ae] logged in with entity id 131 at (1420.044427393266, 4.0, 1145.5487300789523)
+[12:22:29] [Server thread/INFO]: Player823 joined the game
+[12:22:31] [Server thread/INFO]: Saving and pausing game...
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/Australia
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/Moon
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/dimensionDarkWorld
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/Mars
+[12:22:32] [Server thread/INFO]: Saving chunks for level 'New World'/Asteroids
+[12:22:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3453ms behind, skipping 69 tick(s)
+[12:22:49] [Client thread/INFO]: [CHAT] You're not using the latest recommended version of GT++, consider updating.
+[12:23:21] [Server thread/INFO]: [Player823: Given [GregTech Sensor Kit] * 1 to Player823]
+[12:23:21] [Client thread/INFO]: [CHAT] Given [GregTech Sensor Kit] * 1 to Player823
+[12:23:37] [Server thread/INFO]: [Player823: Given [Advanced Information Panel] * 64 to Player823]
+[12:23:37] [Client thread/INFO]: [CHAT] Given [Advanced Information Panel] * 64 to Player823
+[12:23:42] [Server thread/INFO]: [Player823: Given [Advanced Panel Extender] * 64 to Player823]
+[12:23:42] [Client thread/INFO]: [CHAT] Given [Advanced Panel Extender] * 64 to Player823
+[12:24:07] [Server thread/INFO]: Saving and pausing game...
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/Australia
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/Moon
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/dimensionDarkWorld
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/Mars
+[12:24:07] [Server thread/INFO]: Saving chunks for level 'New World'/Asteroids
+[12:24:26] [Server thread/INFO]: [Player823: Given [HV Battery Buffer] * 1 to Player823]
+[12:24:26] [Client thread/INFO]: [CHAT] Given [HV Battery Buffer] * 1 to Player823
+[12:24:47] [Server thread/INFO]: Saving and pausing game...
+[12:24:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[12:24:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[12:24:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[12:24:48] [Server thread/INFO]: Saving chunks for level 'New World'/Australia
+[12:24:48] [Server thread/INFO]: Saving chunks for level 'New World'/Moon
+[12:24:48] [Server thread/INFO]: Saving chunks for level 'New World'/dimensionDarkWorld
+[12:24:48] [Server thread/INFO]: Saving chunks for level 'New World'/Mars
+[12:24:48] [Server thread/INFO]: Saving chunks for level 'New World'/Asteroids
+[12:28:11] [Server thread/INFO]: Saving and pausing game...
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/Australia
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/Moon
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/dimensionDarkWorld
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/Mars
+[12:28:11] [Server thread/INFO]: Saving chunks for level 'New World'/Asteroids
+[12:28:11] [Server thread/INFO]: Stopping server
+[12:28:11] [Server thread/INFO]: Saving players
+[12:28:12] [Server thread/INFO]: Saving worlds
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/Australia
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/Moon
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/dimensionDarkWorld
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/Mars
+[12:28:12] [Server thread/INFO]: Saving chunks for level 'New World'/Asteroids
+[12:28:17] [Client thread/INFO]: Stopping!
