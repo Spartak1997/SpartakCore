@@ -67,3 +67,7 @@ item.SteelBars.name=Steel Bars
 item.DustSmallFertilizer.name=Fertilizer Small Dust
 item.DustTinyFertilizer.name=Fertilizer Tiny Dust
 tile.PistonBlock.name=Piston Block
+item.Empty180SpCell.name=180K Empty Super Cell
+item.Empty360SpCell.name=360K Empty Super Cell
+item.Empty540SpCell.name=540K Empty Super Cell
+item.Empty1080SpCell.name=1080K Empty Super Cell

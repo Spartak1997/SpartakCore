@@ -75,6 +75,10 @@ public class GT_Loader_Items
 		CustomItemList.SteelBars.set(ItemList.SteelBars.getIS());
 		CustomItemList.DustSmallFertilizer.set(ItemList.DustSmallFertilizer.getIS());
 		CustomItemList.DustTinyFertilizer.set(ItemList.DustTinyFertilizer.getIS());
+		CustomItemList.Empty180SpCell.set(ItemList.Empty180SpCell.getIS());
+ 		CustomItemList.Empty360SpCell.set(ItemList.Empty360SpCell.getIS());
+		CustomItemList.Empty540SpCell.set(ItemList.Empty540SpCell.getIS());
+		CustomItemList.Empty1080SpCell.set(ItemList.Empty1080SpCell.getIS());
 		
 	}
 }

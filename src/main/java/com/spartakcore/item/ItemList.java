@@ -69,6 +69,10 @@ public enum ItemList {
 	SteelBars(new ModSimpleBaseItem("SteelBars",ModTabList.ModBarsAndCasingsTab)),
 	DustSmallFertilizer(new ModSimpleBaseItem("DustSmallFertilizer",ModTabList.ModGenericTab)),
 	DustTinyFertilizer(new ModSimpleBaseItem("DustTinyFertilizer",ModTabList.ModGenericTab)),
+	Empty180SpCell(new ModSimpleBaseItem("Empty180SpCell", ModTabList.ModGenericTab)),
+    Empty360SpCell(new ModSimpleBaseItem("Empty360SpCell", ModTabList.ModGenericTab)),
+    Empty540SpCell(new ModSimpleBaseItem("Empty540SpCell", ModTabList.ModGenericTab)),
+    Empty1080SpCell(new ModSimpleBaseItem("Empty1080SpCell", ModTabList.ModGenericTab)),
 	
 	// Do not delete this
     EndOfList(null);

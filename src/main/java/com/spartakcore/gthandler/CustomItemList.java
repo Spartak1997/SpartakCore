@@ -46,6 +46,7 @@ public enum CustomItemList implements IItemContainer {
 	ULVMotor, ULVPiston, ULVRobotArm,
 	PistonBlock, PistonPlate,
 	SteelBars,
+	Empty180SpCell, Empty360SpCell, Empty540SpCell, Empty1080SpCell,
 	
 	//Crystal
 	QuantumCrystal,
