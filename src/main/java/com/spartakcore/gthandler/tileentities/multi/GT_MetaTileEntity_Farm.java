@@ -38,11 +38,11 @@ public class GT_MetaTileEntity_Farm  extends GT_MetaTileEntity_MultiBlockBase {
     @Override
     public String[] getDescription() {
         return new String[]{
-        		"Controller Block for the Multiblock Farm",
+        	"Controller Block for the Multiblock Farm",
                 "Industrial Tree producer",
                 "Size(WxHxD): 5x5x5, Controller (Bottom center)",
-                "5x1x5 of Farm Casings (At the center of the bottom layer)",
-                "5x1x5 of Reinforced Glass (At the center of the Top layer)",
+                "3x1x3 of Farm Casings (At the center of the bottom layer)",
+                "3x1x3 of Reinforced Glass (At the center of the Top layer)",
                 "1x Input Hatch/Bus (Any bottom layer casing)",
                 "1x Output Hatch/Bus (Any bottom layer casing)",
                 "1x Maintenance Hatch (Any bottom layer casing)",
