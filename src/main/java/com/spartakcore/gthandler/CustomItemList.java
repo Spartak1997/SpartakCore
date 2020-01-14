@@ -58,8 +58,15 @@ public enum CustomItemList implements IItemContainer {
 	QuantumPartBoots, QuantumPartChestplate, QuantumPartHelmetEmpty, QuantumPartHelmet, QuantumPartLeggings,
 	
 	//Dusts
-	TCetiESeaweedExtract, DustSmallFertilizer, DustTinyFertilizer;
-	
+	TCetiESeaweedExtract, DustSmallFertilizer, DustTinyFertilizer,
+
+	//SpaceDusts
+	AsteroidsStoneDust, BarnardaEStoneDust, BarnardaFStoneDust, CallistoIceDust, CallistoStoneDust, CentauriASurfaceDust,
+	CentauriAStoneDust, CeresStoneDust, DeimosStoneDust, EnceladusIceDust, EnceladusStoneDust, EuropaIceDust, EuropaStoneDust,
+	GanymedStoneDust, IoStoneDust, HaumeaStoneDust, MarsStoneDust, MakeMakeStoneDust, MercuryCoreDust, MercuryStoneDust,
+	MirandaStoneDust, MoonStoneDust, PhobosStoneDust, PlutoIceDust, PlutoStoneDust, ProteusStoneDust, OberonStoneDust,
+	TCetiEStoneDust, TitanStoneDust, TritonStoneDust, VegaBStoneDust, VenusStoneDust;
+
 	private ItemStack mStack;
 	private boolean mHasNotBeenSet = true;
 
