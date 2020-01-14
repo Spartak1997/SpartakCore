@@ -75,7 +75,7 @@ public enum ItemList {
     Empty1080SpCell(new ModSimpleBaseItem("Empty1080SpCell", ModTabList.ModGenericTab)),
 
 	//SpaceDust
-	AsteroidsStoneDust(new ModSimpleBaseItem("AsteroidsStoneDust", ModTabList.ModGenericTab)),
+	//AsteroidsStoneDust(new ModSimpleBaseItem("AsteroidsStoneDust", ModTabList.ModGenericTab)),
 	BarnardaEStoneDust(new ModSimpleBaseItem("BarnardaEStoneDust", ModTabList.ModSpaceTab)),
 	BarnardaFStoneDust(new ModSimpleBaseItem("BarnardaFStoneDust", ModTabList.ModSpaceTab)),
 	CallistoIceDust(new ModSimpleBaseItem("CallistoIceDust", ModTabList.ModSpaceTab)),
@@ -91,12 +91,12 @@ public enum ItemList {
 	GanymedStoneDust(new ModSimpleBaseItem("GanymedStoneDust", ModTabList.ModSpaceTab)),
 	IoStoneDust(new ModSimpleBaseItem("IoStoneDust", ModTabList.ModSpaceTab)),
 	HaumeaStoneDust(new ModSimpleBaseItem("HaumeaStoneDust", ModTabList.ModSpaceTab)),
-	MarsStoneDust(new ModSimpleBaseItem("MarsStoneDust", ModTabList.ModSpaceTab)),
+	//MarsStoneDust(new ModSimpleBaseItem("MarsStoneDust", ModTabList.ModSpaceTab)),
 	MakeMakeStoneDust(new ModSimpleBaseItem("MakeMakeStoneDust", ModTabList.ModSpaceTab)),
 	MercuryCoreDust(new ModSimpleBaseItem("MercuryCoreDust", ModTabList.ModSpaceTab)),
 	MercuryStoneDust(new ModSimpleBaseItem("MercuryStoneDust", ModTabList.ModSpaceTab)),
 	MirandaStoneDust(new ModSimpleBaseItem("MirandaStoneDust", ModTabList.ModSpaceTab)),
-	MoonStoneDust(new ModSimpleBaseItem("MoonStoneDust", ModTabList.ModGenericTab)),
+	//MoonStoneDust(new ModSimpleBaseItem("MoonStoneDust", ModTabList.ModGenericTab)),
 	PhobosStoneDust(new ModSimpleBaseItem("PhobosStoneDust", ModTabList.ModSpaceTab)),
 	PlutoIceDust(new ModSimpleBaseItem("PlutoIceDust", ModTabList.ModSpaceTab)),
 	PlutoStoneDust(new ModSimpleBaseItem("PlutoStoneDust", ModTabList.ModSpaceTab)),
