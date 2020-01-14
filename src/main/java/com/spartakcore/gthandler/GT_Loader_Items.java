@@ -79,6 +79,34 @@ public class GT_Loader_Items
  		CustomItemList.Empty360SpCell.set(ItemList.Empty360SpCell.getIS());
 		CustomItemList.Empty540SpCell.set(ItemList.Empty540SpCell.getIS());
 		CustomItemList.Empty1080SpCell.set(ItemList.Empty1080SpCell.getIS());
-		
+		CustomItemList.BarnardaEStoneDust.set(ItemList.BarnardaEStoneDust.getIS());
+		CustomItemList.BarnardaFStoneDust.set(ItemList.BarnardaFStoneDust.getIS());
+		CustomItemList.CallistoIceDust.set(ItemList.CallistoIceDust.getIS());
+		CustomItemList.CallistoStoneDust.set(ItemList.CallistoStoneDust .getIS());
+		CustomItemList.CentauriASurfaceDust.set(ItemList.CentauriASurfaceDust.getIS());
+		CustomItemList.CentauriAStoneDust.set(ItemList.CentauriAStoneDust.getIS());
+		CustomItemList.CeresStoneDust.set(ItemList.CeresStoneDust.getIS());
+		CustomItemList.DeimosStoneDust.set(ItemList.DeimosStoneDust.getIS());
+		CustomItemList.EnceladusIceDust.set(ItemList.EnceladusIceDust.getIS());
+		CustomItemList.EnceladusStoneDust.set(ItemList.EnceladusStoneDust.getIS());
+		CustomItemList.EuropaIceDust.set(ItemList.EuropaIceDust.getIS());
+		CustomItemList.EuropaStoneDust.set(ItemList.EuropaStoneDust.getIS());
+		CustomItemList.GanymedStoneDust.set(ItemList.GanymedStoneDust.getIS());
+		CustomItemList.IoStoneDust.set(ItemList.IoStoneDust.getIS());
+		CustomItemList.HaumeaStoneDust.set(ItemList.HaumeaStoneDust.getIS());
+		CustomItemList.MakeMakeStoneDust.set(ItemList.MakeMakeStoneDust.getIS());
+		CustomItemList.MercuryCoreDust.set(ItemList.MercuryCoreDust.getIS());
+		CustomItemList.MercuryStoneDust.set(ItemList.MercuryStoneDust.getIS());
+		CustomItemList.MirandaStoneDust.set(ItemList.MirandaStoneDust.getIS());
+		CustomItemList.PhobosStoneDust.set(ItemList.PhobosStoneDust.getIS());
+		CustomItemList.PlutoIceDust.set(ItemList.PlutoIceDust.getIS());
+		CustomItemList.PlutoStoneDust.set(ItemList.PlutoStoneDust.getIS());
+		CustomItemList.ProteusStoneDust.set(ItemList.ProteusStoneDust.getIS());
+		CustomItemList.OberonStoneDust.set(ItemList.OberonStoneDust  .getIS());
+		CustomItemList.TCetiEStoneDust.set(ItemList.TCetiEStoneDust .getIS());
+		CustomItemList.TitanStoneDust.set(ItemList.TitanStoneDust .getIS());
+		CustomItemList.TritonStoneDust.set(ItemList.TritonStoneDust .getIS());
+		CustomItemList.VegaBStoneDust.set(ItemList.VegaBStoneDust.getIS());
+		CustomItemList.VenusStoneDust.set(ItemList.VenusStoneDust.getIS());
 	}
 }
