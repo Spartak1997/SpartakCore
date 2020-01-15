@@ -93,7 +93,6 @@ public enum ItemList {
 	HaumeaStoneDust(new ModSimpleBaseItem("HaumeaStoneDust", ModTabList.ModSpaceTab)),
 	//MarsStoneDust(new ModSimpleBaseItem("MarsStoneDust", ModTabList.ModSpaceTab)),
 	MakeMakeStoneDust(new ModSimpleBaseItem("MakeMakeStoneDust", ModTabList.ModSpaceTab)),
-	MercuryCoreDust(new ModSimpleBaseItem("MercuryCoreDust", ModTabList.ModSpaceTab)),
 	MercuryStoneDust(new ModSimpleBaseItem("MercuryStoneDust", ModTabList.ModSpaceTab)),
 	MirandaStoneDust(new ModSimpleBaseItem("MirandaStoneDust", ModTabList.ModSpaceTab)),
 	//MoonStoneDust(new ModSimpleBaseItem("MoonStoneDust", ModTabList.ModGenericTab)),

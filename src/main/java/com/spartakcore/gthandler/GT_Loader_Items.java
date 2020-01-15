@@ -96,7 +96,6 @@ public class GT_Loader_Items
 		CustomItemList.HaumeaStoneDust.set(ItemList.HaumeaStoneDust.getIS());
 		CustomItemList.MakeMakeStoneDust.set(ItemList.MakeMakeStoneDust.getIS());
 		CustomItemList.MercuryStoneDust.set(ItemList.MercuryStoneDust.getIS());
-		CustomItemList.MercuryStoneDust.set(ItemList.MercuryStoneDust.getIS());
 		CustomItemList.MirandaStoneDust.set(ItemList.MirandaStoneDust.getIS());
 		CustomItemList.PhobosStoneDust.set(ItemList.PhobosStoneDust.getIS());
 		CustomItemList.PlutoIceDust.set(ItemList.PlutoIceDust.getIS());

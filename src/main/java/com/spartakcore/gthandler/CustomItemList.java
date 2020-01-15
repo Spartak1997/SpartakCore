@@ -63,7 +63,7 @@ public enum CustomItemList implements IItemContainer {
 	//SpaceDusts
 	AsteroidsStoneDust, BarnardaEStoneDust, BarnardaFStoneDust, CallistoIceDust, CallistoStoneDust, CentauriASurfaceDust,
 	CentauriAStoneDust, CeresStoneDust, DeimosStoneDust, EnceladusIceDust, EnceladusStoneDust, EuropaIceDust, EuropaStoneDust,
-	GanymedStoneDust, IoStoneDust, HaumeaStoneDust, MarsStoneDust, MakeMakeStoneDust, MercuryCoreDust, MercuryStoneDust,
+	GanymedStoneDust, IoStoneDust, HaumeaStoneDust, MarsStoneDust, MakeMakeStoneDust, MercuryStoneDust,
 	MirandaStoneDust, MoonStoneDust, PhobosStoneDust, PlutoIceDust, PlutoStoneDust, ProteusStoneDust, OberonStoneDust,
 	TCetiEStoneDust, TitanStoneDust, TritonStoneDust, VegaBStoneDust, VenusStoneDust;
 
