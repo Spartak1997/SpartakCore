@@ -9,13 +9,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class OreDictHandler {
-	
+
 	/*
 	 * Made by bartimaeusnek
 	 */
-	
+
 	public static void register_space_dust() {
-		
+
 		reg_dust(OreDictTypes.BarnardaE.name(),ItemList.BarnardaEStoneDust.getIS());
 		reg_dust(OreDictTypes.BarnardaF.name(),ItemList.BarnardaFStoneDust.getIS());
 		reg_dust(OreDictTypes.Callisto.name(),ItemList.CallistoStoneDust.getIS());
@@ -31,7 +31,6 @@ public class OreDictHandler {
 		reg_dust(OreDictTypes.Io.name(),ItemList.IoStoneDust.getIS());
 		reg_dust(OreDictTypes.MakeMake.name(),ItemList.MakeMakeStoneDust.getIS());
 		reg_dust(OreDictTypes.PlanetMercury.name(),ItemList.MercuryStoneDust.getIS());
-		reg_dust(OreDictTypes.PlanetMercury.name(),ItemList.MercuryCoreDust.getIS());
 		reg_dust(OreDictTypes.Miranda.name(),ItemList.MirandaStoneDust.getIS());
 		reg_dust(OreDictTypes.Oberon.name(),ItemList.OberonStoneDust.getIS());
 		reg_dust(OreDictTypes.Phobos.name(),ItemList.PhobosStoneDust.getIS());
@@ -43,7 +42,7 @@ public class OreDictHandler {
 		reg_dust(OreDictTypes.Triton.name(),ItemList.TritonStoneDust.getIS());
 		reg_dust(OreDictTypes.VegaB.name(),ItemList.VegaBStoneDust.getIS());
 		reg_dust(OreDictTypes.Venus.name(),ItemList.VenusStoneDust.getIS());
-		
+
 		if(Loader.isModLoaded("GalaxySpace")) {
 		reg_dust(OreDictTypes.Enceladus.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L,2));
 		reg_dust(OreDictTypes.Io.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L,1));
@@ -52,9 +51,9 @@ public class OreDictHandler {
 		reg_dust(OreDictTypes.Ceres.name(),GT_ModHandler.getModItem("GalaxySpace", "item.GlowstoneDusts", 1L));
 		}
 	}
-	
+
 	public static void register_space_rocks() {
-		
+
 		for (byte i=0; i<3;i++) {
 			if(Loader.isModLoaded("GalaxySpace")) {
 				reg_rock(OreDictTypes.Phobos.name(),GT_ModHandler.getModItem("GalaxySpace", "phobosblocks", 1L, i));
@@ -70,7 +69,7 @@ public class OreDictHandler {
 				reg_rock(OreDictTypes.TcetiE.name(),GT_ModHandler.getModItem("GalaxySpace", "tcetieblocks", 1L, i));
 			}
 		}
-			
+
 		if(Loader.isModLoaded("GalaxySpace")) {
 			reg_rock(OreDictTypes.Europa.name(),GT_ModHandler.getModItem("GalaxySpace", "europaunderwatergeyser", 1L, 0));
 			reg_rock(OreDictTypes.Europa.name(),GT_ModHandler.getModItem("GalaxySpace", "europageyser", 1L, 0));
@@ -88,7 +87,7 @@ public class OreDictHandler {
 			reg_rock(OreDictTypes.Pluto.name(),GT_ModHandler.getModItem("GalaxySpace", "plutoglowstone", 1L, 0));
 			reg_rock(OreDictTypes.Proteus.name(),GT_ModHandler.getModItem("GalaxySpace", "proteusglowstone", 1L, 0));
 			reg_rock(OreDictTypes.Ceres.name(),GT_ModHandler.getModItem("GalaxySpace", "ceresglowstone", 1L, 0));
-			
+
 			for (byte i=0;i<2;i++) {
 				reg_rock(OreDictTypes.Deimos.name(),GT_ModHandler.getModItem("GalaxySpace", "deimosblocks", 1L, i));
 				reg_rock(OreDictTypes.Venus.name(),GT_ModHandler.getModItem("GalaxySpace", "venusblocks", 1L, i));
@@ -97,12 +96,12 @@ public class OreDictHandler {
 				reg_rock(OreDictTypes.Ganymede.name(),GT_ModHandler.getModItem("GalaxySpace", "ganymedeblocks", 1L, i));
 				reg_rock(OreDictTypes.Callisto.name(),GT_ModHandler.getModItem("GalaxySpace", "callistoblocks", 1L, i));
 				reg_rock(OreDictTypes.Enceladus.name(),GT_ModHandler.getModItem("GalaxySpace", "enceladusblocks", 1L, i));
-				reg_rock(OreDictTypes.MakeMake.name(),GT_ModHandler.getModItem("GalaxySpace", "makemakegrunt", 1L, i));			
+				reg_rock(OreDictTypes.MakeMake.name(),GT_ModHandler.getModItem("GalaxySpace", "makemakegrunt", 1L, i));
 			}
 		}
-		
+
 	}
-	
+
 	public static void reg_additional() {
 		if(Loader.isModLoaded("GalaxySpace"))
 		for (byte i = 0; i<6; i++) {
@@ -114,13 +113,13 @@ public class OreDictHandler {
 		OreDictionary.registerOre("dustTinyFertilizer", ItemList.DustTinyFertilizer.getIS());
 
 	}
-	
+
 	public static void register_all() {
 		reg_additional();
 		register_space_rocks();
 		register_space_dust();
 	}
-	
+
 	private static void reg_dust(String S,ItemStack I) {
 		if (I != null) {
 		String p = I.getDisplayName().replaceAll("Dust", "").replaceAll(" ", "").trim();
