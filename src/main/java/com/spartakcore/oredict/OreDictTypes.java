@@ -1,9 +1,9 @@
 package com.spartakcore.oredict;
 
 public enum OreDictTypes {
-	dust,
-	rock,
-	Space,
+    dust,
+    rock,
+    Space,
     BarnardaE,
     BarnardaF,
     Callisto,
