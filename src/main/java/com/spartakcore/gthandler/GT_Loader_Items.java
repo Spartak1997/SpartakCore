@@ -107,5 +107,14 @@ public class GT_Loader_Items
 		CustomItemList.TritonStoneDust.set(ItemList.TritonStoneDust .getIS());
 		CustomItemList.VegaBStoneDust.set(ItemList.VegaBStoneDust.getIS());
 		CustomItemList.VenusStoneDust.set(ItemList.VenusStoneDust.getIS());
+
+		CustomItemList.OakScheme.set(ItemList.OakScheme.getIS());
+		CustomItemList.DarkOakScheme.set(ItemList.DarkOakScheme.getIS());
+		CustomItemList.JungleScheme.set(ItemList.JungleScheme.getIS());
+		CustomItemList.AcaciaScheme.set(ItemList.AcaciaScheme.getIS());
+		CustomItemList.SpruceScheme.set(ItemList.SpruceScheme.getIS());
+		CustomItemList.BirchScheme.set(ItemList.BirchScheme.getIS());
+		CustomItemList.RubberScheme.set(ItemList.RubberScheme.getIS());
+
 	}
 }

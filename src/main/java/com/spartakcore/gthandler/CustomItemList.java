@@ -65,8 +65,11 @@ public enum CustomItemList implements IItemContainer {
 	CentauriAStoneDust, CeresStoneDust, DeimosStoneDust, EnceladusIceDust, EnceladusStoneDust, EuropaIceDust, EuropaStoneDust,
 	GanymedStoneDust, IoStoneDust, HaumeaStoneDust, MarsStoneDust, MakeMakeStoneDust, MercuryStoneDust,
 	MirandaStoneDust, MoonStoneDust, PhobosStoneDust, PlutoIceDust, PlutoStoneDust, ProteusStoneDust, OberonStoneDust,
-	TCetiEStoneDust, TitanStoneDust, TritonStoneDust, VegaBStoneDust, VenusStoneDust;
+	TCetiEStoneDust, TitanStoneDust, TritonStoneDust, VegaBStoneDust, VenusStoneDust,
 
+	OakScheme, DarkOakScheme, JungleScheme, AcaciaScheme, SpruceScheme, BirchScheme, RubberScheme
+
+	;
 	private ItemStack mStack;
 	private boolean mHasNotBeenSet = true;
 

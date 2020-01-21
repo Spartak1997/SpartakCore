@@ -107,6 +107,14 @@ public enum ItemList {
 	VegaBStoneDust(new ModSimpleBaseItem("VegaBStoneDust", ModTabList.ModSpaceTab)),
 	VenusStoneDust(new ModSimpleBaseItem("VenusStoneDust", ModTabList.ModSpaceTab)),
 
+	OakScheme		(new ModSimpleBaseItem("OakScheme", ModTabList.ModGenericTab)),
+	DarkOakScheme	(new ModSimpleBaseItem("DarkOakScheme", ModTabList.ModGenericTab)),
+	JungleScheme	(new ModSimpleBaseItem("JungleScheme", ModTabList.ModGenericTab)),
+	AcaciaScheme	(new ModSimpleBaseItem("AcaciaScheme", ModTabList.ModGenericTab)),
+	SpruceScheme	(new ModSimpleBaseItem("SpruceScheme", ModTabList.ModGenericTab)),
+	BirchScheme		(new ModSimpleBaseItem("BirchScheme", ModTabList.ModGenericTab)),
+	RubberScheme	(new ModSimpleBaseItem("RubberScheme", ModTabList.ModGenericTab)),
+
 	
 	// Do not delete this
     EndOfList(null);

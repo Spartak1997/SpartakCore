@@ -71,15 +71,15 @@ public class GT_MetaTileEntity_Farm  extends GT_MetaTileEntity_MultiBlockBase {
     public boolean isFacingValid(byte aFacing) {
         return aFacing > 1;
     }
-    
-    @Override
+
+	@Override
 	public boolean checkRecipe(ItemStack aStack) {
 		ArrayList<ItemStack> tInputList = getStoredInputs();
 		int tInputList_sS = tInputList.size();
 		for (int i = 0; i < tInputList_sS - 1; i++) {
 			for (int j = i + 1; j < tInputList_sS; j++) {
-				if (GT_Utility.areStacksEqual((ItemStack) tInputList.get(i), (ItemStack) tInputList.get(j))) {
-					if (((ItemStack) tInputList.get(i)).stackSize >= ((ItemStack) tInputList.get(j)).stackSize) {
+				if (GT_Utility.areStacksEqual(tInputList.get(i), tInputList.get(j))) {
+					if (tInputList.get(i).stackSize >= tInputList.get(j).stackSize) {
 						tInputList.remove(j--);
 						tInputList_sS = tInputList.size();
 					} else {
@@ -90,8 +90,7 @@ public class GT_MetaTileEntity_Farm  extends GT_MetaTileEntity_MultiBlockBase {
 				}
 			}
 		}
-		tInputList.add(mInventory[1]);
-		ItemStack[] inputs = tInputList.toArray(new ItemStack[tInputList.size()]);
+		ItemStack[] tInputs = tInputList.toArray(new ItemStack[tInputList.size()]);
 
 		ArrayList<FluidStack> tFluidList = getStoredFluids();
 		int tFluidList_sS = tFluidList.size();
@@ -109,21 +108,20 @@ public class GT_MetaTileEntity_Farm  extends GT_MetaTileEntity_MultiBlockBase {
 				}
 			}
 		}
-		FluidStack[] fluids = tFluidList.toArray(new FluidStack[tFluidList.size()]);
-
-		if (inputs.length > 0 || fluids.length > 0) {
-			long voltage = getMaxInputVoltage();
-			byte tier = (byte) Math.max(1, GT_Utility.getTier(voltage));
+		FluidStack[] tFluids = tFluidList.toArray(new FluidStack[tFluidList.size()]);
+		if (tInputList.size() > 0) {
+			long tVoltage = getMaxInputVoltage();
+			byte tTier = (byte) Math.max(1, GT_Utility.getTier(tVoltage));
 			GT_Recipe recipe = GT_Recipe.GT_Recipe_Map.sFarmRecipes.findRecipe(getBaseMetaTileEntity(), false,
-					false, gregtech.api.enums.GT_Values.V[tier], fluids, inputs);
-			if (recipe != null && recipe.isRecipeInputEqual(true, fluids, inputs)) {
+					false, gregtech.api.enums.GT_Values.V[tTier], tFluids, tInputs);
+			if ((recipe != null) && (recipe.isRecipeInputEqual(true, tFluids, tInputs))) {
 				this.mEfficiency = (10000 - (getIdealStatus() - getRepairStatus()) * 1000);
 				this.mEfficiencyIncrease = 10000;
 
 				int EUt = recipe.mEUt;
 				int maxProgresstime = recipe.mDuration;
 
-				while (EUt <= gregtech.api.enums.GT_Values.V[tier - 1] && maxProgresstime > 2) {
+				while (EUt <= gregtech.api.enums.GT_Values.V[tTier - 1] && maxProgresstime > 2) {
 					EUt *= 4;
 					maxProgresstime /= 4;
 				}
@@ -135,11 +133,11 @@ public class GT_MetaTileEntity_Farm  extends GT_MetaTileEntity_MultiBlockBase {
 				this.mEUt = -EUt;
 				this.mMaxProgresstime = maxProgresstime;
 				mOutputItems = new ItemStack[recipe.mOutputs.length];
- 		        for (int i = 0; i < recipe.mOutputs.length; i++) {
- 		            if (getBaseMetaTileEntity().getRandomNumber(10000) < recipe.getOutputChance(i)) {
- 		                this.mOutputItems[i] = recipe.getOutput(i);
- 		            }
- 		        }
+				for (int i = 0; i < recipe.mOutputs.length; i++) {
+					if (getBaseMetaTileEntity().getRandomNumber(10000) < recipe.getOutputChance(i)) {
+						this.mOutputItems[i] = recipe.getOutput(i);
+					}
+				}
 				this.mOutputFluids = recipe.mFluidOutputs;
 				this.updateSlots();
 				return true;
