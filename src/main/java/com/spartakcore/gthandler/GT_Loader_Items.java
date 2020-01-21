@@ -79,6 +79,7 @@ public class GT_Loader_Items
  		CustomItemList.Empty360SpCell.set(ItemList.Empty360SpCell.getIS());
 		CustomItemList.Empty540SpCell.set(ItemList.Empty540SpCell.getIS());
 		CustomItemList.Empty1080SpCell.set(ItemList.Empty1080SpCell.getIS());
+
 		CustomItemList.BarnardaEStoneDust.set(ItemList.BarnardaEStoneDust.getIS());
 		CustomItemList.BarnardaFStoneDust.set(ItemList.BarnardaFStoneDust.getIS());
 		CustomItemList.CallistoIceDust.set(ItemList.CallistoIceDust.getIS());
@@ -107,5 +108,6 @@ public class GT_Loader_Items
 		CustomItemList.TritonStoneDust.set(ItemList.TritonStoneDust .getIS());
 		CustomItemList.VegaBStoneDust.set(ItemList.VegaBStoneDust.getIS());
 		CustomItemList.VenusStoneDust.set(ItemList.VenusStoneDust.getIS());
+
 	}
 }

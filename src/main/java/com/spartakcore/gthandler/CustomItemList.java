@@ -26,7 +26,7 @@ public enum CustomItemList implements IItemContainer {
 	Casing_Farm,
 	
 	//Multimachines
-	Machine_Multi_Farm,
+	Machine_Multi_Farm, Machine_Blast_Smelter,
 	
 	//Schematics
 	SchematicsTier1, SchematicsTier2, SchematicsTier3, SchematicsTier4, SchematicsTier5, SchematicsTier6, SchematicsTier7, SchematicsTier8,SchematicsAstroMiner,SchematicsCargoRocket,SchematicsMoonBuggy,

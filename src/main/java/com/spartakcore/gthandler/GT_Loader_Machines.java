@@ -1,5 +1,6 @@
 package com.spartakcore.gthandler;
 
+import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_BlastSmelter;
 import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_Farm;
 
 import cpw.mods.fml.common.Loader;
@@ -278,8 +279,12 @@ public class GT_Loader_Machines {
 								'P', ItemList.Electric_Pump_MV,
 								'R', ItemList.Robot_Arm_MV,
 								'O', OreDictNames.craftingDiamondBlade});
-				
-		        
+
+
+				CustomItemList.Machine_Blast_Smelter.set(new GT_MetaTileEntity_BlastSmelter(13002, "multimachine.blastsmelter", "Alloy Blast Smelter").getStackForm(1L));
+
+
+
 	}
 
 }
