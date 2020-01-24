@@ -83,7 +83,7 @@ public class GT_MachineRecipeLoader implements Runnable{
         //Rubber
         GT_Values.RA.addFarmRecipe(CustomItemList.RubberScheme.get(0L), CustomItemList.DustTinyFertilizer.get(1), GT_Utility.getIntegratedCircuit(1), Materials.Water.getFluid(1000L), GT_Values.NF, new ItemStack[] {GT_ModHandler.getModItem("IC2", "blockRubWood", 10L, 0),GT_ModHandler.getModItem("IC2", "blockRubWood", 2L, 0),GT_ModHandler.getModItem("IC2", "blockRubSapling", 2L, 0),GT_ModHandler.getModItem("IC2", "blockRubSapling", 1L, 0), GT_ModHandler.getModItem("IC2", "itemHarz", 3L, 0)}, new int[]{10000, 4000, 9000, 4000, 10000}, 170, 120);
         GT_Values.RA.addFarmRecipe(CustomItemList.RubberScheme.get(0L), CustomItemList.DustSmallFertilizer.get(1), GT_Utility.getIntegratedCircuit(2), Materials.Water.getFluid(1000L), GT_Values.NF, new ItemStack[] {GT_ModHandler.getModItem("IC2", "blockRubWood", 10L, 0),GT_ModHandler.getModItem("IC2", "blockRubWood", 2L, 0),GT_ModHandler.getModItem("IC2", "blockRubSapling", 3L, 0),GT_ModHandler.getModItem("IC2", "blockRubSapling", 2L, 0), GT_ModHandler.getModItem("IC2", "itemHarz", 3L, 0), GT_ModHandler.getModItem("IC2", "blockRubLeaves", 32L, 0)}, new int[]{10000, 4000, 9500, 5000, 10000, 10000}, 510, 120);
-        
+        	
 		// ===================================================================================================
 		// CELLS
 		// ===================================================================================================
@@ -162,6 +162,15 @@ public class GT_MachineRecipeLoader implements Runnable{
                     GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[] {RocketMaterial[i],ItemList.Circuit_Nanocomputer.get(1L),DataStickWScheme.splitStack(0)},tMat.getMolten(576L * tMultiplier / 2L),ExtraChips[i], 9000, EUperRecipe[i], true);
                 }
                 
+	    //Farm Circuits
+	    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), GT_ModHandler.getModItem("minecraft", "sapling", 64L, 0)}, tMat.getMolten(144L * tMultiplier / 2L), CustomItemList.OakScheme.get(1L), 200, 30);
+	    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), GT_ModHandler.getModItem("minecraft", "sapling", 64L, 1)}, tMat.getMolten(144L * tMultiplier / 2L), CustomItemList.SpruceScheme.get(1L), 200, 30);
+	    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), GT_ModHandler.getModItem("minecraft", "sapling", 64L, 2)}, tMat.getMolten(144L * tMultiplier / 2L), CustomItemList.BirchScheme.get(1L), 200, 30);
+	    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), GT_ModHandler.getModItem("minecraft", "sapling", 64L, 3)}, tMat.getMolten(144L * tMultiplier / 2L), CustomItemList.JungleScheme.get(1L), 200, 30);
+	    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), GT_ModHandler.getModItem("minecraft", "sapling", 64L, 4)}, tMat.getMolten(144L * tMultiplier / 2L), CustomItemList.AcaciaScheme.get(1L), 200, 30);
+	    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), GT_ModHandler.getModItem("minecraft", "sapling", 64L, 5)}, tMat.getMolten(144L * tMultiplier / 2L), CustomItemList.DarkOakScheme.get(1L), 200, 30);
+	    GT_Values.RA.addCircuitAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Good, 1L), GT_ModHandler.getModItem("IC2", "blockRubSapling", 64L, 0)}, tMat.getMolten(144L * tMultiplier / 2L), CustomItemList.RubberScheme.get(1L), 200, 30);
+	    
 		if(Loader.isModLoaded("OpenComputers")) {
 			//cable
             GT_Values.RA.addAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Gold, 1), GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.RedstoneAlloy, 1), GT_Utility.getIntegratedCircuit(1)}, GT_Values.NF, GT_ModHandler.getModItem("OpenComputers", "cable", 1L, 0), 200, 120);
