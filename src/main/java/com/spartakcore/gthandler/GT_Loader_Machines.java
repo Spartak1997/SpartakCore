@@ -1,5 +1,6 @@
 package com.spartakcore.gthandler;
 
+import com.spartakcore.gthandler.tileentities.generators.GT_MetaTileEntity_SemifluidGenerator;
 import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_Farm;
 
 import cpw.mods.fml.common.Loader;
@@ -271,9 +272,9 @@ public class GT_Loader_Machines {
 				// semifluid Generators
 				// ===================================================================================================
 
-				CustomItemList.Generator_Semi_Turbine_LV.set(new GT_MetaTileEntity_SemifluidGenerator(13029, "basicgenerator.semifluid.tier.01", "Basic Semifluid Generator", 0).getStackForm(1L));
-				CustomItemList.Generator_Semi_Turbine_MV.set(new GT_MetaTileEntity_SemifluidGenerator(13030, "basicgenerator.semifluid.tier.02", "Advanced Semifluid Generator", 0).getStackForm(1L));
-				CustomItemList.Generator_Semi_Turbine_HV.set(new GT_MetaTileEntity_SemifluidGenerator(13031, "basicgenerator.semifluid.tier.03", "Turbo Semifluid Generator", 0).getStackForm(1L));
+				CustomItemList.Generator_Semi_Turbine_LV.set(new GT_MetaTileEntity_SemifluidGenerator(13029, "basicgenerator.semifluid.tier.01", "Basic Semifluid Generator", 1).getStackForm(1L));
+				CustomItemList.Generator_Semi_Turbine_MV.set(new GT_MetaTileEntity_SemifluidGenerator(13030, "basicgenerator.semifluid.tier.02", "Advanced Semifluid Generator", 2).getStackForm(1L));
+				CustomItemList.Generator_Semi_Turbine_HV.set(new GT_MetaTileEntity_SemifluidGenerator(13031, "basicgenerator.semifluid.tier.03", "Turbo Semifluid Generator", 3).getStackForm(1L));
 
 				// ===================================================================================================
 				// Primitive Assemblers
