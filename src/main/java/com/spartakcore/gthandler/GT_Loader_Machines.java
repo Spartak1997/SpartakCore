@@ -12,10 +12,7 @@ import gregtech.api.util.GT_OreDictUnificator;
 import gregtech.api.util.GT_Recipe;
 import gregtech.api.util.GT_Utility;
 import gregtech.common.tileentities.automation.GT_MetaTileEntity_ChestBuffer;
-import gregtech.common.tileentities.generators.GT_MetaTileEntity_DieselGenerator;
-import gregtech.common.tileentities.generators.GT_MetaTileEntity_GasTurbine;
-import gregtech.common.tileentities.generators.GT_MetaTileEntity_PlasmaGenerator;
-import gregtech.common.tileentities.generators.GT_MetaTileEntity_SteamTurbine;
+import gregtech.common.tileentities.generators.*;
 import gregtech.common.tileentities.machines.basic.*;
 import gregtech.loaders.preload.GT_Loader_MetaTileEntities;
 import gtPlusPlus.core.material.gregtech.CustomGTMaterials;
@@ -264,19 +261,26 @@ public class GT_Loader_Machines {
 		        CustomItemList.Generator_Steam_Turbine_ULV.set(new GT_MetaTileEntity_SteamTurbine(13025, "basicgenerator.steamturbine.tier.00", "First Steam Turbine", 0).getStackForm(1L));
 		        CustomItemList.Generator_Diesel_ULV.set(new GT_MetaTileEntity_DieselGenerator(13026, "basicgenerator.diesel.tier.00", "First Combustion Generator", 0).getStackForm(1L));
 		        CustomItemList.Generator_Gas_Turbine_ULV.set(new GT_MetaTileEntity_GasTurbine(13027, "basicgenerator.gasturbine.tier.00", "First Gas Turbine", 0).getStackForm(1L));
+				CustomItemList.Generator_Semi_Turbine_ULV.set(new GT_MetaTileEntity_SemifluidGenerator(13028, "basicgenerator.semifluid.tier.00", "First Semifluid Generator", 0).getStackForm(1L));
 
 				GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Steam_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'P', OrePrefixes.pipeSmall.get(Materials.Lead)});
 		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Diesel_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "EME", "GWG", 'M', ItemList.Hull_ULV, 'P', CustomItemList.ULVPiston, 'E', CustomItemList.ULVMotor, 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
 		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Gas_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"CRC", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead)});
 
+				// ===================================================================================================
+				// semifluid Generators
+				// ===================================================================================================
+
+				CustomItemList.Generator_Semi_Turbine_LV.set(new GT_MetaTileEntity_SemifluidGenerator(13029, "basicgenerator.semifluid.tier.01", "Basic Semifluid Generator", 0).getStackForm(1L));
+				CustomItemList.Generator_Semi_Turbine_MV.set(new GT_MetaTileEntity_SemifluidGenerator(13030, "basicgenerator.semifluid.tier.02", "Advanced Semifluid Generator", 0).getStackForm(1L));
+				CustomItemList.Generator_Semi_Turbine_HV.set(new GT_MetaTileEntity_SemifluidGenerator(13031, "basicgenerator.semifluid.tier.03", "Turbo Semifluid Generator", 0).getStackForm(1L));
 
 				// ===================================================================================================
 				// Primitive Assemblers
 				// ===================================================================================================
 
-				CustomItemList.Machine_ULV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13028, "basicmachine.assembler.tier.00", "Primitive Assembler", 0, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 3, 1, 8000, 0, 1, "Assembler0.png", GregTech_API.sSoundList.get(204), false, false, 0, "ASSEMBLER", null).getStackForm(1L));
-				CustomItemList.Machine_ULV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe( 13029, "basicmachine.circuitassembler.tier.00", "Primitive Circuit Assembler", 0, "Pick-n-Place all over the place", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes, 6, 1, 8000, 0, 1, "CircuitAssembler0.png", GregTech_API.sSoundList.get(204), false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
-
+				CustomItemList.Machine_ULV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13032, "basicmachine.assembler.tier.00", "Primitive Assembler", 0, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 3, 1, 8000, 0, 1, "Assembler0.png", GregTech_API.sSoundList.get(204), false, false, 0, "ASSEMBLER", null).getStackForm(1L));
+				CustomItemList.Machine_ULV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe( 13033, "basicmachine.circuitassembler.tier.00", "Primitive Circuit Assembler", 0, "Pick-n-Place all over the place", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes, 6, 1, 8000, 0, 1, "CircuitAssembler0.png", GregTech_API.sSoundList.get(204), false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
 
 				// ===================================================================================================
 				// MULTIBLOCKS
