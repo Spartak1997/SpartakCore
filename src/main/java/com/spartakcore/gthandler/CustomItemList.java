@@ -67,7 +67,9 @@ public enum CustomItemList implements IItemContainer {
 	MirandaStoneDust, MoonStoneDust, PhobosStoneDust, PlutoIceDust, PlutoStoneDust, ProteusStoneDust, OberonStoneDust,
 	TCetiEStoneDust, TitanStoneDust, TritonStoneDust, VegaBStoneDust, VenusStoneDust,
 
-	OakScheme, DarkOakScheme, JungleScheme, AcaciaScheme, SpruceScheme, BirchScheme, RubberScheme
+	OakScheme, DarkOakScheme, JungleScheme, AcaciaScheme, SpruceScheme, BirchScheme, RubberScheme,
+
+    CokeOvenBrick
 
 	;
 	private ItemStack mStack;

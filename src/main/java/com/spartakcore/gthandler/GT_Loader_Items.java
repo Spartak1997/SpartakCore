@@ -1,20 +1,22 @@
 package com.spartakcore.gthandler;
 
 import com.spartakcore.item.ItemList;
-import gregtech.common.items.GT_MetaGenerated_Item_01;
+import gregtech.common.items.GT_MetaGenerated_Item_04;
 
 public class GT_Loader_Items
 {
 	public void run()
 	{
-		GT = GT_MetaGenerated_Item_01.INSTANCE;
+		GT = GT_MetaGenerated_Item_04.INSTANCE;
 		registerItems();
 	}
 
-	private GT_MetaGenerated_Item_01 GT;
+	private GT_MetaGenerated_Item_04 GT;
 	
 	private void registerItems()
 	{
+		CustomItemList.CokeOvenBrick.set(GT.addItem(1,"Coke Oven Brick","",new Object[]{}));
+
 		CustomItemList.SchematicsTier1.set(ItemList.SchematicsTier1.getIS());
 		CustomItemList.SchematicsTier2.set(ItemList.SchematicsTier2.getIS());
 		CustomItemList.SchematicsTier3.set(ItemList.SchematicsTier3.getIS());

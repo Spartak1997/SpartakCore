@@ -44,7 +44,7 @@ public class GT_MetaTileEntity_CokeOven
 
     public ITexture[] getTexture(IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone) {
         if (aSide == aFacing) {
-            return new ITexture[]{Textures.BlockIcons.casingTexturePages[1][53], new GT_RenderedTexture(aActive ? Textures.BlockIcons.MACHINE_CASING_BRICKEDBLASTFURNACE_ACTIVE : Textures.BlockIcons.MACHINE_CASING_BRICKEDBLASTFURNACE_INACTIVE)};
+            return new ITexture[]{Textures.BlockIcons.casingTexturePages[1][53], new GT_RenderedTexture(aActive ? Textures.BlockIcons.OVERLAY_COKE_OVEN_BRICK_ACTIVE : Textures.BlockIcons.OVERLAY_COKE_OVEN_BRICK)};
         }
         return new ITexture[]{Textures.BlockIcons.casingTexturePages[1][53]};
     }

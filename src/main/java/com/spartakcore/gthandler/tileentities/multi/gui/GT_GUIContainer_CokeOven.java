@@ -49,13 +49,15 @@ public class GT_GUIContainer_CokeOven extends GT_GUIContainerMetaTile_Machine {
         int y = (height - ySize) / 2;
         drawTexturedModalRect(x, y, 0, 0, xSize, ySize);
         if (this.mContainer != null) {
-            double tScale = (double) this.mContainer.mProgressTime / (double) this.mContainer.mMaxProgressTime;
             if ((((GT_Container_MultiMachine) mContainer).mDisplayErrorCode & 64) != 0) {
                 drawTexturedModalRect(x + 50, y + 49, 0, 251 - 5, 0, 5);
+            } else {
+                drawTexturedModalRect(x + 151, y + 60, 238, 0, 18, 18);
+                drawTexturedModalRect(x + 115, y + 16, 238, 18, 18, 18);
+                drawTexturedModalRect(x + 121, y + 34, 226, 136, 30, 38);
             }
-                    drawTexturedModalRect(x + 151, y + 60, 238, 0,18, 18);
-                    drawTexturedModalRect(x + 115, y + 16, 238, 18,18, 18);
-                    drawTexturedModalRect(x + 121, y + 34, 226, 136,30, 38);
+            double tScale = (double) this.mContainer.mProgressTime / (double) this.mContainer.mMaxProgressTime;
+
                     drawTexturedModalRect(x + 121, y + 34, 226, 180,30, Math.min(68, (int) (tScale * 68)));
                     drawTexturedModalRect(x + 94, y + 66, 199, 174, Math.min(58, (int) ((tScale) * 58)),6);
 
