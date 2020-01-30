@@ -1,6 +1,7 @@
 package com.spartakcore.gthandler;
 
 import com.spartakcore.gthandler.tileentities.generators.GT_MetaTileEntity_SemifluidGenerator;
+import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_CokeOven;
 import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_Farm;
 
 import cpw.mods.fml.common.Loader;
@@ -290,15 +291,17 @@ public class GT_Loader_Machines {
 
 				GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_Multi_Farm.get(1L),
 						bitsd,
-						new Object[]{"ROR", "CHC", "PWP",
+						new Object[]{
+								"ROR", "CHC", "PWP",
 								'H', ItemList.Hull_MV,
 								'W', OrePrefixes.cableGt02.get(Materials.Copper),
 								'C', OrePrefixes.circuit.get(Materials.Good),
 								'P', ItemList.Electric_Pump_MV,
 								'R', ItemList.Robot_Arm_MV,
-								'O', OreDictNames.craftingDiamondBlade});
+								'O', OreDictNames.craftingDiamondBlade
+						});
 
-		        
+				CustomItemList.Machine_CokeOven.set(new GT_MetaTileEntity_CokeOven(13002, "multimachine.cokeoven", "Coke Oven").getStackForm(1L));
+
 	}
-
 }
