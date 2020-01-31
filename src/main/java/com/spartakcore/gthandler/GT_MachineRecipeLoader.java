@@ -53,6 +53,9 @@ public class GT_MachineRecipeLoader implements Runnable{
         	GT_Values.RA.addMultiblockChemicalRecipe(new ItemStack[]{ItemList.Circuit_Chip_RPico.get(1L),Materials.MysteriousCrystal.getDust(2),GT_OreDictUnificator.get(OrePrefixes.dustTiny,Materials.InfinityCatalyst,1L).copy().splitStack(0),Materials.AlienBiomass.getDust(1)},new FluidStack[]{Materials.Neutronium.getFluid(100L)},new FluidStack[]{GT_Values.NF},new ItemStack[]{ItemList.Circuit_Chip_Pico.get(1L)},3000,(int)(GT_Values.V[9]-(GT_Values.V[9]/10)));
         }
         
+	//CokeOven Brick
+	GT_Values.RA.addAlloySmelterRecipe(new ItemStack(Items.clay_ball, 1, 0), new ItemStack(Blocks.sand, 1, 0), CustomItemList.CokeOvenBrick.get(2L), 200, 8);
+			
         //Bars
         GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.stick, Materials.Steel, 3L), GT_Utility.getIntegratedCircuit(3), CustomItemList.SteelBars.get(4L), 400, 48);
         
