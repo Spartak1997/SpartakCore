@@ -167,41 +167,39 @@ task getBartworks(type: Download, dependsOn: "getGalacticGreg") {
 
 processResources
 {
-    def cleanVersion = project.version.split('-')[1]
     // this will ensure that this task is redone when the versions change.
-    inputs.property "version", cleanVersion
+    inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
 
     // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-
+                
         // replace version and mcversion
-        expand 'version':cleanVersion, 'mcversion':project.minecraft.version
+        expand 'version':project.version, 'mcversion':project.minecraft.version
     }
         
     // copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+	exclude '**/Thumbs.db'
 }
-idea {
-    module {
-        inheritOutputDirs = true
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
+task devJar(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'dev'
+    manifest {
+        //attributes 'FMLCorePlugin': 'WhateverLoaderClass'
+        //attributes 'FMLCorePluginContainsFMLMod': 'true'
     }
 }
 
-task signJar(dependsOn: 'reobf'){
-    doLast {
-        ant.signjar(
-            destDir: jar.destinationDir,
-            jar: jar.getArchivePath(),
-            alias: findProperty('keyStoreAlias') ?: '',
-            keystore: findProperty('keyStore') ?: '',
-            storepass: findProperty('keyStorePass') ?: '',
-            digestalg: findProperty('signDigestAlg') ?: '',
-            tsaurl: findProperty('signTSAurl') ?: '',
-            verbose: true
-            )
-    }
+artifacts {
+    archives devJar
 }
