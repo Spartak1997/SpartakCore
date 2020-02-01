@@ -326,7 +326,15 @@ public class GT_Loader_Machines {
 
 				CustomItemList.Water_Tank.set(new GT_MetaTileEntity_WaterTank(13034, "basicmachine.watertank", "Water Tank",0).getStackForm(1L));
 
-
+				GT_ModHandler.addCraftingRecipe(CustomItemList.GT_MetaTileEntity_WaterTank.get(1L),
+						bitsd,
+						new Object[]{
+								"POP", "PWP", "PRP",
+								'P', OrePrefixes.plank.get(Materials.Wood),
+								'O', OrePrefixes.ring.get(Materials.Iron),
+								'W', OrePrefixes.pipeLarge.get(Materials.Wood),
+								'R', ItemList.IC2_Resin
+						});
 
 				// ===================================================================================================
 				// MULTIBLOCKS
@@ -346,6 +354,13 @@ public class GT_Loader_Machines {
 						});
 
 				CustomItemList.Machine_CokeOven.set(new GT_MetaTileEntity_CokeOven(13002, "multimachine.cokeoven", "Coke Oven").getStackForm(1L));
-
+				
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_CokeOven.get(1L),
+						bitsd,
+						new Object[]{
+								"BBB", "BFB", "BBB",
+								'B', CustomItemList.CokeOvenBrick,
+								'F', OreDictNames.craftingFurnace
+						});
 	}
 }
