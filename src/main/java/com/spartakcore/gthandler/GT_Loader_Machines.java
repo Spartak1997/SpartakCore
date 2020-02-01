@@ -281,7 +281,7 @@ public class GT_Loader_Machines {
 						'M', ItemList.Hull_ULV,
 						'P', CustomItemList.ULVPiston,
 					    	'E', CustomItemList.ULVMotor,
-					    	'C', OrePrefixes.circuit.get(Materials.Privitive),
+					    	'C', OrePrefixes.circuit.get(Materials.Primitive),
 					    	'W', OrePrefixes.cableGt01.get(Materials.Lead),
 					    	'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
 				// ===================================================================================================
@@ -332,7 +332,7 @@ public class GT_Loader_Machines {
 
 				CustomItemList.Water_Tank.set(new GT_MetaTileEntity_WaterTank(13034, "basicmachine.watertank", "Water Tank",0).getStackForm(1L));
 
-				GT_ModHandler.addCraftingRecipe(CustomItemList.GT_MetaTileEntity_WaterTank.get(1L),
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Water_Tank.get(1L),
 						bitsd,
 						new Object[]{
 								"POP", "PWP", "PRP",
