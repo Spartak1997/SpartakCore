@@ -184,8 +184,8 @@ public class GT_Loader_Machines {
 		        }
 				
 		        // ===================================================================================================
-				// Component Assembler
-				// ===================================================================================================
+			// Component Assembler
+			// ===================================================================================================
 
 		        if(GT_Mod.gregtechproxy.mComponentAssembler){
 		        	CustomItemList.Machine_LV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13010, "basicmachine.componentassembler.tier.01", "Basic Component Assembling Machine", 1, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 16000, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
@@ -264,18 +264,26 @@ public class GT_Loader_Machines {
 		        }
 		        
 		        // ===================================================================================================
-				// ULV Generators
-				// ===================================================================================================
+			// ULV Generators
+			// ===================================================================================================
 
 		        CustomItemList.Generator_Steam_Turbine_ULV.set(new GT_MetaTileEntity_SteamTurbine(13025, "basicgenerator.steamturbine.tier.00", "First Steam Turbine", 0).getStackForm(1L));
 		        CustomItemList.Generator_Diesel_ULV.set(new GT_MetaTileEntity_DieselGenerator(13026, "basicgenerator.diesel.tier.00", "First Combustion Generator", 0).getStackForm(1L));
 		        CustomItemList.Generator_Gas_Turbine_ULV.set(new GT_MetaTileEntity_GasTurbine(13027, "basicgenerator.gasturbine.tier.00", "First Gas Turbine", 0).getStackForm(1L));
-				CustomItemList.Generator_Semi_Turbine_ULV.set(new GT_MetaTileEntity_SemifluidGenerator(13028, "basicgenerator.semifluid.tier.00", "First Semifluid Generator", 0).getStackForm(1L));
+			CustomItemList.Generator_Semi_Turbine_ULV.set(new GT_MetaTileEntity_SemifluidGenerator(13028, "basicgenerator.semifluid.tier.00", "First Semifluid Generator", 0).getStackForm(1L));
 
-				GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Steam_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'P', OrePrefixes.pipeSmall.get(Materials.Lead)});
+			GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Steam_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'P', OrePrefixes.pipeSmall.get(Materials.Lead)});
 		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Diesel_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "EME", "GWG", 'M', ItemList.Hull_ULV, 'P', CustomItemList.ULVPiston, 'E', CustomItemList.ULVMotor, 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
 		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Gas_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"CRC", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead)});
-
+			GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Semi_Turbine_ULV.get(1L),
+				bitsd,
+				new Object[]{"GCG", "EME", "PWP",
+						'M', ItemList.Hull_ULV,
+						'P', CustomItemList.ULVPiston,
+					    	'E', CustomItemList.ULVMotor,
+					    	'C', OrePrefixes.circuit.get(Materials.Privitive),
+					    	'W', OrePrefixes.cableGt01.get(Materials.Lead),
+					    	'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
 				// ===================================================================================================
 				// semifluid Generators
 				// ===================================================================================================
@@ -284,6 +292,33 @@ public class GT_Loader_Machines {
 				CustomItemList.Generator_Semi_Turbine_MV.set(new GT_MetaTileEntity_SemifluidGenerator(13030, "basicgenerator.semifluid.tier.02", "Advanced Semifluid Generator", 2).getStackForm(1L));
 				CustomItemList.Generator_Semi_Turbine_HV.set(new GT_MetaTileEntity_SemifluidGenerator(13031, "basicgenerator.semifluid.tier.03", "Turbo Semifluid Generator", 3).getStackForm(1L));
 
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Semi_Turbine_LV.get(1L),
+				bitsd,
+				new Object[]{"GCG", "EME", "PWP",
+						'M', ItemList.Hull_LV,
+						'P', ItemList.Electric_Piston_LV,
+					    	'E', ItemList.Electric_Motor_LV,
+					    	'C', OrePrefixes.circuit.get(Materials.Basic),
+					    	'W', OrePrefixes.cableGt01.get(Materials.Tin),
+					    	'G', OrePrefixes.gearGt.get(Materials.Steel)});
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Semi_Turbine_MV.get(1L),
+				bitsd,
+				new Object[]{"GCG", "EME", "PWP",
+						'M', ItemList.Hull_MV,
+						'P', ItemList.Electric_Piston_MV,
+					    	'E', ItemList.Electric_Motor_MV,
+					    	'C', OrePrefixes.circuit.get(Materials.Good),
+					    	'W', OrePrefixes.cableGt01.get(Materials.Copper),
+					    	'G', OrePrefixes.gearGt.get(Materials.Aluminium)});
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Semi_Turbine_HV.get(1L),
+				bitsd,
+				new Object[]{"GCG", "EME", "PWP",
+						'M', ItemList.Hull_HV,
+						'P', ItemList.Electric_Piston_HV,
+					    	'E', ItemList.Electric_Motor_HV,
+					    	'C', OrePrefixes.circuit.get(Materials.Advanced),
+					    	'W', OrePrefixes.cableGt01.get(Materials.Gold),
+					    	'G', OrePrefixes.gearGt.get(Materials.StainlessSteel)});
 				// ===================================================================================================
 				// Primitive Assemblers
 				// ===================================================================================================
@@ -297,7 +332,15 @@ public class GT_Loader_Machines {
 
 				CustomItemList.Water_Tank.set(new GT_MetaTileEntity_WaterTank(13034, "basicmachine.watertank", "Water Tank",0).getStackForm(1L));
 
-
+				GT_ModHandler.addCraftingRecipe(CustomItemList.GT_MetaTileEntity_WaterTank.get(1L),
+						bitsd,
+						new Object[]{
+								"POP", "PWP", "PRP",
+								'P', OrePrefixes.plank.get(Materials.Wood),
+								'O', OrePrefixes.ring.get(Materials.Iron),
+								'W', OrePrefixes.pipeLarge.get(Materials.Wood),
+								'R', ItemList.IC2_Resin
+						});
 
 				// ===================================================================================================
 				// MULTIBLOCKS
@@ -317,6 +360,13 @@ public class GT_Loader_Machines {
 						});
 
 				CustomItemList.Machine_CokeOven.set(new GT_MetaTileEntity_CokeOven(13002, "multimachine.cokeoven", "Coke Oven").getStackForm(1L));
-
+				
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_CokeOven.get(1L),
+						bitsd,
+						new Object[]{
+								"BBB", "BFB", "BBB",
+								'B', CustomItemList.CokeOvenBrick,
+								'F', OreDictNames.craftingFurnace
+						});
 	}
 }
