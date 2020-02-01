@@ -2,6 +2,9 @@ package com.spartakcore.gthandler;
 
 import com.spartakcore.gthandler.tileentities.basic.GT_MetaTileEntity_WaterTank;
 import com.spartakcore.gthandler.tileentities.generators.GT_MetaTileEntity_SemifluidGenerator;
+import com.spartakcore.gthandler.tileentities.hatches.GT_MetaTileEntity_Primitive_Hatch_Output;
+import com.spartakcore.gthandler.tileentities.hatches.GT_MetaTileEntity_Primitive_InputBus;
+import com.spartakcore.gthandler.tileentities.hatches.GT_MetaTileEntity_Primitive_OutputBus;
 import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_CokeOven;
 import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_Farm;
 
@@ -55,6 +58,7 @@ public class GT_Loader_Machines {
 				// ===================================================================================================
 				// Output Hatches
 				// ===================================================================================================
+				CustomItemList.Hatch_Output_Prim.set(new GT_MetaTileEntity_Primitive_Hatch_Output(14013, "primitive.hatchoutput", "Primitive Output Hatch",0).getStackForm(1L));
 
 				CustomItemList.Hatch_Output_UEV.set(new GT_MetaTileEntity_Hatch_Output(12256, "hatch.output.tier.10", "Output Hatch (UEV)",10).getStackForm(1L));
 				CustomItemList.Hatch_Output_UIV.set(new GT_MetaTileEntity_Hatch_Output(12257, "hatch.output.tier.11", "Output Hatch (UIV)",11).getStackForm(1L));
@@ -116,7 +120,8 @@ public class GT_Loader_Machines {
 				// ===================================================================================================
 				// Input Buses
 				// ===================================================================================================
-				
+				CustomItemList.Bus_Input_Prim.set(new GT_MetaTileEntity_Primitive_InputBus(14012, "primitive.input", "Primitive Input Bus",0).getStackForm(1L));
+
 				CustomItemList.Bus_Input_UEV.set(new GT_MetaTileEntity_Hatch_InputBus(12262, "bus.input.tier.10", "Input Bus (UEV)",10).getStackForm(1L));
 				CustomItemList.Bus_Input_UIV.set(new GT_MetaTileEntity_Hatch_InputBus(12263, "bus.input.tier.11", "Input Bus (UIV)",11).getStackForm(1L));
 				CustomItemList.Bus_Input_UMV.set(new GT_MetaTileEntity_Hatch_InputBus(12264, "bus.input.tier.12", "Input Bus (UMV)",12).getStackForm(1L));
@@ -128,6 +133,7 @@ public class GT_Loader_Machines {
 				// ===================================================================================================
 				// Output Buses
 				// ===================================================================================================
+				CustomItemList.Bus_Output_Prim.set(new GT_MetaTileEntity_Primitive_OutputBus(14011, "primitive.output", "Primitive Output Bus)",0).getStackForm(1L));
 
 				CustomItemList.Bus_Output_UEV.set(new GT_MetaTileEntity_Hatch_OutputBus(12268, "bus.output.tier.10", "Output Bus (UEV)",10).getStackForm(1L));
 				CustomItemList.Bus_Output_UIV.set(new GT_MetaTileEntity_Hatch_OutputBus(12269, "bus.output.tier.11", "Output Bus (UIV)",11).getStackForm(1L));
