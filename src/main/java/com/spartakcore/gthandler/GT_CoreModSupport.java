@@ -51,7 +51,7 @@ public class GT_CoreModSupport implements IMaterialHandler {
     //        return this;
     //    }
 
-    public static Materials CoalCoke = new Materials( 860, TextureSet.SET_LIGNITE,  1.0F,0,1,  4, 45,53,61,0,"CokeCoal","Coke Coal",0,0,-1,0,false, false,1,1,1,Dyes.dyeBlack,1, Arrays.asList(new MaterialStack(Carbon, 1)));
+    public static Materials CokeCoal = new Materials( 860, TextureSet.SET_LIGNITE,  1.0F,0,1,  4, 108,108,124,0,"CokeCoal","Coke Coal",0,0,-1,0,false, false,1,1,1,Dyes.dyeBlack,1, Arrays.asList(new MaterialStack(Carbon, 1)));
 
 
     public static Materials RawRadox = new MaterialBuilder(-1,TextureSet.SET_DULL,"Raw Radox").setRGB(80, 30, 80).addFluid().constructMaterial();
