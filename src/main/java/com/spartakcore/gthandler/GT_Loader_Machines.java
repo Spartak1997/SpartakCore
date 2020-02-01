@@ -1,5 +1,6 @@
 package com.spartakcore.gthandler;
 
+import com.spartakcore.gthandler.tileentities.basic.GT_MetaTileEntity_WaterTank;
 import com.spartakcore.gthandler.tileentities.generators.GT_MetaTileEntity_SemifluidGenerator;
 import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_CokeOven;
 import com.spartakcore.gthandler.tileentities.multi.GT_MetaTileEntity_Farm;
@@ -283,6 +284,14 @@ public class GT_Loader_Machines {
 
 				CustomItemList.Machine_ULV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13032, "basicmachine.assembler.tier.00", "Primitive Assembler", 0, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 3, 1, 8000, 0, 1, "Assembler0.png", GregTech_API.sSoundList.get(204), false, false, 0, "ASSEMBLER", null).getStackForm(1L));
 				CustomItemList.Machine_ULV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe( 13033, "basicmachine.circuitassembler.tier.00", "Primitive Circuit Assembler", 0, "Pick-n-Place all over the place", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes, 6, 1, 8000, 0, 1, "CircuitAssembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
+
+				// ===================================================================================================
+				// Water Tank
+				// ===================================================================================================
+
+				CustomItemList.Water_Tank.set(new GT_MetaTileEntity_WaterTank(13034, "basicmachine.watertank", "Water Tank",0).getStackForm(1L));
+
+
 
 				// ===================================================================================================
 				// MULTIBLOCKS

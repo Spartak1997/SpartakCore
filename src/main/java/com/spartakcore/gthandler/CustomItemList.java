@@ -20,7 +20,7 @@ public enum CustomItemList implements IItemContainer {
 	
 	Machine_ULV_ComponentAssembler, Machine_LV_ComponentAssembler, Machine_MV_ComponentAssembler, Machine_HV_ComponentAssembler, Machine_EV_ComponentAssembler, Machine_IV_ComponentAssembler, Machine_LuV_ComponentAssembler, Machine_ZPM_ComponentAssembler, Machine_UV_ComponentAssembler, Machine_UHV_ComponentAssembler, Machine_UEV_ComponentAssembler, Machine_UIV_ComponentAssembler, Machine_UMV_ComponentAssembler, Machine_UXV_ComponentAssembler, Machine_OpV_ComponentAssembler, 
 
-	Generator_Steam_Turbine_ULV, Generator_Diesel_ULV, Generator_Gas_Turbine_ULV, Machine_ULV_Assembler, Machine_ULV_CircuitAssembler, Generator_Semi_Turbine_ULV, Generator_Semi_Turbine_LV, Generator_Semi_Turbine_MV, Generator_Semi_Turbine_HV,
+	Generator_Steam_Turbine_ULV, Generator_Diesel_ULV, Generator_Gas_Turbine_ULV, Machine_ULV_Assembler, Machine_ULV_CircuitAssembler, Generator_Semi_Turbine_ULV, Generator_Semi_Turbine_LV, Generator_Semi_Turbine_MV, Generator_Semi_Turbine_HV, Water_Tank,
 	
 	//Casings
 	Casing_Farm,
