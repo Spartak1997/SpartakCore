@@ -823,6 +823,9 @@ public class GT_MachineRecipeLoader implements Runnable{
         //GT_Values.RA.addAssemblerRecipe(new ItemStack[] {GT_ModHandler.getModItem("Forestry","fencesFireproof",1L),ItemList.Plank_Oak.get(1L)}, Materials.Redstone.getMolten(72L), com.spartakcore.item.ItemList.PistonPlate.getIS(), 100, 30, false);
         GT_Values.RA.addAssemblerRecipe(CustomItemList.PistonPlate.get(1L), com.spartakcore.block.BlockList.PistonBlock.getIS(), null, new ItemStack(Blocks.piston, 1), 100, 8);
         
+		
+	//CokeOven Brick Block
+	GT_Values.RA.addCompressorRecipe(CustomItemList.CokeOvenBrick.get(4L), ItemList.Casing_CokeOvenBrick.get(1L), 200, 8);
         
         
 		// ### BlastFurnace ### \\
