@@ -21,8 +21,8 @@ public class GT_MetaTileEntity_Primitive_OutputBus extends GT_MetaTileEntity_Hat
     private byte actualTexture = 0;
 
     public GT_MetaTileEntity_Primitive_OutputBus(int aID, String aName, String aNameRegional, int aTier) {
-        super(aID, aName, aNameRegional, aTier, getSlots(aTier), new String[]{"Item Output for Multiblocks",
-        		"Capacity: " + getSlots(aTier) + " stack" + (getSlots(aTier) >= 2 ? "s" : "")});
+        super(aID, aName, aNameRegional, aTier, getSlots(aTier), new String[]{"Primitive Item Output for Coke Oven",
+        		"Capacity: 1 stack"});
     }
 
     public GT_MetaTileEntity_Primitive_OutputBus(String aName, int aTier, String aDescription, ITexture[][][] aTextures) {
@@ -97,7 +97,7 @@ public class GT_MetaTileEntity_Primitive_OutputBus extends GT_MetaTileEntity_Hat
 
     @Override
     public Object getClientGUI(int aID, InventoryPlayer aPlayerInventory, IGregTechTileEntity aBaseMetaTileEntity) {
-                return new GT_GUIContainer_1by1(aPlayerInventory, aBaseMetaTileEntity, "Output Bus");
+                return new GT_GUIContainer_1by1(aPlayerInventory, aBaseMetaTileEntity, "Primitive Output Bus");
     }
 
     @Override

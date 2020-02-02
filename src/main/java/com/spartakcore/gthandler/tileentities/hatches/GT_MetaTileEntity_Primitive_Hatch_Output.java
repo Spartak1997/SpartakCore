@@ -26,11 +26,8 @@ public class GT_MetaTileEntity_Primitive_Hatch_Output extends GT_MetaTileEntity_
 
     public GT_MetaTileEntity_Primitive_Hatch_Output(int aID, String aName, String aNameRegional, int aTier) {
         super(aID, aName, aNameRegional, aTier, 3, new String[]{
-        		"Fluid Output for Multiblocks",
-        		"Capacity: "  + 1000 + "L",
-        		"Right click with screwdriver to restrict output",
-        		"Can be restricted to put out Items and/or Steam/No Steam/1 specific Fluid",
-        		"Restricted Output Hatches are given priority for Multiblock Fluid output"});
+        		"Primitive Fluid Output for Coke Oven",
+        		"Capacity: " + 1000 + "L"});
     }
 
     public GT_MetaTileEntity_Primitive_Hatch_Output(String aName, int aTier, String aDescription, ITexture[][][] aTextures) {

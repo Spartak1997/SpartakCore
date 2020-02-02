@@ -25,9 +25,8 @@ public class GT_MetaTileEntity_Primitive_InputBus extends GT_MetaTileEntity_Hatc
 
     public GT_MetaTileEntity_Primitive_InputBus(int aID, String aName, String aNameRegional, int aTier) {
         super(aID, aName, aNameRegional, aTier, getSlots(aTier), new String[]{
-                "Item Input for Multiblocks",
-                "Shift + right click with screwdriver to turn Sort mode on/off",
-                "Capacity: " + getSlots(aTier) + " stack" + (getSlots(aTier) >= 2 ? "s" : "")});
+                "Primitive Item Input for Coke Oven",
+                "Capacity: 1 stack"});
     }
 
     @Override
@@ -100,7 +99,7 @@ public class GT_MetaTileEntity_Primitive_InputBus extends GT_MetaTileEntity_Hatc
 
     @Override
     public Object getClientGUI(int aID, InventoryPlayer aPlayerInventory, IGregTechTileEntity aBaseMetaTileEntity) {
-        return new GT_GUIContainer_1by1(aPlayerInventory, aBaseMetaTileEntity, "Input Bus");
+        return new GT_GUIContainer_1by1(aPlayerInventory, aBaseMetaTileEntity, "Primitive Input Bus");
     }
 
 

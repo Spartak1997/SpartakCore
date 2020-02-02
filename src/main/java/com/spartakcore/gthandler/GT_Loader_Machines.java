@@ -133,7 +133,7 @@ public class GT_Loader_Machines {
 				// ===================================================================================================
 				// Output Buses
 				// ===================================================================================================
-				CustomItemList.Bus_Output_Prim.set(new GT_MetaTileEntity_Primitive_OutputBus(14011, "primitive.output", "Primitive Output Bus)",0).getStackForm(1L));
+				CustomItemList.Bus_Output_Prim.set(new GT_MetaTileEntity_Primitive_OutputBus(14011, "primitive.output", "Primitive Output Bus",0).getStackForm(1L));
 
 				CustomItemList.Bus_Output_UEV.set(new GT_MetaTileEntity_Hatch_OutputBus(12268, "bus.output.tier.10", "Output Bus (UEV)",10).getStackForm(1L));
 				CustomItemList.Bus_Output_UIV.set(new GT_MetaTileEntity_Hatch_OutputBus(12269, "bus.output.tier.11", "Output Bus (UIV)",11).getStackForm(1L));
