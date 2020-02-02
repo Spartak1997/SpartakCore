@@ -179,5 +179,8 @@ public class GT_CraftingRecipeLoader extends gregtech.loaders.postload.GT_Crafti
         GT_ModHandler.addCraftingRecipe(ItemList.Field_Generator_IV.get(1L), GT_ModHandler.RecipeBits.DISMANTLEABLE | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE, new Object[]{"WCW", "CGC", "WCW", 'G', ItemList.Emitter_IV, 'C',  OrePrefixes.circuit.get(Materials.Master), 'W', OrePrefixes.plateTriple.get(Materials.HSSS)});
     	}
         
+        //CokeOvenBrick Block
+        GT_ModHandler.addCraftingRecipe(ItemList.Casing_CokeOvenBrick.get(1L, new Object[0]), bits, new Object[] {"BB", "BB", 'B', CustomItemList.CokeOvenBrick.get(1L)});
+        
     }
 }
