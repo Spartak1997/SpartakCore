@@ -16,7 +16,7 @@ public enum CustomItemList implements IItemContainer {
 	Hatch_Input_UEV, Hatch_Input_UIV, Hatch_Input_UMV, Hatch_Input_UXV, Hatch_Input_OPV,Hatch_Input_MAX,
 	Hatch_Output_UEV, Hatch_Output_UIV, Hatch_Output_UMV, Hatch_Output_UXV, Hatch_Output_OPV,Hatch_Output_MAX,
 	Bus_Input_UEV, Bus_Input_UIV, Bus_Input_UMV, Bus_Input_UXV, Bus_Input_OPV,Bus_Input_MAX,
-	Bus_Output_UEV, Bus_Output_UIV, Bus_Output_UMV, Bus_Output_UXV, Bus_Output_OPV,Bus_Output_MAX,
+	Bus_Output_UEV, Bus_Output_UIV, Bus_Output_UMV, Bus_Output_UXV, Bus_Output_OPV,Bus_Output_MAX, Bus_Output_Prim, Bus_Input_Prim,Hatch_Output_Prim,
 	
 	Machine_ULV_ComponentAssembler, Machine_LV_ComponentAssembler, Machine_MV_ComponentAssembler, Machine_HV_ComponentAssembler, Machine_EV_ComponentAssembler, Machine_IV_ComponentAssembler, Machine_LuV_ComponentAssembler, Machine_ZPM_ComponentAssembler, Machine_UV_ComponentAssembler, Machine_UHV_ComponentAssembler, Machine_UEV_ComponentAssembler, Machine_UIV_ComponentAssembler, Machine_UMV_ComponentAssembler, Machine_UXV_ComponentAssembler, Machine_OpV_ComponentAssembler, 
 
@@ -43,7 +43,7 @@ public enum CustomItemList implements IItemContainer {
 	HeavyDutyRocketFinsTier4,HeavyDutyRocketFinsTier5,HeavyDutyRocketFinsTier6,HeavyDutyRocketFinsTier7,HeavyDutyRocketFinsTier8,
 	Tier4Booster,Tier5Booster,Tier6Booster,Tier7Booster,Tier8Booster,
 	IridiumAlloyItemCasing,
-	ULVMotor, ULVPiston, ULVRobotArm,
+	ULVMotor, ULVPiston, ULVRobotArm, ULVConveyorModule,
 	PistonBlock, PistonPlate,
 	SteelBars,
 	Empty180SpCell, Empty360SpCell, Empty540SpCell, Empty1080SpCell,
@@ -69,7 +69,7 @@ public enum CustomItemList implements IItemContainer {
 
 	OakScheme, DarkOakScheme, JungleScheme, AcaciaScheme, SpruceScheme, BirchScheme, RubberScheme,
 
-    CokeOvenBrick
+    CokeOvenBrick,BlockCokeCoal
 
 	;
 	private ItemStack mStack;

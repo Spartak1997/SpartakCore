@@ -11,6 +11,7 @@ import net.minecraft.block.*;
 public enum BlockList {
 
 	PistonBlock(new ModSimpleBaseBlock(new PistonBlockProperties(), ModTabList.ModBlocksTab)),
+	BlockCokeCoal(new ModSimpleBaseBlock(new CokeCoalBlock(), ModTabList.ModBlocksTab)),
 		// A simple basic block. Not enabled, as it doesn't have a texture
 	//BoringDefaultBlock(new ModSimpleBaseBlock(Material.rock, "BoringBlock", ModTabList.ModBlocksTab)), 
 	

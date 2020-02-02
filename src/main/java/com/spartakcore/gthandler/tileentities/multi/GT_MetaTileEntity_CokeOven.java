@@ -143,7 +143,7 @@ public class GT_MetaTileEntity_CokeOven
                 for (int h = -1; h < 2; h++) {
                     if ((h != 0) || (((xDir + i != 0) || (zDir + j != 0)) && ((i != 0) || (j != 0)))) {
                         IGregTechTileEntity tTileEntity = aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir + i, h, zDir + j);
-                        if ((!addInputToMachineList(tTileEntity, 181)) && (!addOutputToMachineList(tTileEntity, 181))) {
+                        if ((!addPrimInputToMachineList(tTileEntity, 181)) && (!addPrimOutputToMachineList(tTileEntity, 181))) {
                             if (aBaseMetaTileEntity.getBlockOffset(xDir + i, h, zDir + j) != GregTech_API.sBlockCasings8) {
                                 return false;
                             }

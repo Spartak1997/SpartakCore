@@ -17,6 +17,11 @@ public class GT_Loader_Items
 	{
 		CustomItemList.CokeOvenBrick.set(GT.addItem(1,"Coke Oven Brick","",new Object[]{}));
 
+		CustomItemList.ULVMotor.set(GT.addItem(396,"Electric Motor (ULV)","",new Object[]{}));
+		CustomItemList.ULVPiston.set(GT.addItem(397,"Electric Piston (ULV)","",new Object[]{}));
+		CustomItemList.ULVRobotArm.set(GT.addItem(398,"Robot Arm (ULV)","",new Object[]{}));
+		CustomItemList.ULVConveyorModule.set(GT.addItem(399,"Conveyor Module (ULV)","",new Object[]{}));
+
 		CustomItemList.SchematicsTier1.set(ItemList.SchematicsTier1.getIS());
 		CustomItemList.SchematicsTier2.set(ItemList.SchematicsTier2.getIS());
 		CustomItemList.SchematicsTier3.set(ItemList.SchematicsTier3.getIS());
@@ -70,9 +75,6 @@ public class GT_Loader_Items
 		CustomItemList.ChargedGlassLense.set(ItemList.ChargedGlassLense.getIS());
 		CustomItemList.HugeRefinedReinforcedGlassLense.set(ItemList.HugeRefinedReinforcedGlassLense.getIS());
 		CustomItemList.HugeChargedGlassLense.set(ItemList.HugeChargedGlassLense.getIS());
-		CustomItemList.ULVMotor.set(ItemList.ULVMotor.getIS());
-		CustomItemList.ULVPiston.set(ItemList.ULVPiston.getIS());
-		CustomItemList.ULVRobotArm.set(ItemList.ULVRobotArm.getIS());
 		CustomItemList.PistonPlate.set(ItemList.PistonPlate.getIS());
 		CustomItemList.SteelBars.set(ItemList.SteelBars.getIS());
 		CustomItemList.DustSmallFertilizer.set(ItemList.DustSmallFertilizer.getIS());
