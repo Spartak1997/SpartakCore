@@ -149,7 +149,7 @@ public class GT_Loader_Machines {
 				CustomItemList.Bus_Output_OPV.set(new GT_MetaTileEntity_Hatch_OutputBus(12272, "bus.output.tier.14", "Output Bus (OpV)",14).getStackForm(1L));
 				CustomItemList.Bus_Output_MAX.set(new GT_MetaTileEntity_Hatch_OutputBus(12273, "bus.output.tier.15", "Output Bus (MAX)",15).getStackForm(1L));
 				
-				GT_ModHandler.addCraftingRecipe(CustomItemList.Bus_Input_Prim.get(1L),bitsd,new Object[]{"BBB", "B B", "BEB",
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Bus_Output_Prim.get(1L),bitsd,new Object[]{"BBB", "B B", "BEB",
 							'B', CustomItemList.CokeOvenBrick,
 							'E', new ItemStack(Blocks.hopper, 1, 32767)});
 		
