@@ -335,8 +335,17 @@ public class GT_Loader_Machines {
 				// ===================================================================================================
 
 				CustomItemList.Machine_ULV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13032, "basicmachine.assembler.tier.00", "Primitive Assembler", 0, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 3, 1, 8000, 0, 1, "Assembler0.png", GregTech_API.sSoundList.get(204), false, false, 0, "ASSEMBLER", null).getStackForm(1L));
-				CustomItemList.Machine_ULV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe( 13033, "basicmachine.circuitassembler.tier.00", "Primitive Circuit Assembler", 0, "Pick-n-Place all over the place", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes, 6, 1, 8000, 0, 1, "CircuitAssembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
+				//CustomItemList.Machine_ULV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe( 13033, "basicmachine.circuitassembler.tier.00", "Primitive Circuit Assembler", 0, "Pick-n-Place all over the place", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes, 6, 1, 8000, 0, 1, "CircuitAssembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
 
+				GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_ULV_Assembler.get(1L),
+				bitsd,
+				new Object[]{"RCR", "OMO", "WCW",
+						'M', ItemList.Hull_ULV,
+						'R', CustomItemList.ULVRobotArm,
+					    	'O', CustomItemList.ULVConveyorModule,
+					    	'C', OrePrefixes.circuit.get(Materials.Primitive),
+					    	'W', OrePrefixes.cableGt01.get(Materials.Lead)});
+				
 				// ===================================================================================================
 				// Water Tank
 				// ===================================================================================================
