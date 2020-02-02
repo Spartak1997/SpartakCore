@@ -1,6 +1,7 @@
 package com.spartakcore.gthandler.tileentities.multi;
 
 import com.spartakcore.gthandler.tileentities.multi.gui.GT_GUIContainer_CokeOven;
+import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
 import gregtech.api.enums.Textures;
 import gregtech.api.interfaces.ITexture;
@@ -10,12 +11,16 @@ import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_MultiBlockB
 import gregtech.api.objects.GT_RenderedTexture;
 import gregtech.api.util.GT_Recipe;
 import gregtech.api.util.GT_Utility;
+import gregtech.common.GT_Pollution;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.ChunkPosition;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
 
 import java.util.ArrayList;
+
+import static gregtech.api.objects.XSTR.XSTR_INSTANCE;
 
 public class GT_MetaTileEntity_CokeOven
         extends GT_MetaTileEntity_MultiBlockBase {
@@ -172,7 +177,7 @@ public class GT_MetaTileEntity_CokeOven
     }
 
     public int getPollutionPerTick(ItemStack aStack) {
-        return 20;
+        return 0;
     }
 
     public int getDamageToComponent(ItemStack aStack) {
