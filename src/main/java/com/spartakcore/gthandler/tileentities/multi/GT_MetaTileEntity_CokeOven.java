@@ -35,9 +35,9 @@ public class GT_MetaTileEntity_CokeOven
         return new String[]{
                 "Controller Block for the Coke Oven",
                 "Size(WxHxD): 3x3x3 (Hollow), Controller (Front centered)",
-                "1x Input Bus (Any casing)",
-                "1x Output Bus (Any casing)",
-                "1x Output Hatch (Any casing)",
+                "1x Primitive Input Bus (Any casing)",
+                "1x Primitive Output Bus (Any casing)",
+                "1x Primitive Output Hatch (Any casing)",
                 "Coke Oven Bricks for the rest"
         };
     }
