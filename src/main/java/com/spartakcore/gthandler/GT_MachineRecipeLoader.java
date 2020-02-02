@@ -669,6 +669,7 @@ public class GT_MachineRecipeLoader implements Runnable{
             GT_Values.RA.addComponentAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_IV.get(1L), GT_OreDictUnificator.get(OrePrefixes.ring, Materials.StyreneButadieneRubber, 2), GT_OreDictUnificator.get(OrePrefixes.rotor, Materials.TungstenSteel, 1), GT_OreDictUnificator.get(OrePrefixes.screw, Materials.TungstenSteel, 1), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tungsten, 1), GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.TungstenSteel, 1)}, GT_Values.NF, ItemList.Electric_Pump_IV.get(1L), 200, 7680);
 
             //Conveyors
+	    GT_Values.RA.addComponentAssemblerRecipe(new ItemStack[]{CustomItemList.ULVMotor.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Rubber, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Lead, 1)}, GT_Values.NF, CustomItemList.ULVConveyorModule.get(1L), 40, 4);
             GT_Values.RA.addComponentAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_LV.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Rubber, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tin, 1)}, GT_Values.NF, ItemList.Conveyor_Module_LV.get(1L), 80, 30);
             GT_Values.RA.addComponentAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_LV.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Silicone, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tin, 1)}, GT_Values.NF, ItemList.Conveyor_Module_LV.get(1L), 80, 30);
             GT_Values.RA.addComponentAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_LV.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StyreneButadieneRubber, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tin, 1)}, GT_Values.NF, ItemList.Conveyor_Module_LV.get(1L), 80, 30);
@@ -749,6 +750,7 @@ public class GT_MachineRecipeLoader implements Runnable{
             GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_IV.get(1L), GT_OreDictUnificator.get(OrePrefixes.ring, Materials.StyreneButadieneRubber, 2), GT_OreDictUnificator.get(OrePrefixes.rotor, Materials.TungstenSteel, 1), GT_OreDictUnificator.get(OrePrefixes.screw, Materials.TungstenSteel, 1), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tungsten, 1), GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.TungstenSteel, 1)}, GT_Values.NF, ItemList.Electric_Pump_IV.get(1L), 200, 480);
 
             //Conveyors
+	    GT_Values.RA.addAssemblerRecipe(new ItemStack[]{CustomItemList.ULVMotor.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Rubber, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Lead, 1)}, GT_Values.NF, CustomItemList.ULVConveyorModule.get(1L), 40, 4);
             GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_LV.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Rubber, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tin, 1)}, GT_Values.NF, ItemList.Conveyor_Module_LV.get(1L), 200, 30);
             GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_LV.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Silicone, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tin, 1)}, GT_Values.NF, ItemList.Conveyor_Module_LV.get(1L), 200, 30);
             GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.Electric_Motor_LV.get(2L), GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StyreneButadieneRubber, 6), GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tin, 1)}, GT_Values.NF, ItemList.Conveyor_Module_LV.get(1L), 200, 30);
@@ -818,7 +820,10 @@ public class GT_MachineRecipeLoader implements Runnable{
         
 		
 	//CokeOven Brick Block
-	GT_Values.RA.addCompressorRecipe(CustomItemList.CokeOvenBrick.get(4L), ItemList.Casing_CokeOvenBrick.get(1L), 200, 8);
+	GT_Values.RA.addCompressorRecipe(CustomItemList.CokeOvenBrick.get(4L), CustomItemList.CokeOvenBrick.get(1L), 200, 8);
+        
+	//CokeCoal Block
+	GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.gem, GT_CoreModSupport.CokeCoal, 9L), ItemList.BlockCokeCoal.get(1L), 200, 8);
         
         
 		// ### BlastFurnace ### \\
