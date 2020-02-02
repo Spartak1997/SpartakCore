@@ -172,7 +172,7 @@ public class GT_MetaTileEntity_CokeOven
     }
 
     public int getPollutionPerTick(ItemStack aStack) {
-        return 0;
+        return 20;
     }
 
     public int getDamageToComponent(ItemStack aStack) {
