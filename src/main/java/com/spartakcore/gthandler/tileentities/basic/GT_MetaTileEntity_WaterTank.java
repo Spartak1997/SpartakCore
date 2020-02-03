@@ -68,23 +68,6 @@ public class GT_MetaTileEntity_WaterTank extends GT_MetaTileEntity_BasicTank {
 
             for(byte tSide = 0; tSide < 6; ++tSide) {
                 IFluidHandler tTileEntity = aBaseMetaTileEntity.getITankContainerAtSide(tSide);
-                if (this.mFluid != null) {
-                    // auto outputs on top every second or so
-                    IFluidHandler tTank = aBaseMetaTileEntity.getITankContainerAtSide(tSide); //1 is up.
-                    if (tTank != null) {
-                        FluidStack tDrained = drain((mTier+1)*5000, false);
-                        if (tDrained != null) {
-                            int tFilledAmount = tTank.fill(ForgeDirection.UNKNOWN, tDrained, false);
-                            if (tFilledAmount > 0)
-                                tTank.fill(ForgeDirection.DOWN, drain(tFilledAmount, true), true);
-                                tTank.fill(ForgeDirection.UP, drain(tFilledAmount, true), true);
-                                tTank.fill(ForgeDirection.EAST, drain(tFilledAmount, true), true);
-                                tTank.fill(ForgeDirection.NORTH, drain(tFilledAmount, true), true);
-                                tTank.fill(ForgeDirection.WEST, drain(tFilledAmount, true), true);
-                                tTank.fill(ForgeDirection.SOUTH, drain(tFilledAmount, true), true);
-                        }
-                    }
-                }
                 if (tTileEntity != null) {
                     if (tTileEntity instanceof IGregTechTileEntity && aBaseMetaTileEntity.getColorization() >= 0) {
                         byte tColor = ((IGregTechTileEntity)tTileEntity).getColorization();
