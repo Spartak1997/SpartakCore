@@ -363,6 +363,136 @@ public class GT_Loader_Machines {
 						});
 
 				// ===================================================================================================
+				// Dust Washer
+				// ===================================================================================================
+
+
+		CustomItemList.DustWasherULV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13035, "basicmachine.dustwasher.tier.00", "ULV Dust Washer", 0, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', OrePrefixes.plate.get(Materials.WroughtIron),
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+						).getStackForm(1L));
+
+		CustomItemList.DustWasherLV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13036, "basicmachine.dustwasher.tier.01", "LV Dust Washer", 1, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*2, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13037, "basicmachine.dustwasher.tier.02", "MV Dust Washer", 2, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*3, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13038, "basicmachine.dustwasher.tier.03", "HV Dust Washer", 3, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*4, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13039, "basicmachine.dustwasher.tier.04", "EV Dust Washer", 4, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*5, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13040, "basicmachine.dustwasher.tier.05", "IV Dust Washer", 5, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*6, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherLuV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13041, "basicmachine.dustwasher.tier.06", "LuV Dust Washer", 6, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*7, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherZPM.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13042, "basicmachine.dustwasher.tier.07", "ZPM Dust Washer", 7, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherUV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13043, "basicmachine.dustwasher.tier.08", "UV Dust Washer", 8, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13044, "basicmachine.dustwasher.tier.09", "UHV Dust Washer", 9, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+		CustomItemList.DustWasherUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
+				13045, "basicmachine.dustwasher.tier.10", "UEV Dust Washer", 10, "Washed your Dusts",
+				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
+				"", false, false, 0, "DUSTWASHER",
+				new Object[]{"IPI", "IMI", "ICI",
+						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
+						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
+						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
+		).getStackForm(1L));
+
+
+
+
+
+				// ===================================================================================================
 				// MULTIBLOCKS
 				// ===================================================================================================
 				CustomItemList.Machine_Multi_Farm.set(new GT_MetaTileEntity_Farm(13001, "multimachine.farm", "Multiblock Farm").getStackForm(1L));

@@ -18,7 +18,9 @@ public enum CustomItemList implements IItemContainer {
 	Bus_Input_UEV, Bus_Input_UIV, Bus_Input_UMV, Bus_Input_UXV, Bus_Input_OPV,Bus_Input_MAX,
 	Bus_Output_UEV, Bus_Output_UIV, Bus_Output_UMV, Bus_Output_UXV, Bus_Output_OPV,Bus_Output_MAX, Bus_Output_Prim, Bus_Input_Prim,Hatch_Output_Prim,
 	
-	Machine_ULV_ComponentAssembler, Machine_LV_ComponentAssembler, Machine_MV_ComponentAssembler, Machine_HV_ComponentAssembler, Machine_EV_ComponentAssembler, Machine_IV_ComponentAssembler, Machine_LuV_ComponentAssembler, Machine_ZPM_ComponentAssembler, Machine_UV_ComponentAssembler, Machine_UHV_ComponentAssembler, Machine_UEV_ComponentAssembler, Machine_UIV_ComponentAssembler, Machine_UMV_ComponentAssembler, Machine_UXV_ComponentAssembler, Machine_OpV_ComponentAssembler, 
+	Machine_ULV_ComponentAssembler, Machine_LV_ComponentAssembler, Machine_MV_ComponentAssembler, Machine_HV_ComponentAssembler, Machine_EV_ComponentAssembler, Machine_IV_ComponentAssembler, Machine_LuV_ComponentAssembler, Machine_ZPM_ComponentAssembler, Machine_UV_ComponentAssembler, Machine_UHV_ComponentAssembler, Machine_UEV_ComponentAssembler, Machine_UIV_ComponentAssembler, Machine_UMV_ComponentAssembler, Machine_UXV_ComponentAssembler, Machine_OpV_ComponentAssembler,
+
+	DustWasherULV, DustWasherLV, 	DustWasherMV, 	DustWasherHV, 	DustWasherEV, 	DustWasherIV, 	DustWasherLuV , 	DustWasherZPM, 	DustWasherUV, 	DustWasherUHV, 	DustWasherUEV,
 
 	Generator_Steam_Turbine_ULV, Generator_Diesel_ULV, Generator_Gas_Turbine_ULV, Machine_ULV_Assembler, Machine_ULV_CircuitAssembler, Generator_Semi_Turbine_ULV, Generator_Semi_Turbine_LV, Generator_Semi_Turbine_MV, Generator_Semi_Turbine_HV, Water_Tank,
 	
