@@ -373,7 +373,7 @@ public class GT_Loader_Machines {
 				"", false, false, 0, "DUSTWASHER",
 				new Object[]{"IPI", "IMI", "ICI",
 						'I', OrePrefixes.plate.get(Materials.WroughtIron),
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
+						'P', CustomItemList.ULVPump,
 						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
 						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
 						).getStackForm(1L));
