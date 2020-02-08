@@ -17,6 +17,7 @@ public class GT_Loader_Items
 	{
 		CustomItemList.CokeOvenBrick.set(GT.addItem(1,"Coke Oven Brick","",new Object[]{}));
 
+		CustomItemList.ULVPump.set(GT.addItem(395,"Electric Pump (ULV)","",new Object[]{}));
 		CustomItemList.ULVMotor.set(GT.addItem(396,"Electric Motor (ULV)","",new Object[]{}));
 		CustomItemList.ULVPiston.set(GT.addItem(397,"Electric Piston (ULV)","",new Object[]{}));
 		CustomItemList.ULVRobotArm.set(GT.addItem(398,"Robot Arm (ULV)","",new Object[]{}));
