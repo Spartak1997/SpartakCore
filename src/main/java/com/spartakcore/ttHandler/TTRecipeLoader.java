@@ -708,6 +708,112 @@ public class TTRecipeLoader implements Runnable{
                     new FluidStack[]{
                             Materials.SolderingAlloy.getMolten(23040)},
                     ItemList.Machine_DigitalTransformer_UEV.get(1L), 2000, 8000000);
-    
+    		
+		//UHV - UIV Energy Hatches 
+		TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Energy_UV.get(1L),
+	                24000, 64, 500000, 4,  new Object[]{
+                            ItemList.Hull_MAX.get(1L, new Object(){}),
+                            GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.Superconductor, 2L),
+                            ItemList.Circuit_Chip_QPIC.get(2L,  new Object(){}),
+                            ItemList.Circuit_HighEnergyFlow.get(1L, new Object(){}),
+                            new Object[]{OrePrefixes.circuit.get(Materials.Infinite), 2},
+                            ItemList.UHV_Coil.get(2L, new Object(){}),
+                            new ItemStack[]{ItemList.Reactor_Coolant_He_6.get(1, new Object(){}), ItemList.Reactor_Coolant_NaK_6.get(1, new Object(){}), ItemList.Reactor_Coolant_Le_2.get(1, new Object(){})},
+                            new ItemStack[]{ItemList.Reactor_Coolant_He_6.get(1, new Object(){}), ItemList.Reactor_Coolant_NaK_6.get(1, new Object(){}), ItemList.Reactor_Coolant_Le_2.get(1, new Object(){})},
+                            new ItemStack[]{ItemList.Reactor_Coolant_He_6.get(1, new Object(){}), ItemList.Reactor_Coolant_NaK_6.get(1, new Object(){}), ItemList.Reactor_Coolant_Le_2.get(1, new Object(){})},
+                            ItemList.Electric_Pump_UHV.get(1L, new Object(){})},
+                    new FluidStack[]{
+                            new FluidStack(FluidRegistry.getFluid("ic2coolant"), 16000),
+                            Materials.SolderingAlloy.getMolten(5760)},
+                    ItemList.Hatch_Energy_MAX.get(1, new Object[]{}), 1000, 2000000);
+            
+		TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Energy_MAX.get(1L),
+	                48000, 128, 1000000, 4,  new Object[]{
+                    ItemList.Hull_UEV.get(1L, new Object(){}),
+                    GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.SuperconductorUEV, 6L),
+                    ItemList.Circuit_Chip_QPIC.get(4L,  new Object(){}),
+                    ItemList.Circuit_HighEnergyFlow.get(2L, new Object(){}),
+                    new Object[]{OrePrefixes.circuit.get(Materials.Bio), 2},
+                    ItemList.UEV_Coil.get(2L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Electric_Pump_UEV.get(1L, new Object(){})},
+                    new FluidStack[]{
+                    new FluidStack(FluidRegistry.getFluid("ic2coolant"), 32000),
+                    Materials.SolderingAlloy.getMolten(11520)},
+                    ItemList.Hatch_Energy_UEV.get(1, new Object[]{}), 1200, 8000000);
+            
+		TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Energy_UEV.get(1L),
+	                96000, 256, 2000000, 4,  new Object[]{
+                    ItemList.Hull_UIV.get(1L, new Object(){}),
+                    GT_OreDictUnificator.get(OrePrefixes.wireGt08, Materials.Neutronium, 8L),
+                    ItemList.Circuit_Chip_QPIC.get(8L,  new Object(){}),
+                    ItemList.Circuit_HighEnergyFlow.get(4L, new Object(){}),
+                    new Object[]{OrePrefixes.circuit.get(Materials.Bio), 2},
+                    ItemList.UIV_Coil.get(2L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Electric_Pump_UEV.get(1L, new Object(){})},
+                    new FluidStack[]{
+                    new FluidStack(FluidRegistry.getFluid("ic2coolant"), 64000),
+                    Materials.SolderingAlloy.getMolten(23040)},
+                    ItemList.Hatch_Energy_UIV.get(1, new Object[]{}), 1400, 32000000);
+		    
+		//UHV - UIV Dynamo Hatches
+		TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Dynamo_UV.get(1L),
+	                24000, 64, 500000, 4,  new Object[]{
+                            ItemList.Hull_MAX.get(1L, new Object(){}),
+                            GT_OreDictUnificator.get(OrePrefixes.spring, Materials.Europium, 4L),
+                            ItemList.Circuit_Chip_QPIC.get(2L,  new Object(){}),
+                            ItemList.Circuit_HighEnergyFlow.get(1L, new Object(){}),
+                            new Object[]{OrePrefixes.circuit.get(Materials.Infinite), 2},
+                            ItemList.UHV_Coil.get(2L, new Object(){}),
+                            new ItemStack[]{ItemList.Reactor_Coolant_He_6.get(1, new Object(){}), ItemList.Reactor_Coolant_NaK_6.get(1, new Object(){}), ItemList.Reactor_Coolant_Le_2.get(1, new Object(){})},
+                            new ItemStack[]{ItemList.Reactor_Coolant_He_6.get(1, new Object(){}), ItemList.Reactor_Coolant_NaK_6.get(1, new Object(){}), ItemList.Reactor_Coolant_Le_2.get(1, new Object(){})},
+                            new ItemStack[]{ItemList.Reactor_Coolant_He_6.get(1, new Object(){}), ItemList.Reactor_Coolant_NaK_6.get(1, new Object(){}), ItemList.Reactor_Coolant_Le_2.get(1, new Object(){})},
+                            ItemList.Electric_Pump_UHV.get(1L, new Object(){})},
+                    new FluidStack[]{
+                            new FluidStack(FluidRegistry.getFluid("ic2coolant"), 16000),
+                            Materials.SolderingAlloy.getMolten(5760)},
+                    ItemList.Hatch_Dynamo_MAX.get(1, new Object[]{}), 1000, 2000000);
+            
+		TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Dynamo_MAX.get(1L),
+	                48000, 128, 1000000, 4,  new Object[]{
+                    ItemList.Hull_UEV.get(1L, new Object(){}),
+                    GT_OreDictUnificator.get(OrePrefixes.spring, Materials.Diamericiumtitanium, 6L),
+                    ItemList.Circuit_Chip_QPIC.get(4L,  new Object(){}),
+                    ItemList.Circuit_HighEnergyFlow.get(2L, new Object(){}),
+                    new Object[]{OrePrefixes.circuit.get(Materials.Bio), 2},
+                    ItemList.UEV_Coil.get(2L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Electric_Pump_UEV.get(1L, new Object(){})},
+                    new FluidStack[]{
+                    new FluidStack(FluidRegistry.getFluid("ic2coolant"), 32000),
+                    Materials.SolderingAlloy.getMolten(11520)},
+                    ItemList.Hatch_Dynamo_UEV.get(1, new Object[]{}), 1200, 8000000);
+            
+		TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Dynamo_UEV.get(1L),
+	                96000, 256, 2000000, 4,  new Object[]{
+                    ItemList.Hull_UIV.get(1L, new Object(){}),
+                    GT_OreDictUnificator.get(OrePrefixes.spring, Materials.Neutronium, 8L),
+                    ItemList.Circuit_Chip_QPIC.get(8L,  new Object(){}),
+                    ItemList.Circuit_HighEnergyFlow.get(4L, new Object(){}),
+                    new Object[]{OrePrefixes.circuit.get(Materials.Bio), 2},
+                    ItemList.UIV_Coil.get(2L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Reactor_Coolant_Le_2.get(1L, new Object(){}),
+                    ItemList.Electric_Pump_UEV.get(1L, new Object(){})},
+                    new FluidStack[]{
+                    new FluidStack(FluidRegistry.getFluid("ic2coolant"), 64000),
+                    Materials.SolderingAlloy.getMolten(23040)},
+                    ItemList.Hatch_Dynamo_UIV.get(1, new Object[]{}), 1400, 32000000);
+		
 	 }	 
 }
