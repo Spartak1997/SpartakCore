@@ -23,9 +23,9 @@ public class GT_Loader_Items
 	private void registerItems()
 	{
 		int tLastID = 0;
-		CustomItemList.CokeOvenBrick.set(GT.addItem(1,"Coke Oven Brick","640 L/sec (as Cover",new Object[]{}));
+		CustomItemList.CokeOvenBrick.set(GT.addItem(1,"Coke Oven Brick","",new Object[]{}));
 
-		CustomItemList.ULVPump.set(GT.addItem(395,"Electric Pump (ULV)","",new Object[]{}));
+		CustomItemList.ULVPump.set(GT.addItem(395,"Electric Pump (ULV)","640 L/sec (as Cover",new Object[]{}));
 			GregTech_API.registerCover(CustomItemList.ULVPump.get(1L, new Object[0]), new GT_MultiTexture(new ITexture[]{Textures.BlockIcons.MACHINE_CASINGS[0][0], new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PUMP)}), new GT_Cover_Pump(32));
 		CustomItemList.ULVMotor.set(GT.addItem(396,"Electric Motor (ULV)","",new Object[]{}));
 		CustomItemList.ULVPiston.set(GT.addItem(397,"Electric Piston (ULV)","",new Object[]{}));
