@@ -209,69 +209,6 @@ public class GT_Loader_Machines {
 			        CustomItemList.Machine_UV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13017, "basicmachine.componentassembler.tier.08", "Extreme Component Assembling Machine III", 8, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 64000, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
 			        CustomItemList.Machine_UHV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13018, "basicmachine.componentassembler.tier.09", "Epic Component Assembling Machine", 9, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 64000, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
 			        CustomItemList.Machine_UEV_ComponentAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13019, "basicmachine.componentassembler.tier.10", "Epic Component Assembling Machine II", 10, "Components, Assemble!", GT_Recipe.GT_Recipe_Map.sComponentAssemblerRecipes,6, 1, 64000, 0, 1, "Assembler.png", GregTech_API.sSoundList.get(204), false, false, 0, "COMPONENTASSEMBLER", null).getStackForm(1L));
-					
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_LV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', CustomItemList.ULVPiston,
-							'R', CustomItemList.ULVRobotArm,
-							'H', ItemList.Hull_LV,
-							'C', OrePrefixes.circuit.get(Materials.Basic),
-							'W', OrePrefixes.cableGt01.get(Materials.Tin)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_MV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_LV,
-							'R', ItemList.Robot_Arm_LV,
-							'H', ItemList.Hull_MV,
-							'C', OrePrefixes.circuit.get(Materials.Good),
-							'W', OrePrefixes.cableGt01.get(Materials.Copper)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_HV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_MV,
-							'R', ItemList.Robot_Arm_MV,
-							'H', ItemList.Hull_HV,
-							'C', OrePrefixes.circuit.get(Materials.Advanced),
-							'W', OrePrefixes.cableGt02.get(Materials.Gold)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_EV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_HV,
-							'R', ItemList.Robot_Arm_HV,
-							'H', ItemList.Hull_EV,
-							'C', OrePrefixes.circuit.get(Materials.Data),
-							'W', OrePrefixes.cableGt02.get(Materials.Aluminium)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_IV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_EV,
-							'R', ItemList.Robot_Arm_EV,
-							'H', ItemList.Hull_IV,
-							'C', OrePrefixes.circuit.get(Materials.Elite),
-							'W', OrePrefixes.cableGt04.get(Materials.TungstenSteel)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_LuV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_IV,
-							'R', ItemList.Robot_Arm_IV,
-							'H', ItemList.Hull_LuV,
-							'C', OrePrefixes.circuit.get(Materials.Master),
-							'W', OrePrefixes.cableGt04.get(Materials.VanadiumGallium)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_ZPM_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_LuV,
-							'R', ItemList.Robot_Arm_LuV,
-							'H', ItemList.Hull_ZPM,
-							'C', OrePrefixes.circuit.get(Materials.Ultimate),
-							'W', OrePrefixes.cableGt08.get(Materials.Naquadah)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_UV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_ZPM,
-							'R', ItemList.Robot_Arm_ZPM,
-							'H', ItemList.Hull_UV,
-							'C', OrePrefixes.circuit.get(Materials.Superconductor),
-							'W', OrePrefixes.cableGt08.get(Materials.NaquadahAlloy)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_UHV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_UV,
-							'R', ItemList.Robot_Arm_UV,
-							'H', ItemList.Hull_MAX,
-							'C', OrePrefixes.circuit.get(Materials.Infinite),
-							'W', OrePrefixes.wireGt12.get(Materials.Europium)});
-			        GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_UEV_ComponentAssembler.get(1L),bitsd,new Object[]{"PCP", "RHR", "WCW",
-							'P', ItemList.Electric_Piston_UHV,
-							'R', ItemList.Robot_Arm_UHV,
-							'H', ItemList.Hull_UEV,
-							'C', OrePrefixes.circuit.get(Materials.Bio),
-							'W', OrePrefixes.wireGt12.get(Materials.Diamericiumtitanium)});
-		        }else {
-		        
 		        }
 		        
 		        // ===================================================================================================
@@ -283,18 +220,8 @@ public class GT_Loader_Machines {
 		        CustomItemList.Generator_Gas_Turbine_ULV.set(new GT_MetaTileEntity_GasTurbine(13027, "basicgenerator.gasturbine.tier.00", "First Gas Turbine", 0).getStackForm(1L));
 			CustomItemList.Generator_Semi_Turbine_ULV.set(new GT_MetaTileEntity_SemifluidGenerator(13028, "basicgenerator.semifluid.tier.00", "First Semifluid Generator", 0).getStackForm(1L));
 
-			GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Steam_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'P', OrePrefixes.pipeSmall.get(Materials.Lead)});
-		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Diesel_ULV.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "EME", "GWG", 'M', ItemList.Hull_ULV, 'P', CustomItemList.ULVPiston, 'E', CustomItemList.ULVMotor, 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead), 'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
-		        GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Gas_Turbine_ULV.get(1L, new Object[0]), bitsd, new Object[]{"CRC", "RHR", "EWE", 'H', ItemList.Hull_ULV, 'E', CustomItemList.ULVMotor, 'R', OrePrefixes.rotor.get(Materials.Lead), 'C', OrePrefixes.circuit.get(Materials.Primitive), 'W', OrePrefixes.cableGt01.get(Materials.Lead)});
-			GT_ModHandler.addCraftingRecipe(CustomItemList.Generator_Semi_Turbine_ULV.get(1L),
-				bitsd,
-				new Object[]{"GCG", "EME", "PWP",
-						'M', ItemList.Hull_ULV,
-						'P', CustomItemList.ULVPiston,
-					    	'E', CustomItemList.ULVMotor,
-					    	'C', OrePrefixes.circuit.get(Materials.Primitive),
-					    	'W', OrePrefixes.cableGt01.get(Materials.Lead),
-					    	'G', OrePrefixes.gearGt.get(Materials.WroughtIron)});
+
+
 				// ===================================================================================================
 				// semifluid Generators
 				// ===================================================================================================
@@ -336,15 +263,7 @@ public class GT_Loader_Machines {
 				// ===================================================================================================
 
 				CustomItemList.Machine_ULV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(13032, "basicmachine.assembler.tier.00", "Primitive Assembler", 0, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 3, 1, 8000, 0, 1, "Assembler0.png", GregTech_API.sSoundList.get(204), false, false, 0, "ASSEMBLER", null).getStackForm(1L));
-				
-				GT_ModHandler.addCraftingRecipe(CustomItemList.Machine_ULV_Assembler.get(1L),
-				bitsd,
-				new Object[]{"RCR", "OMO", "WCW",
-						'M', ItemList.Hull_ULV,
-						'R', CustomItemList.ULVRobotArm,
-					    	'O', CustomItemList.ULVConveyorModule,
-					    	'C', OrePrefixes.circuit.get(Materials.Primitive),
-					    	'W', OrePrefixes.cableGt01.get(Materials.Lead)});
+
 				
 				// ===================================================================================================
 				// Water Tank
@@ -361,136 +280,6 @@ public class GT_Loader_Machines {
 								'W', OrePrefixes.pipeLarge.get(Materials.Wood),
 								'R', ItemList.IC2_Resin
 						});
-
-				// ===================================================================================================
-				// Dust Washer
-				// ===================================================================================================
-
-
-		CustomItemList.DustWasherULV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13035, "basicmachine.dustwasher.tier.00", "ULV Dust Washer", 0, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', OrePrefixes.plate.get(Materials.WroughtIron),
-						'P', CustomItemList.ULVPump,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-						).getStackForm(1L));
-
-		CustomItemList.DustWasherLV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13036, "basicmachine.dustwasher.tier.01", "LV Dust Washer", 1, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*2, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13037, "basicmachine.dustwasher.tier.02", "MV Dust Washer", 2, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*3, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13038, "basicmachine.dustwasher.tier.03", "HV Dust Washer", 3, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*4, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13039, "basicmachine.dustwasher.tier.04", "EV Dust Washer", 4, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*5, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13040, "basicmachine.dustwasher.tier.05", "IV Dust Washer", 5, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*6, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherLuV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13041, "basicmachine.dustwasher.tier.06", "LuV Dust Washer", 6, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*7, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherZPM.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13042, "basicmachine.dustwasher.tier.07", "ZPM Dust Washer", 7, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherUV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13043, "basicmachine.dustwasher.tier.08", "UV Dust Washer", 8, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13044, "basicmachine.dustwasher.tier.09", "UHV Dust Washer", 9, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-		CustomItemList.DustWasherUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				13045, "basicmachine.dustwasher.tier.10", "UEV Dust Washer", 10, "Washed your Dusts",
-				GT_Recipe.GT_Recipe_Map.sDustWashRecipes, 1, 1, 8000*8, 0, 1, "Autoclave.png",
-				"", false, false, 0, "DUSTWASHER",
-				new Object[]{"IPI", "IMI", "ICI",
-						'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE,
-						'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP,
-						'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE,
-						'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL}
-		).getStackForm(1L));
-
-
-
-
 
 				// ===================================================================================================
 				// MULTIBLOCKS
