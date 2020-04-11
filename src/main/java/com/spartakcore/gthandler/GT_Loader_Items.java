@@ -66,10 +66,6 @@ public class GT_Loader_Items
 		CustomItemList.QuantumPartLeggings.set(ItemList.QuantumPartLeggings.getIS());
 		CustomItemList.IridiumAlloyItemCasing.set(ItemList.IridiumAlloyItemCasing.getIS());
 		CustomItemList.QuantumCrystal.set(ItemList.QuantumCrystal.getIS());
-		CustomItemList.RefinedReinforcedGlassLense.set(ItemList.RefinedReinforcedGlassLense.getIS());
-		CustomItemList.ChargedGlassLense.set(ItemList.ChargedGlassLense.getIS());
-		CustomItemList.HugeRefinedReinforcedGlassLense.set(ItemList.HugeRefinedReinforcedGlassLense.getIS());
-		CustomItemList.HugeChargedGlassLense.set(ItemList.HugeChargedGlassLense.getIS());
 		CustomItemList.PistonPlate.set(ItemList.PistonPlate.getIS());
 		CustomItemList.SteelBars.set(ItemList.SteelBars.getIS());
 		CustomItemList.DustSmallFertilizer.set(ItemList.DustSmallFertilizer.getIS());

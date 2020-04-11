@@ -55,8 +55,7 @@ public class GT_MachineRecipeLoader implements Runnable{
         }
         
 	//CokeOven Brick
-	GT_Values.RA.addAlloySmelterRecipe(new ItemStack(Items.clay_ball, 1, 0), new ItemStack(Blocks.sand, 1, 0), CustomItemList.CokeOvenBrick.get(2L), 200, 8);
-			
+
         //Bars
         GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.stick, Materials.Steel, 3L), GT_Utility.getIntegratedCircuit(3), CustomItemList.SteelBars.get(4L), 400, 48);
         
@@ -653,7 +652,7 @@ public class GT_MachineRecipeLoader implements Runnable{
         
 		
 	//CokeOven Brick Block
-	GT_Values.RA.addCompressorRecipe(CustomItemList.CokeOvenBrick.get(4L), ItemList.Casing_CokeOvenBrick.get(1L), 200, 8);
+
         
 	//CokeCoal Block
 	GT_Values.RA.addCompressorRecipe(GT_OreDictUnificator.get(OrePrefixes.gem, GT_CoreModSupport.CokeCoal, 9L), BlockList.BlockCokeCoal.getIS(), 200, 8);
