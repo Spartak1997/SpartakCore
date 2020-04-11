@@ -1,6 +1,13 @@
 package com.spartakcore.gthandler;
 
 import com.spartakcore.item.ItemList;
+import gregtech.api.GregTech_API;
+import gregtech.api.enums.TC_Aspects;
+import gregtech.api.enums.Textures;
+import gregtech.api.interfaces.ITexture;
+import gregtech.api.objects.GT_MultiTexture;
+import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.common.covers.GT_Cover_Pump;
 import gregtech.common.items.GT_MetaGenerated_Item_04;
 
 public class GT_Loader_Items
@@ -16,6 +23,14 @@ public class GT_Loader_Items
 	private void registerItems()
 	{
 		int tLastID = 0;
+		CustomItemList.CokeOvenBrick.set(GT.addItem(1,"Coke Oven Brick","",new Object[]{}));
+
+		CustomItemList.ULVPump.set(GT.addItem(395,"Electric Pump (ULV)","640 L/sec (as Cover",new Object[]{}));
+			GregTech_API.registerCover(CustomItemList.ULVPump.get(1L, new Object[0]), new GT_MultiTexture(new ITexture[]{Textures.BlockIcons.MACHINE_CASINGS[0][0], new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PUMP)}), new GT_Cover_Pump(32));
+		CustomItemList.ULVMotor.set(GT.addItem(396,"Electric Motor (ULV)","",new Object[]{}));
+		CustomItemList.ULVPiston.set(GT.addItem(397,"Electric Piston (ULV)","",new Object[]{}));
+		CustomItemList.ULVRobotArm.set(GT.addItem(398,"Robot Arm (ULV)","",new Object[]{}));
+		CustomItemList.ULVConveyorModule.set(GT.addItem(399,"Conveyor Module (ULV)","",new Object[]{}));
 
 		CustomItemList.SchematicsTier1.set(ItemList.SchematicsTier1.getIS());
 		CustomItemList.SchematicsTier2.set(ItemList.SchematicsTier2.getIS());
