@@ -622,7 +622,12 @@ public class GT_MachineRecipeLoader implements Runnable{
 	//Electrotine
 	GT_Values.RA.addCentrifugeRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Electrotine, 8L), GT_Values.NI, GT_Values.NF, GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Redstone, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Electrum, 1L), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, new int[]{10000, 10000}, 400, 480);
 		
-
+	//Lens
+	GT_Values.RA.addChemicalBathRecipe(GT_OreDictUnificator.get(OrePrefixes.lens, Materials.ReinforcedGlass, 1L), Materials.Chlorine.getGas(100L), CustomItemList.RefinedReinforcedGlassLense.get(1L), GT_Values.NI, GT_Values.NI, null, 600, 16);
+	GT_Values.RA.addChemicalBathRecipe(CustomItemList.RefinedReinforcedGlassLense.get(1L), Materials.Radon.getGas(250), CustomItemList.ChargedGlassLense.get(1L), null, null, null, 384, 480);
+        GT_Values.RA.addChemicalBathRecipe(CustomItemList.HugeRefinedReinforcedGlassLense.get(1L), Materials.Radon.getGas(1250), CustomItemList.HugeChargedGlassLense.get(1L), null, null, null, 384, 1920);
+        GT_Values.RA.addLaserEngraverRecipe(CustomItemList.RefinedReinforcedGlassLense.get(3L), GT_Utility.copyAmount(0, GT_OreDictUnificator.get(OrePrefixes.lens, Materials.Diamond, 1)), CustomItemList.HugeRefinedReinforcedGlassLense.get(1L), 2400, 2000, false);
+        
         //Casings
         if (Loader.isModLoaded("miscutils")){
     		
