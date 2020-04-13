@@ -897,6 +897,9 @@ public class GT_MachineRecipeLoader implements Runnable{
 		        GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, 		Materials.StainlessSteel, 1L), 	GT_Utility.getIntegratedCircuit(1), 		GT_Values.NF, 										GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.StainlessSteel, 1L), GT_Values.NI, 1700, 480, 1700);
 		        GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, 		Materials.StainlessSteel, 1L), 	GT_Utility.getIntegratedCircuit(11), 		Materials.Oxygen.getGas(1000L), 					GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.StainlessSteel, 1L), GT_Values.NI, 1200, 480, 1700);
 		        
+			GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, 		Materials.HSLA, 1L), 	GT_Utility.getIntegratedCircuit(1), 		GT_Values.NF, 										GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.HSLA, 1L), GT_Values.NI, 1800, 480, 1811);
+		        GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, 		Materials.HSLA, 1L), 	GT_Utility.getIntegratedCircuit(11), 		Materials.Oxygen.getGas(1000L), 					GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.HSLA, 1L), GT_Values.NI, 1300, 480, 1811);
+		        
 		        GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Aluminium, 1L), 			    GT_Utility.getIntegratedCircuit(11),       Materials.Nitrogen.getGas(1000L),                   GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Aluminium, 1L), GT_Values.NI, 1200, 120, 1700);
 		        
 		        GT_Values.RA.addBlastRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, 		Materials.MeteoricSteel, 1L), 	GT_Utility.getIntegratedCircuit(1), 		GT_Values.NF, 										GT_Values.NF, GT_OreDictUnificator.get(OrePrefixes.ingotHot, Materials.MeteoricSteel, 1L), GT_Values.NI, 1700, 480, 2460);
