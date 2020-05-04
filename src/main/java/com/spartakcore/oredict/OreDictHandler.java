@@ -112,7 +112,6 @@ public class OreDictHandler {
 		OreDictionary.registerOre("dustFertilizer", GT_ModHandler.getModItem("IC2", "itemFertilizer", 1L,0));
 		OreDictionary.registerOre("dustSmallFertilizer", ItemList.DustSmallFertilizer.getIS());
 		OreDictionary.registerOre("dustTinyFertilizer", ItemList.DustTinyFertilizer.getIS());
-		OreDictionary.registerOre("blockCokeCoal", BlockList.BlockCokeCoal.getIS());
 	}
 
 	public static void register_all() {
